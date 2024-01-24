@@ -2,22 +2,11 @@
 
 .SectionProject {
   display: flex;
-  padding: 100px 0px 100px 0px;
-  background: var(--color-white);
+  width: 100%;
 }
 
 .SectionProject--reversed {
   flex-direction: row-reverse;
-  background: var(--color-grey);
-}
-
-.SectionProject--darkMode {
-  background: var(--color-dark-black);
-}
-
-.SectionProject--darkMode--reversed {
-  flex-direction: row-reverse;
-  background: var(--color-dark-grey);
 }
 
 @media screen and (max-width: 1100px) {

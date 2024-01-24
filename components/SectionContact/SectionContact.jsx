@@ -8,23 +8,17 @@ import Button from "../Button/Button.jsx";
 import { Formik } from "formik";
 import get from "lodash/get";
 import isEmpty from "lodash/isEmpty";
+import Section from "../Section/Section.jsx";
 import { getInitialValues, validate, post } from "./SectionContactUtils";
 
 const SectionContact = ({ darkMode, reversed }) => {
   const [message, setMessage] = useState(false);
   return (
-    <div
-      className={classnames("SectionContact", {
-        "SectionContact--reversed": !darkMode && reversed,
-        "SectionContact--darkMode": darkMode && !reversed,
-        "SectionContact--darkMode--reversed": darkMode && reversed,
-      })}
-    >
+    <Section darkMode={darkMode} reversed={reversed}>
       <script
         type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
       ></script>
-
       <Formik
         initialValues={getInitialValues()}
         validate={(values) => validate(values)}
@@ -44,11 +38,7 @@ const SectionContact = ({ darkMode, reversed }) => {
           validateForm,
           setTouched,
         }) => (
-          <form
-            noValidate
-            onSubmit={handleSubmit}
-            className="SectionContact__form"
-          >
+          <form noValidate onSubmit={handleSubmit} className="SectionContact">
             <div className="SectionContact__container">
               <Field
                 reversed={reversed}
@@ -190,7 +180,7 @@ const SectionContact = ({ darkMode, reversed }) => {
           </form>
         )}
       </Formik>
-    </div>
+    </Section>
   );
 };
 

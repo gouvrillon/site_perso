@@ -1,27 +1,10 @@
 .SectionContact {
-  padding: 100px 0px 100px 0px;
-  background: var(--color-white);
-}
-
-.SectionContact--reversed {
-  background: var(--color-grey);
-}
-
-.SectionContact--darkMode {
-  background: var(--color-dark-black);
-}
-
-.SectionContact--darkMode--reversed {
-  background: var(--color-dark-grey);
-}
-
-.SectionContact__form {
   width: 100%;
   display: flex;
 }
 
 @media screen and (max-width: 1100px) {
-  .SectionContact__form {
+  .SectionContact {
     flex-direction: column;
     gap: 20px;
   }

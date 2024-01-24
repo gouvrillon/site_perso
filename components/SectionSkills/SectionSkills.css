@@ -2,20 +2,8 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 100px 0px 100px 0px;
-  background: var(--color-white);
-}
-
-.SectionSkills--reversed {
-  background: var(--color-grey);
-}
-
-.SectionSkills--darkMode {
-  background: var(--color-dark-black);
-}
-
-.SectionSkills--darkMode--reversed {
-  background: var(--color-dark-grey);
+  width: 100%;
+  width: 100%;
 }
 
 .SectionSkills__line {

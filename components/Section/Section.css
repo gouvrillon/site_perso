@@ -1,0 +1,16 @@
+.Section {
+  padding: 100px 0px 100px 0px;
+  background: var(--color-white);
+}
+
+.Section--reversed {
+  background: var(--color-grey);
+}
+
+.Section--darkMode {
+  background: var(--color-dark-black);
+}
+
+.Section--darkMode--reversed {
+  background: var(--color-dark-grey);
+}
