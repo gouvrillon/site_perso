@@ -1,0 +1,9 @@
+.Paragraph {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-violet);
+}
+
+.Paragraph--darkMode {
+  color: var(--color-dark-white);
+}

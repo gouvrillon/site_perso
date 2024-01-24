@@ -1,0 +1,25 @@
+.SectionProjects {
+  display: flex;
+  flex-direction: column;
+  padding: 50px 0px 50px 0px;
+}
+
+.SectionProjects--lightMode {
+  background: var(--color-yellow);
+}
+
+.SectionProjects--lightMode--reversed {
+  background: var(--color-green);
+}
+
+.SectionProjects--darkMode {
+  background: var(--color-black);
+}
+
+.SectionProjects--darkMode--reversed {
+  background: var(--color-grey);
+}
+
+.SectionProjects__title {
+  margin: 0px auto 40px auto;
+}

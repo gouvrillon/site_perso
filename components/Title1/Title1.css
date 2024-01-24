@@ -1,0 +1,9 @@
+.Title1 {
+  font-size: 30px;
+  font-weight: 800;
+  color: var(--color-black);
+}
+
+.Title1--darkMode {
+  color: var(--color-dark-white);
+}

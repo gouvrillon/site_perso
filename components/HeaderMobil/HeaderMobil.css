@@ -1,0 +1,24 @@
+.HeaderMobil {
+  position: fixed;
+  top: 0px;
+  height: 50px;
+  background: var(--color-black);
+  width: 100%;
+  z-index: 99;
+}
+
+.HeaderMobil--darkMode {
+  background: var(--color-dark-grey);
+}
+
+.HeaderMobil--displayMenu {
+  position: fixed;
+  height: 100vh;
+  width: 300px;
+}
+
+@media (min-width: 600px) {
+  .HeaderMobil {
+    display: none;
+  }
+}

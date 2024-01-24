@@ -1,0 +1,37 @@
+.SectionTitle2 {
+  display: flex;
+  padding: 50px 0px 50px 0px;
+  background: var(--color-white);
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionTitle2 {
+    flex-direction: column;
+  }
+}
+
+.SectionTitle2--reversed {
+  background: var(--color-grey);
+}
+
+.SectionTitle2--darkMode {
+  background: var(--color-dark-black);
+}
+
+.SectionTitle2--darkMode--reversed {
+  background: var(--color-dark-grey);
+}
+
+.SectionTitle2__container {
+  width: 500px;
+  margin: 0px auto 0px auto;
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .SectionTitle2__container {
+    width: 90%;
+  }
+}

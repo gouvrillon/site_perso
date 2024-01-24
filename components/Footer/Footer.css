@@ -1,0 +1,9 @@
+.Footer {
+  height: 50px;
+  background: var(--color-black);
+  width: 100%;
+}
+
+.Footer--darkMode {
+  background: var(--color-dark-black);
+}

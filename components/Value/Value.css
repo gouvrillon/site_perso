@@ -1,0 +1,28 @@
+.Value {
+  transition: 200ms;
+  display: flex;
+  max-width: max-content;
+}
+
+.Value__point {
+  font-size: 12px;
+  margin: 5px 8px auto 0px;
+  background: var(--color-violet);
+  width: 5px;
+  height: 5px;
+  border-radius: 100%;
+}
+
+.Value__point--darkMode {
+  background: var(--color-dark-violet);
+}
+
+.Value__label {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-violet);
+}
+
+.Value__label--darkMode {
+  color: var(--color-dark-white);
+}

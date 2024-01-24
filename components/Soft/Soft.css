@@ -1,0 +1,25 @@
+.Soft {
+  transition: 200ms;
+  display: flex;
+  max-width: max-content;
+}
+
+.Soft__icon {
+  font-size: 12px;
+  margin: 2px 8px auto 0px;
+  color: var(--color-black);
+}
+
+.Soft__icon--darkMode {
+  color: var(--color-dark-green);
+}
+
+.Soft__label {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.Soft__label--darkMode {
+  color: var(--color-dark-white);
+}

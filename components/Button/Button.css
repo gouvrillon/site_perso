@@ -1,0 +1,48 @@
+.Button {
+  padding: 10px 20px 10px 20px;
+  height: 42px;
+  border-radius: 8px;
+  border: 0px;
+  cursor: pointer;
+  position: relative;
+  font-size: 18px;
+  font-weight: 500;
+  background: var(--color-violet);
+  color: var(--color-white);
+  position: relative;
+  font-family: var(--font-rubik);
+  width: max-content;
+}
+
+.Button:hover {
+  background: var(--color-grey);
+  color: var(--color-violet);
+}
+
+.Button--reversed:hover {
+  background: var(--color-white);
+}
+
+.Button--darkMode {
+  background: var(--color-dark-violet);
+  color: var(--color-dark-white);
+}
+
+.Button--darkMode:hover {
+  background: var(--color-dark-grey);
+  color: var(--color-dark-white);
+}
+
+.Button--darkMode--reversed {
+  background: var(--color-dark-violet);
+  color: var(--color-dark-white);
+}
+
+.Button--darkMode--reversed:hover {
+  background: var(--color-dark-black);
+  color: var(--color-dark-white);
+}
+
+.Button--disabled {
+  cursor: not-allowed;
+}

@@ -1,0 +1,36 @@
+.Link {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: var(--color-violet);
+  background: var(--color-grey);
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  width: max-content;
+}
+
+.Link--reversed {
+  background: var(--color-white);
+}
+
+.Link:hover,
+.Link--reversed:hover {
+  background: var(--color-violet);
+  color: var(--color-white);
+}
+
+.Link--darkMode {
+  color: var(--color-dark-white);
+  background: var(--color-dark-grey);
+}
+
+.Link--darkMode--reversed {
+  color: var(--color-dark-white);
+  background: var(--color-dark-black);
+}
+
+.Link--darkMode:hover,
+.Link--darkMode--reversed:hover {
+  background: var(--color-dark-violet);
+  color: var(--color-dark-white);
+}

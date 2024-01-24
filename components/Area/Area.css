@@ -1,0 +1,87 @@
+.Area {
+  display: flex;
+  flex-direction: column;
+}
+
+.Area__label {
+  font-size: 18px;
+  font-weight: 400;
+  color: var(--color-blue);
+  margin: 0px 0px 20px 0px;
+}
+
+.Area__label--darkMode {
+  color: var(--color-dark-white);
+}
+
+.Area__icon {
+  font-size: 12px;
+  margin: 0px 10px 0px 0px;
+  color: var(--color-blue);
+}
+
+.Area__icon--darkMode {
+  color: var(--color-dark-green);
+}
+
+.Area__error {
+  font-size: 18px;
+  font-weight: 200;
+  color: var(--color-red);
+  margin: 0px 0px 0px 4px;
+  opacity: 0;
+}
+
+.Area__error--display {
+  opacity: 1;
+}
+
+.Area__error--darkMode {
+  color: var(--color-dark-red);
+}
+
+.Area__input {
+  border: 0px;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  background: var(--color-grey);
+  color: var(--color-blue);
+  font-family: var(--font-rubik);
+  height: 188px;
+}
+
+.Area__input::placeholder {
+  font-size: 18px;
+  font-weight: 400;
+  opacity: 0.3;
+  color: var(--color-violet);
+  font-family: var(--font-rubik);
+}
+
+.Area__input:focus {
+  outline: none;
+}
+
+.Area__input--reversed {
+  background: var(--color-white);
+}
+
+.Area__input--darkMode {
+  background: var(--color-dark-grey);
+  color: var(--color-dark-white);
+}
+
+.Area__input--darkMode::placeholder {
+  color: var(--color-dark-white);
+}
+
+.Area__input--darkMode--reversed {
+  background: var(--color-dark-black);
+  color: var(--color-dark-white);
+}
+
+.Area__input--darkMode--reversed::placeholder {
+  color: var(--color-dark-white);
+}

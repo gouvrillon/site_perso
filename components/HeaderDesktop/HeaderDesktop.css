@@ -1,0 +1,19 @@
+.HeaderDesktop {
+  position: fixed;
+  top: 0px;
+  height: 50px;
+  display: flex;
+  width: 100%;
+  z-index: 99;
+  background: var(--color-black);
+}
+
+.HeaderDesktop--darkMode {
+  background: var(--color-dark-black);
+}
+
+@media (max-width: 600px) {
+  .HeaderDesktop {
+    display: none;
+  }
+}

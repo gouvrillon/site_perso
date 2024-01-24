@@ -1,0 +1,14 @@
+.Label {
+  font-size: 18px;
+  font-weight: 500;
+  background: var(--color-violet);
+  color: var(--color-white);
+  padding: 10px 20px 10px 20px;
+  border-radius: 8px;
+  width: max-content;
+}
+
+.Label--darkMode {
+  background: var(--color-dark-violet);
+  color: var(--color-dark-white);
+}

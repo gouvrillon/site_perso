@@ -1,0 +1,73 @@
+.SectionContact {
+  padding: 100px 0px 100px 0px;
+  background: var(--color-white);
+}
+
+.SectionContact--reversed {
+  background: var(--color-grey);
+}
+
+.SectionContact--darkMode {
+  background: var(--color-dark-black);
+}
+
+.SectionContact--darkMode--reversed {
+  background: var(--color-dark-grey);
+}
+
+.SectionContact__form {
+  width: 100%;
+  display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionContact__form {
+    flex-direction: column;
+    gap: 20px;
+  }
+}
+
+.SectionContact__container {
+  width: 500px;
+  margin: 0px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .SectionContact__container {
+    width: 90%;
+  }
+}
+
+.SectionContact__input {
+  margin: 0px 0px 20px 0px;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionContact__first {
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+.SectionContact__footer {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.SectionContact__message {
+  font-size: 18px;
+  font-weight: 200;
+  color: var(--color-red);
+  margin: 0px 0px 0px 4px;
+  opacity: 0;
+}
+
+.SectionContact__message--display {
+  opacity: 1;
+}
+
+.SectionContact__message--darkMode {
+  color: var(--color-dark-red);
+}
