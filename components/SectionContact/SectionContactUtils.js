@@ -26,18 +26,14 @@ const validate = (values) => {
   return errors;
 };
 
-const post = async (setSubmitting, setMessage, resetForm) => {
+const post = async (setSubmitting, setMessage, resetForm, values) => {
   setSubmitting(true);
-  // eslint-disable-next-line no-undef
-  emailjs.init("O6nkgmPokVNXh4e6k");
   const serviceID = "default_service";
   const templateID = "template_0duji4e";
   // eslint-disable-next-line no-undef
-  const response = await emailjs.sendForm(
-    serviceID,
-    templateID,
-    "#SectionContact__form"
-  );
+  emailjs.init("O6nkgmPokVNXh4e6k");
+  // eslint-disable-next-line no-undef
+  const response = await emailjs.send(serviceID, templateID, values);
   if (isEqual(get(response, "status"), 200)) {
     setSubmitting(false);
     setMessage("Message envoyé");

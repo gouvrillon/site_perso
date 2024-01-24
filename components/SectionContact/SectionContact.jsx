@@ -24,11 +24,12 @@ const SectionContact = ({ darkMode, reversed }) => {
         type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
       ></script>
+
       <Formik
         initialValues={getInitialValues()}
         validate={(values) => validate(values)}
         onSubmit={(values, { setSubmitting, resetForm }) => {
-          post(setSubmitting, setMessage, resetForm);
+          post(setSubmitting, setMessage, resetForm, values);
         }}
       >
         {({
@@ -39,12 +40,14 @@ const SectionContact = ({ darkMode, reversed }) => {
           handleBlur,
           handleSubmit,
           isSubmitting,
+          submitForm,
+          validateForm,
+          setTouched,
         }) => (
           <form
             noValidate
             onSubmit={handleSubmit}
             className="SectionContact__form"
-            id="SectionContact__form"
           >
             <div className="SectionContact__container">
               <Field
@@ -151,10 +154,29 @@ const SectionContact = ({ darkMode, reversed }) => {
                   label="Envoyer"
                   darkMode={darkMode}
                   reversed={reversed}
-                  type="submit"
+                  type="button"
                   className="SectionContact__button"
                   icon="SEND"
                   disabled={isSubmitting}
+                  onClick={async () => {
+                    const newErrors = await validateForm(values);
+                    if (isEmpty(newErrors)) {
+                      submitForm();
+                    } else {
+                      const keys = Object.keys(newErrors);
+                      const firstErrorId = keys[0];
+                      setTouched({ mail: true, message: true });
+                      var firstErrorElement =
+                        document.getElementById(firstErrorId);
+                      window.scrollTo({
+                        behavior: "smooth",
+                        top:
+                          firstErrorElement.getBoundingClientRect().top -
+                          document.body.getBoundingClientRect().top -
+                          50,
+                      });
+                    }
+                  }}
                 />
                 <div
                   className={classnames("SectionContact__message", {
