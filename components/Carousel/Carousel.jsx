@@ -37,9 +37,8 @@ CarouselArrow.propTypes = {
 const Carousel = ({ darkMode, slides }) => {
   var settings = {
     infinite: true,
-    autoplay: false,
     slidesToShow: 4,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     prevArrow: <CarouselArrow darkMode={darkMode} type="PREV" />,
     nextArrow: <CarouselArrow darkMode={darkMode} type="NEXT" />,
     responsive: [

@@ -28,7 +28,7 @@
 
 .CarouselArrow::before {
   color: var(--color-violet);
-  font-size: 70px;
+  font-size: 30px;
   opacity: 1;
 }
 
@@ -37,9 +37,11 @@
 }
 
 .CarouselArrow--prev {
-  left: -80px !important;
+  left: calc(50% - 42px) !important;
+  top: 420px !important;
 }
 
 .CarouselArrow--next {
-  right: -15px !important;
+  left: calc(50% - 2px) !important;
+  top: 420px !important;
 }
