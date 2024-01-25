@@ -27,17 +27,17 @@
 }
 
 .CarouselArrow::before {
-  color: var(--color-violet);
-  font-size: 30px;
-  opacity: 1;
+  color: var(--color-violet) !important;
+  font-size: 30px !important;
+  transition: 200ms !important;
 }
 
 .CarouselArrow--darkMode::before {
-  color: var(--color-dark-white);
+  color: var(--color-dark-white) !important;
 }
 
 .CarouselArrow--prev {
-  left: calc(50% - 42px) !important;
+  left: calc(50% - 41px) !important;
   top: 420px !important;
 }
 
