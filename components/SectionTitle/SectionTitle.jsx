@@ -1,6 +1,6 @@
 import React from "react";
 import "./SectionTitle.css";
-import { bool, string } from "prop-types";
+import { bool, string, number } from "prop-types";
 import Title1 from "../Title1/Title1.jsx";
 import Title2 from "../Title2/Title2.jsx";
 import Title3 from "../Title3/Title3.jsx";
@@ -28,7 +28,7 @@ const SectionTitle = ({ darkMode, reversed, text, level }) => {
 
 SectionTitle.propTypes = {
   text: string.isRequired,
-  level: Number.isRequired,
+  level: number.isRequired,
   darkMode: bool,
   reversed: bool,
 };

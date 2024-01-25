@@ -46,15 +46,15 @@ const Home = () => {
   return (
     <div className={classnames("Home", { "Home--darkMode": darkMode })}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <SectionTitle level={1} darkMode={darkMode} text="Homepage" />
+      {/* <SectionTitle level={1} darkMode={darkMode} text="Homepage" />
       <SectionTitle
         level={2}
         darkMode={darkMode}
         text="Tous les projets"
         reversed={true}
-      />
-      <SectionProjects darkMode={darkMode} />
-      <SectionProjects darkMode={darkMode} reversed={true} />
+      /> */}
+      {/* <SectionProjects darkMode={darkMode} />
+      <SectionProjects darkMode={darkMode} reversed={true} /> */}
       <SectionTitle darkMode={darkMode} text="Les derniers projets" level={2} />
       {HOME_CONST_PROJECTS.map((project, index) => (
         <SectionProject
