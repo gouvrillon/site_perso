@@ -1,18 +1,34 @@
 import React from "react";
-import { object } from "prop-types";
+import { object, bool } from "prop-types";
 import "./SectionProjectsSlide.css";
+import Label from "../Label/Label.jsx";
+import classnames from "classnames";
 
-const SectionProjectsSlide = ({ slide }) => {
+const SectionProjectsSlide = ({ slide, darkMode }) => {
   return (
     <div
-      className="SectionProjectsSlide"
+      className={classnames("SectionProjectsSlide ", {
+        "SectionProjectsSlide--darkMode": darkMode,
+      })}
       style={{ backgroundImage: `url(${slide.url})` }}
-    ></div>
+    >
+      <div
+        className={classnames("SectionProjectsSlide__filter ", {
+          "SectionProjectsSlide__filter--darkMode": darkMode,
+        })}
+      />
+      <Label
+        label="Voir le projet"
+        darkMode={darkMode}
+        className="SectionProjectsSlide__label"
+      />
+    </div>
   );
 };
 
 SectionProjectsSlide.propTypes = {
   slide: object.isRequired,
+  darkMode: bool,
 };
 
 export default SectionProjectsSlide;

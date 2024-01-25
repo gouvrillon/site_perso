@@ -2,10 +2,11 @@
 
 import React, { useState } from "react";
 import "./Home.css";
-import SectionTitle2 from "../../components/SectionTitle2/SectionTitle2.jsx";
+import SectionTitle from "../../components/SectionTitle/SectionTitle.jsx";
 import SectionProject from "../../components/SectionProject/SectionProject.jsx";
 import SectionSkills from "../../components/SectionSkills/SectionSkills.jsx";
 import SectionContact from "../../components/SectionContact/SectionContact.jsx";
+import SectionProjects from "../../components/SectionProjects/SectionProjects.jsx";
 import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import isEqual from "lodash/isEqual";
@@ -45,25 +46,35 @@ const Home = () => {
   return (
     <div className={classnames("Home", { "Home--darkMode": darkMode })}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <SectionTitle2
+      <SectionTitle level={1} darkMode={darkMode} text="Homepage" />
+      <SectionTitle
+        level={2}
         darkMode={darkMode}
-        text="Derniers projets"
+        text="Tous les projets"
         reversed={true}
       />
+      <SectionProjects darkMode={darkMode} />
+      <SectionProjects darkMode={darkMode} reversed={true} />
+      <SectionTitle darkMode={darkMode} text="Les derniers projets" level={2} />
       {HOME_CONST_PROJECTS.map((project, index) => (
         <SectionProject
           key={index}
           project={project}
-          reversed={isEqual(index % 2, 1)}
+          reversed={isEqual(index % 2, 0)}
           darkMode={darkMode}
         />
       ))}
-      <SectionTitle2 darkMode={darkMode} text="Compétences" />
-      <SectionSkills darkMode={darkMode} reversed={true} />
+      <SectionTitle
+        level={2}
+        darkMode={darkMode}
+        text="Compétences"
+        reversed={true}
+      />
       <SectionSkills darkMode={darkMode} />
-      <SectionTitle2 darkMode={darkMode} text="Contact" reversed={true} />
-      <SectionContact darkMode={darkMode} />
+      <SectionSkills darkMode={darkMode} reversed={true} />
+      <SectionTitle level={2} darkMode={darkMode} text="Contact" />
       <SectionContact darkMode={darkMode} reversed={true} />
+      <SectionContact darkMode={darkMode} />
       <Footer darkMode={darkMode} />
     </div>
   );

@@ -2,4 +2,40 @@
   width: 250px;
   height: 135px;
   background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  position: relative;
+  border: solid 1px var(--color-grey);
+}
+
+.SectionProjectsSlide--darkMode {
+  border: solid 1px var(--color-dark-grey);
+}
+
+.SectionProjectsSlide:hover {
+  .SectionProjectsSlide__label {
+    opacity: 1;
+  }
+  .SectionProjectsSlide__filter {
+    opacity: 0.3;
+  }
+}
+
+.SectionProjectsSlide__filter {
+  width: 100%;
+  height: 100%;
+  background: var(--color-violet);
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+}
+
+.SectionProjectsSlide__filter--darkMode {
+  background: var(--color-dark-violet);
+}
+
+.SectionProjectsSlide__label {
+  opacity: 0;
 }
