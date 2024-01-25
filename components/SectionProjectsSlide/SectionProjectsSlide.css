@@ -1,41 +1,88 @@
 .SectionProjectsSlide {
-  width: 250px;
-  height: 135px;
-  background-size: cover;
+  width: 300px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  flex-direction: column;
   cursor: pointer;
+  background: var(--color-grey);
+  border-radius: 8px;
+  text-decoration: none;
   position: relative;
-  border: solid 1px var(--color-grey);
-}
-
-.SectionProjectsSlide--darkMode {
-  border: solid 1px var(--color-dark-grey);
 }
 
 .SectionProjectsSlide:hover {
-  .SectionProjectsSlide__label {
-    opacity: 1;
-  }
   .SectionProjectsSlide__filter {
     opacity: 0.3;
   }
+  .SectionProjectsSlide__label {
+    opacity: 1;
+  }
+}
+
+.SectionProjectsSlide--reversed {
+  background: var(--color-white);
+}
+
+.SectionProjectsSlide--darkMode {
+  background: var(--color-dark-grey);
+}
+
+.SectionProjectsSlide--darkMode--reversed {
+  background: var(--color-dark-black);
+}
+
+.SectionProjectsSlide__image {
+  width: 100%;
+  height: 160px;
+  background: var(--color-violet);
+  background-size: cover;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  margin: 0px 0px 20px 0px;
+  border-left: solid 1px var(--color-grey);
+  border-right: solid 1px var(--color-grey);
+}
+
+.SectionProjectsSlide__image--darkMode {
+  border-left: solid 1px var(--color-dark-grey);
+  border-right: solid 1px var(--color-dark-grey);
 }
 
 .SectionProjectsSlide__filter {
+  position: absolute;
   width: 100%;
-  height: 100%;
+  height: 160px;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
   background: var(--color-violet);
   opacity: 0;
+}
+
+.SectionProjectsSlide__label {
   position: absolute;
-  top: 0px;
+  left: 50%;
+  top: 70px;
+  transform: translate(-50%);
+  opacity: 0;
 }
 
 .SectionProjectsSlide__filter--darkMode {
   background: var(--color-dark-violet);
 }
 
-.SectionProjectsSlide__label {
-  opacity: 0;
+.SectionProjectsSlide__title {
+  margin: 0px 20px 20px 20px;
+}
+
+.SectionProjectsSlide__technos {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 20px 20px 20px;
+  gap: 10px;
+}
+
+.SectionProjectsSlide__tags {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px 20px 20px 20px;
+  gap: 10px;
 }
