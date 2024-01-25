@@ -38,7 +38,17 @@ const Field = ({
         >
           <Icon icon={icon} />
         </span>
-        {`${label}${required ? " *" : ""}`}
+        {label}
+        {required && (
+          <span
+            className={classnames("Field__required", {
+              "Field__required--darkMode": darkMode,
+            })}
+          >
+            {" "}
+            *
+          </span>
+        )}
         <span
           className={classnames("Field__error", {
             "Field__error--display":

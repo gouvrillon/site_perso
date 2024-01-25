@@ -1,7 +1,7 @@
 .Paragraph {
   font-size: 18px;
   font-weight: 400;
-  color: var(--color-violet);
+  color: var(--color-black);
 }
 
 .Paragraph--darkMode {

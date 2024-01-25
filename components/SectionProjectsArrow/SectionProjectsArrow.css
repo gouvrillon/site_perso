@@ -1,5 +1,5 @@
 .SectionProjectsArrow::before {
-  color: var(--color-blue);
+  color: var(--color-violet);
   font-size: 70px;
   opacity: 1;
 }

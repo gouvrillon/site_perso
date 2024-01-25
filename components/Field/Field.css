@@ -6,7 +6,7 @@
 .Field__label {
   font-size: 18px;
   font-weight: 400;
-  color: var(--color-blue);
+  color: var(--color-violet);
   margin: 0px 0px 20px 0px;
 }
 
@@ -17,11 +17,19 @@
 .Field__icon {
   font-size: 12px;
   margin: 0px 10px 0px 0px;
-  color: var(--color-blue);
+  color: var(--color-violet);
 }
 
 .Field__icon--darkMode {
   color: var(--color-dark-green);
+}
+
+.Field__required {
+  color: var(--color-red);
+}
+
+.Field__required--darkMode {
+  color: var(--color-dark-red);
 }
 
 .Field__error {
@@ -47,7 +55,7 @@
   padding: 10px 20px 10px 20px;
   border-radius: 8px;
   background: var(--color-grey);
-  color: var(--color-blue);
+  color: var(--color-violet);
   font-family: var(--font-rubik);
 }
 

@@ -38,7 +38,17 @@ const Area = ({
         >
           <Icon icon={icon} />
         </span>
-        {`${label}${required ? " *" : ""}`}
+        {label}
+        {required && (
+          <span
+            className={classnames("Area__required", {
+              "Area__required--darkMode": darkMode,
+            })}
+          >
+            {" "}
+            *
+          </span>
+        )}
         <span
           className={classnames("Area__error", {
             "Area__error--display":
