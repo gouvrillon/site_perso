@@ -6,7 +6,7 @@ import SectionTitle from "../../components/SectionTitle/SectionTitle.jsx";
 import SectionProject from "../../components/SectionProject/SectionProject.jsx";
 import SectionSkills from "../../components/SectionSkills/SectionSkills.jsx";
 import SectionContact from "../../components/SectionContact/SectionContact.jsx";
-import SectionProjects from "../../components/SectionProjects/SectionProjects.jsx";
+// import SectionProjects from "../../components/SectionProjects/SectionProjects.jsx";
 import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import isEqual from "lodash/isEqual";
