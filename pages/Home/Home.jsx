@@ -46,13 +46,13 @@ const Home = () => {
   return (
     <div className={classnames("Home", { "Home--darkMode": darkMode })}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      {/* <SectionTitle level={1} darkMode={darkMode} text="Homepage" />
+      <SectionTitle level={1} darkMode={darkMode} text="Homepage" />
       <SectionTitle
         level={2}
         darkMode={darkMode}
         text="Tous les projets"
         reversed={true}
-      /> */}
+      />
       <SectionProjects darkMode={darkMode} projects={HOME_CONST_PROJECTS} />
       <SectionProjects
         darkMode={darkMode}

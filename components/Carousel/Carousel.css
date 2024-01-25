@@ -1,0 +1,45 @@
+.Carousel {
+  width: 100%;
+  display: flex;
+}
+
+.Carousel__container {
+  margin: 0px auto 0px auto;
+  width: 1260px;
+}
+
+@media screen and (max-width: 1420px) {
+  .Carousel__container {
+    width: 940px;
+  }
+}
+
+@media screen and (max-width: 1100px) {
+  .Carousel__container {
+    width: 620px;
+  }
+}
+
+@media screen and (max-width: 780px) {
+  .Carousel__container {
+    width: 310px;
+  }
+}
+
+.CarouselArrow::before {
+  color: var(--color-violet);
+  font-size: 70px;
+  opacity: 1;
+}
+
+.CarouselArrow--darkMode::before {
+  color: var(--color-dark-white);
+}
+
+.CarouselArrow--prev {
+  left: -80px !important;
+}
+
+.CarouselArrow--next {
+  right: -15px !important;
+}

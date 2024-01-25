@@ -1,6 +1,6 @@
 import React from "react";
 import { object, bool } from "prop-types";
-import "./SectionProjectsSlide.css";
+import "./SlideProject.css";
 import Label from "../Label/Label.jsx";
 import classnames from "classnames";
 import get from "lodash/get";
@@ -8,38 +8,38 @@ import Techno from "../Techno/Techno.jsx";
 import Tag from "../Tag/Tag.jsx";
 import Title3 from "../Title3/Title3.jsx";
 
-const SectionProjectsSlide = ({ project, darkMode, reversed }) => {
+const SlideProject = ({ project, darkMode, reversed }) => {
   return (
     <a
       href={get(project, "href", "")}
-      className={classnames("SectionProjectsSlide", {
-        "SectionProjectsSlide--reversed": !darkMode && reversed,
-        "SectionProjectsSlide--darkMode": darkMode && !reversed,
-        "SectionProjectsSlide--darkMode--reversed": darkMode && reversed,
+      className={classnames("SlideProject", {
+        "SlideProject--reversed": !darkMode && reversed,
+        "SlideProject--darkMode": darkMode && !reversed,
+        "SlideProject--darkMode--reversed": darkMode && reversed,
       })}
     >
       <div
-        className={classnames("SectionProjectsSlide__image", {
-          "SectionProjectsSlide__image--darkMode": darkMode,
+        className={classnames("SlideProject__image", {
+          "SlideProject__image--darkMode": darkMode,
         })}
         style={{ backgroundImage: `url(${get(project, "image", "")})` }}
       />
       <div
-        className={classnames("SectionProjectsSlide__filter ", {
-          "SectionProjectsSlide__filter--darkMode": darkMode,
+        className={classnames("SlideProject__filter ", {
+          "SlideProject__filter--darkMode": darkMode,
         })}
       />
       <Label
         label="Voir le projet"
         darkMode={darkMode}
-        className="SectionProjectsSlide__label"
+        className="SlideProject__label"
       />
       <Title3
-        className="SectionProjectsSlide__title"
+        className="SlideProject__title"
         text={get(project, "title", "")}
         darkMode={darkMode}
       />
-      <div className="SectionProjectsSlide__technos">
+      <div className="SlideProject__technos">
         {get(project, "technos", []).map((techno, index) => (
           <Techno
             key={index}
@@ -49,7 +49,7 @@ const SectionProjectsSlide = ({ project, darkMode, reversed }) => {
           />
         ))}
       </div>
-      <div className="SectionProjectsSlide__tags">
+      <div className="SlideProject__tags">
         {get(project, "tags", []).map((tag, index) => (
           <Tag key={index} label={tag} darkMode={darkMode} />
         ))}
@@ -58,10 +58,10 @@ const SectionProjectsSlide = ({ project, darkMode, reversed }) => {
   );
 };
 
-SectionProjectsSlide.propTypes = {
+SlideProject.propTypes = {
   project: object.isRequired,
   darkMode: bool,
   reversed: bool,
 };
 
-export default SectionProjectsSlide;
+export default SlideProject;

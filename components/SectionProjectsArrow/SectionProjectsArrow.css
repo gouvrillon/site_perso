@@ -1,9 +1,0 @@
-.SectionProjectsArrow::before {
-  color: var(--color-violet);
-  font-size: 70px;
-  opacity: 1;
-}
-
-.SectionProjectsArrow--darkMode::before {
-  color: var(--color-dark-white);
-}
