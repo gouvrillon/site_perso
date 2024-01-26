@@ -36,7 +36,7 @@ const SectionProfile = ({ reversed, darkMode, profile }) => {
             ))}
           </div>
           <Link
-            label="Voir le profile"
+            label="Voir le profil"
             href={get(profile, "href", "")}
             darkMode={darkMode}
             isInternal={true}
@@ -56,7 +56,7 @@ const SectionProfile = ({ reversed, darkMode, profile }) => {
               })}
             />
             <Label
-              label="Voir le profile"
+              label="Voir le profil"
               darkMode={darkMode}
               className="SectionProfile__label"
             />
