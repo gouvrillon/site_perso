@@ -2,6 +2,7 @@ import React from "react";
 import "./HeaderDesktop.css";
 import { func, bool } from "prop-types";
 import classnames from "classnames";
+import Toogle from "../Toogle/Toogle.jsx";
 
 const HeaderDesktop = ({ setDarkMode, darkMode }) => {
   return (
@@ -10,10 +11,11 @@ const HeaderDesktop = ({ setDarkMode, darkMode }) => {
         "HeaderDesktop--darkMode": darkMode,
       })}
     >
-      <input
-        type="checkbox"
-        checked={darkMode}
+      <Toogle
+        label="Dark mode"
         onChange={() => setDarkMode(!darkMode)}
+        value={darkMode}
+        darkMode={darkMode}
       />
     </div>
   );

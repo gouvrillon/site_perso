@@ -1,0 +1,39 @@
+.Toogle {
+  display: flex;
+  height: max-content;
+}
+
+.Toogle__label {
+  margin: auto 0px auto 0px;
+  font-size: 14px;
+  font-weight: 300;
+  color: var(--color-white);
+}
+
+.Toogle__label--darkMode {
+  color: var(--color-dark-white);
+}
+
+.Toogle__container {
+  color: white;
+  width: 35px;
+  height: 20px;
+  border: solid 2px var(--color-grey);
+  border-radius: 20px;
+  display: flex;
+  margin: 0px 10px 0px 0px;
+  cursor: pointer;
+}
+
+.Toogle__circle {
+  width: 14px;
+  height: 14px;
+  background: var(--color-grey);
+  border-radius: 100%;
+  margin: auto 0px auto 1px;
+}
+
+.Toogle__circle--darkMode {
+  background: var(--color-dark-green);
+  margin: auto 0px auto 16px;
+}
