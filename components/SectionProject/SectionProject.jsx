@@ -15,13 +15,13 @@ const SectionProject = ({ project, reversed, darkMode }) => {
   return (
     <Section reversed={reversed} darkMode={darkMode}>
       <div
-        className={classnames("SectionProject ", {
+        className={classnames("SectionProject", {
           "SectionProject--reversed": reversed,
         })}
       >
         <div className="SectionProject__image">
           <a
-            className={classnames("SectionProject__image__container ", {
+            className={classnames("SectionProject__image__container", {
               "SectionProject__image__container--darkMode": darkMode,
             })}
             href={get(project, "href", "")}
@@ -31,7 +31,7 @@ const SectionProject = ({ project, reversed, darkMode }) => {
               src={get(project, "image", "")}
             />
             <div
-              className={classnames("SectionProject__image__filter ", {
+              className={classnames("SectionProject__image__filter", {
                 "SectionProject__image__filter--darkMode": darkMode,
               })}
             />

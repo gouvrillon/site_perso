@@ -1,0 +1,107 @@
+.SectionProfile {
+  display: flex;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionProfile {
+    flex-direction: column-reverse;
+    gap: 40px;
+  }
+}
+
+.SectionProfile__container {
+  width: 500px;
+  margin: 0px auto 0px auto;
+  display: flex;
+}
+
+.SectionProfile__container--left {
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .SectionProfile__container {
+    width: 90%;
+  }
+}
+
+.SectionProfile__title {
+  margin: 0px 0px 40px 0px;
+}
+
+.SectionProfile__tags {
+  margin: 0px 0px 20px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.SectionProfile__description {
+  margin: 0px 0px 20px 0px;
+}
+
+.SectionProfile__label {
+  margin: 0px 0px 20px 0px;
+}
+
+.SectionProfile__image {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  background-size: cover;
+  margin: auto 40px auto 0px;
+  position: relative;
+  overflow: hidden;
+}
+
+@media screen and (max-width: 600px) {
+  .SectionProfile__image {
+    width: 150px;
+    height: 150px;
+  }
+}
+
+.SectionProfile__image:hover {
+  .SectionProfile__filter {
+    opacity: 0.3;
+  }
+  .SectionProfile__label {
+    opacity: 1;
+  }
+}
+
+.SectionProfile__filter {
+  width: 100%;
+  height: 100%;
+  background: var(--color-violet);
+  opacity: 0;
+  position: absolute;
+  top: 0px;
+}
+
+.SectionProfile__filter--darkMode {
+  background: var(--color-dark-violet);
+}
+
+.SectionProfile__label {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  top: 80px;
+  left: 23px;
+}
+
+@media screen and (max-width: 600px) {
+  .SectionProfile__label {
+    opacity: 1;
+    top: 55px;
+    left: -2px;
+  }
+}
+
+.SectionProfile__technos {
+  display: flex;
+  flex-direction: column;
+  margin: auto 0px auto 0px;
+  gap: 10px;
+}
