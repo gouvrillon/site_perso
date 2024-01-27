@@ -35,7 +35,7 @@
 
 .SectionProfile__container--right {
   justify-content: center;
-  gap: 40px;
+  gap: 80px;
 }
 
 @media screen and (max-width: 600px) {
@@ -78,11 +78,11 @@
 }
 
 .SectionProfile__image {
-  width: 100px;
-  height: 100px;
+  width: 180px;
+  height: 180px;
   border-radius: 100%;
   background-size: cover;
-  margin: 20px auto 20px auto;
+  margin: 0px auto 20px auto;
 }
 
 @media screen and (max-width: 1100px) {
@@ -98,11 +98,11 @@
 .SectionProfile__technos {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 15px;
 }
 
 .SectionProfile__softs {
   display: flex;
   flex-direction: column;
-  gap: 17px;
+  gap: 23px;
 }
