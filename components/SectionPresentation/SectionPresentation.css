@@ -1,0 +1,36 @@
+.SectionPresentation {
+  display: flex;
+  justify-content: center;
+}
+
+.SectionPresentation__container {
+  width: 1000px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionPresentation__container {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .SectionPresentation__container {
+    width: 90%;
+  }
+}
+
+.SectionPresentation__title {
+  margin: 0px 0px 40px 0px;
+}
+
+.SectionPresentation__paragraph {
+  margin: 0px 0px 20px 0px;
+}
+
+.SectionPresentation__softs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}

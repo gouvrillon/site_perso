@@ -1,18 +1,30 @@
 .SectionSkills {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 40px;
-  width: 100%;
-  width: 100%;
+}
+
+@media screen and (max-width: 620px) {
+  .SectionSkills {
+    gap: 40px;
+  }
 }
 
 .SectionSkills__line {
-  width: 100%;
+  width: 1000px;
   display: flex;
 }
 
 @media screen and (max-width: 1100px) {
   .SectionSkills__line {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .SectionSkills__line {
+    width: 90%;
     flex-direction: column;
     gap: 40px;
   }
@@ -20,24 +32,24 @@
 
 .SectionSkills__list {
   margin: 0px auto 0px auto;
-  width: 500px;
+  width: 50%;
   display: flex;
   flex-direction: column;
+}
+
+@media screen and (max-width: 620px) {
+  .SectionSkills__list {
+    width: 100%;
+  }
 }
 
 .SectionSkills__list--second {
   margin: 90px auto 0px auto;
 }
 
-@media screen and (max-width: 1100px) {
+@media screen and (max-width: 620px) {
   .SectionSkills__list--second {
     margin: 0px auto 0px auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .SectionSkills__list {
-    width: 90%;
   }
 }
 
@@ -51,7 +63,7 @@
 
 .SectionSkills__row {
   display: flex;
-  width: 280px;
+  width: 260px;
   height: 28px;
   margin: 0px 0px 10px 0px;
 }

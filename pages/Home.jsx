@@ -3,7 +3,6 @@
 import React from "react";
 import Layout from "../components/Layout/Layout.jsx";
 import SectionProject from "../components/SectionProject/SectionProject.jsx";
-import SectionSkills from "../components/SectionSkills/SectionSkills.jsx";
 import SectionContact from "../components/SectionContact/SectionContact.jsx";
 import SectionProjects from "../components/SectionProjects/SectionProjects.jsx";
 import SectionProfile from "../components/SectionProfile/SectionProfile.jsx";
@@ -12,7 +11,7 @@ import isEqual from "lodash/isEqual";
 const PROFILE = {
   image: "/images/ME.jpeg",
   title: "Thomas Gouvrillon, développeur javascript",
-  href: "profile",
+  href: "profil",
   tags: ["freelance", "développement", "indé"],
   technos: ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE"],
   softs: ["GESTION", "TEAM", "LEADER", "COMMUNICATION", "MENTORING"],
@@ -66,8 +65,7 @@ const Home = () => {
           reversed={isEqual(index % 2, 1)}
         />
       ))}
-      <SectionSkills reversed={true} />
-      <SectionContact />
+      <SectionContact reversed={true} />
     </Layout>
   );
 };
