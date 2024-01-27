@@ -74,12 +74,46 @@ const PROFILE = {
     "Développeur expérimenté, je transforme vos idées en sites web percutants. Expert en HTML, CSS, et JavaScript, je crée des expériences utilisateurs modernes et réactives. Parlons de votre projet et faisons-le décoller.",
 };
 
+const CLIENT_VALWIN = {
+  name: "Valwin",
+  logo: "/images/logo/VALWIN.png",
+  tags: ["pharmacie", "e-sante"],
+};
+
 const EXPERIENCE = {
-  client: {
-    name: "Valwin",
-    logo: "/images/logo/VALWIN.png",
-    tags: ["pharmacie", "e-sante"],
-  },
+  client: CLIENT_VALWIN,
+  experiences: [
+    {
+      title: "Directeur Produit",
+      city: "Nantes",
+      date: "2020",
+      technos: ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE"],
+      description:
+        "Le Directeur Produit est le chef d'orchestre de l'innovation dans le domaine de la technologie. Il allie vision stratégique, expertise technique et compréhension du marché pour créer des produits révolutionnaires.",
+      tags: ["front", "back", "design", "architecture"],
+      softs: ["GESTION", "TEAM", "LEADER", "COMMUNICATION", "MENTORING"],
+    },
+    {
+      title: "Directeur Produit",
+      city: "Nantes",
+      date: "2020",
+      technos: ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE"],
+      description:
+        "Le Directeur Produit est le chef d'orchestre de l'innovation dans le domaine de la technologie. Il allie vision stratégique, expertise technique et compréhension du marché pour créer des produits révolutionnaires.",
+      tags: ["front", "back", "design", "architecture"],
+      softs: ["GESTION", "TEAM", "LEADER", "COMMUNICATION", "MENTORING"],
+    },
+    {
+      title: "Directeur Produit",
+      city: "Nantes",
+      date: "2020",
+      technos: ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE"],
+      description:
+        "Le Directeur Produit est le chef d'orchestre de l'innovation dans le domaine de la technologie. Il allie vision stratégique, expertise technique et compréhension du marché pour créer des produits révolutionnaires.",
+      tags: ["front", "back", "design", "architecture"],
+      softs: ["GESTION", "TEAM", "LEADER", "COMMUNICATION", "MENTORING"],
+    },
+  ],
 };
 
 const Home = () => {

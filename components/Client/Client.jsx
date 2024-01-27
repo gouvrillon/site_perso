@@ -4,6 +4,7 @@ import { string, bool, object } from "prop-types";
 import classnames from "classnames";
 import get from "lodash/get";
 import Tag from "../Tag/Tag.jsx";
+import Name from "../Name/Name.jsx";
 
 const Client = ({ className, client, darkMode, reversed }) => {
   return (
@@ -15,13 +16,11 @@ const Client = ({ className, client, darkMode, reversed }) => {
       })}
     >
       <img className="Client__logo" src={get(client, "logo", "")} />
-      <div
-        className={classnames(`Client__name ${className}`, {
-          "Client__name--darkMode": darkMode,
-        })}
-      >
-        {get(client, "name", "")}
-      </div>
+      <Name
+        className="Client__name"
+        name={get(client, "name", "")}
+        darkMode={darkMode}
+      />
       <div className="Client__tags">
         {get(client, "tags", []).map((tag, index) => (
           <Tag key={index} label={tag} darkMode={darkMode} />

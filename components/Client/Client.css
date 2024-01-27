@@ -24,14 +24,7 @@
 }
 
 .Client__name {
-  color: var(--color-violet);
   margin: 0px auto 10px auto;
-  font-size: 14px;
-  font-weight: 400;
-}
-
-.Client__name--darkMode {
-  color: var(--color-dark-white);
 }
 
 .Client__tags {

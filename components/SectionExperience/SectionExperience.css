@@ -3,3 +3,34 @@
   justify-content: center;
   align-items: center;
 }
+
+.SectionExperience__container__client {
+  width: 500px;
+  display: flex;
+  justify-content: center;
+}
+
+.SectionExperience__container__infos {
+  width: 500px;
+}
+
+.SectionExperience__container__info {
+  background: var(--color-grey);
+  display: flex;
+  flex-direction: column;
+  border-radius: 8px;
+  width: 100%;
+  margin: 0px 0px 20px 0px;
+}
+
+.SectionExperience__container__info--reversed {
+  background: var(--color-white);
+}
+
+.SectionExperience__container__info--darkMode {
+  background: var(--color-dark-grey);
+}
+
+.SectionExperience__container__info--darkMode--reversed {
+  background: var(--color-dark-black);
+}
