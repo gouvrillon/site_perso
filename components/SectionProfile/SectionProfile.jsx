@@ -10,6 +10,7 @@ import Title1 from "../Title1/Title1.jsx";
 import Paragraph from "../Paragraph/Paragraph.jsx";
 import Section from "../Section/Section.jsx";
 import Soft from "../Soft/Soft.jsx";
+import Portrait from "../Portrait/Portrait.jsx";
 
 const SectionProfile = ({ reversed, darkMode, profile }) => {
   return (
@@ -37,10 +38,7 @@ const SectionProfile = ({ reversed, darkMode, profile }) => {
           </div>
         </div>
         <div className="SectionProfile__container SectionProfile__container--center">
-          <div
-            className="SectionProfile__image"
-            style={{ backgroundImage: `url(${get(profile, "image", "")})` }}
-          ></div>
+          <Portrait className="SectionProfile__portrait" darkMode={darkMode} />
           <Link
             label="Voir le profil"
             href={get(profile, "href", "")}

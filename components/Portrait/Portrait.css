@@ -1,0 +1,42 @@
+.Portrait {
+  width: 180px;
+  height: 180px;
+  border-radius: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.Portrait__image {
+  width: 180px;
+  height: 180px;
+  background-size: cover;
+  filter: grayscale(0.6);
+}
+
+.Portrait__slide1 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: var(--color-green);
+  top: 140px;
+  left: 40px;
+  transform: rotate(70deg);
+}
+
+.Portrait__slide1--darkMode {
+  background: var(--color-dark-green);
+}
+
+.Portrait__slide2 {
+  position: absolute;
+  width: 180px;
+  height: 180px;
+  background: var(--color-violet);
+  top: 140px;
+  left: 80px;
+  transform: rotate(50deg);
+}
+
+.Portrait__slide2--darkMode {
+  background: var(--color-dark-violet);
+}
