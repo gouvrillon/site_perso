@@ -40,9 +40,7 @@
 
 @media screen and (max-width: 600px) {
   .SectionProfile__container--right {
-    flex-direction: column;
     gap: 20px;
-    align-items: center;
   }
 }
 
