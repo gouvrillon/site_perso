@@ -56,7 +56,7 @@ const SectionExperience = ({ reversed, darkMode, experience }) => {
                 date={get(experience, "date", "")}
                 darkMode={darkMode}
               />
-              <div className="SectionExperience__technos">
+              <div className="SectionExperience__list">
                 {get(experience, "technos", []).map((techno, index) => (
                   <Techno
                     key={index}
@@ -71,12 +71,12 @@ const SectionExperience = ({ reversed, darkMode, experience }) => {
                 text={get(experience, "description", "")}
                 darkMode={darkMode}
               />
-              <div className="SectionExperience__tags">
+              <div className="SectionExperience__list">
                 {get(experience, "tags", []).map((tag, index) => (
                   <Tag key={index} label={tag} darkMode={darkMode} />
                 ))}
               </div>
-              <div className="SectionExperience__softs">
+              <div className="SectionExperience__list">
                 {get(experience, "softs", []).map((soft, index) => (
                   <Soft key={index} name={soft} darkMode={darkMode} />
                 ))}

@@ -24,6 +24,7 @@ import { FaCode } from "react-icons/fa";
 import { AiOutlineTool } from "react-icons/ai";
 import { FaRegCommentDots } from "react-icons/fa";
 import { FaPaperPlane } from "react-icons/fa";
+import { PiMapPinFill } from "react-icons/pi";
 
 const Icon = ({ icon }) => {
   return (
@@ -74,6 +75,8 @@ const Icon = ({ icon }) => {
         <FaRegCommentDots />
       ) : isEqual(icon, "SEND") ? (
         <FaPaperPlane />
+      ) : isEqual(icon, "CITY") ? (
+        <PiMapPinFill />
       ) : null}
     </>
   );

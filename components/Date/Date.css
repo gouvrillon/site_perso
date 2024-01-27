@@ -1,7 +1,9 @@
 .Date {
-  color: red;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-violet);
 }
 
 .Date--darkMode {
-  color: blue;
+  color: var(--color-dark-violet);
 }

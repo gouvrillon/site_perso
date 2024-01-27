@@ -1,7 +1,22 @@
 .City {
-  color: red;
+  display: flex;
+  gap: 3px;
 }
 
-.City--darkMode {
-  color: blue;
+.City__icon {
+  color: var(--color-green);
+}
+
+.City__icon--darkMode {
+  color: var(--color-dark-green);
+}
+
+.City__label {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-black);
+}
+
+.City__label--darkMode {
+  color: var(--color-dark-white);
 }

@@ -21,6 +21,7 @@
   border-radius: 8px;
   width: 100%;
   margin: 0px 0px 20px 0px;
+  padding: 20px 20px 20px 20px;
 }
 
 .SectionExperience__container__info--reversed {
@@ -36,21 +37,23 @@
 }
 
 .SectionExperience__title {
-  border: solid 1px red;
+  margin: 0px 0px 40px 0px;
 }
 
 .SectionExperience__city {
-  border: solid 1px green;
+  margin: 0px 0px 10px 0px;
 }
 
 .SectionExperience__date {
-  border: solid 1px blue;
+  margin: 0px 0px 10px 0px;
 }
 
+.SectionExperience__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 0px 0px 10px 0px;
+}
 .SectionExperience__paragraph {
-  border: solid 1px orange;
-}
-
-.SectionExperience__tags {
-  border: solid 1px pink;
+  margin: 0px 0px 10px 0px;
 }

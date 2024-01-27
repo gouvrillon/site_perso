@@ -6,13 +6,21 @@ import Icon from "../Icon/Icon.jsx";
 
 const City = ({ className, city, darkMode }) => {
   return (
-    <div
-      className={classnames(`City ${className}`, {
-        "City--darkMode": darkMode,
-      })}
-    >
-      <Icon icon="CITY" />
-      {city}
+    <div className={`City ${className}`}>
+      <div
+        className={classnames("City__icon", {
+          "City__icon--darkMode": darkMode,
+        })}
+      >
+        <Icon icon="CITY" />
+      </div>
+      <div
+        className={classnames("City__label", {
+          "City__label--darkMode": darkMode,
+        })}
+      >
+        {city}
+      </div>
     </div>
   );
 };

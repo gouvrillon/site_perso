@@ -1,7 +1,9 @@
 .Name {
-  color: red;
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-violet);
 }
 
 .Name--darkMode {
-  color: blue;
+  color: var(--color-dark-white);
 }

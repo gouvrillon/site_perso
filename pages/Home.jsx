@@ -86,7 +86,7 @@ const EXPERIENCE = {
     {
       title: "Directeur Produit",
       city: "Nantes",
-      date: "2020",
+      date: "Mai 2020 - Mai 2024",
       technos: ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE"],
       description:
         "Le Directeur Produit est le chef d'orchestre de l'innovation dans le domaine de la technologie. Il allie vision stratégique, expertise technique et compréhension du marché pour créer des produits révolutionnaires.",
@@ -96,7 +96,7 @@ const EXPERIENCE = {
     {
       title: "Directeur Produit",
       city: "Nantes",
-      date: "2020",
+      date: "Mai 2020 - Mai 2024",
       technos: ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE"],
       description:
         "Le Directeur Produit est le chef d'orchestre de l'innovation dans le domaine de la technologie. Il allie vision stratégique, expertise technique et compréhension du marché pour créer des produits révolutionnaires.",
@@ -106,7 +106,7 @@ const EXPERIENCE = {
     {
       title: "Directeur Produit",
       city: "Nantes",
-      date: "2020",
+      date: "Mai 2020 - Mai 2024",
       technos: ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE"],
       description:
         "Le Directeur Produit est le chef d'orchestre de l'innovation dans le domaine de la technologie. Il allie vision stratégique, expertise technique et compréhension du marché pour créer des produits révolutionnaires.",
