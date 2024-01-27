@@ -3,6 +3,8 @@
 .SectionProject {
   display: flex;
   width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .SectionProject--reversed {
@@ -12,26 +14,33 @@
 @media screen and (max-width: 1100px) {
   .SectionProject {
     flex-direction: column-reverse;
+    gap: 40px;
   }
 }
 
 /* image */
 
 .SectionProject__image {
-  width: 50%;
+  width: 500px;
   display: flex;
   flex-direction: column;
 }
 
 @media screen and (max-width: 1100px) {
   .SectionProject__image {
-    width: 100%;
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .SectionProject__image {
+    width: 90%;
   }
 }
 
 .SectionProject__image__container {
-  margin: 5px auto 0px auto;
-  width: 500px;
+  margin: auto auto 0px 0px;
+  width: 400px;
   border: solid 1px var(--color-grey);
   display: flex;
   align-items: center;
@@ -40,8 +49,25 @@
   position: relative;
 }
 
+@media screen and (max-width: 620px) {
+  .SectionProject__image__container {
+    width: 100%;
+  }
+}
+
+.SectionProject__image__container--reversed {
+  margin: auto 0px 0px auto;
+}
+
 .SectionProject__image__container--darkMode {
   border: solid 1px var(--color-dark-grey);
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionProject__image__container,
+  .SectionProject__image__container--reversed {
+    margin: auto auto auto auto;
+  }
 }
 
 .SectionProject__image__container:hover {
@@ -50,18 +76,6 @@
   }
   .SectionProject__image__label {
     opacity: 1;
-  }
-}
-
-@media screen and (max-width: 1100px) {
-  .SectionProject__image__container {
-    margin: 0px auto 0px auto;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  .SectionProject__image__container {
-    width: 90%;
   }
 }
 
@@ -92,27 +106,21 @@
 /* infos */
 
 .SectionProject__infos {
-  width: 50%;
+  width: 500px;
   display: flex;
+  flex-direction: column;
 }
 
 @media screen and (max-width: 1100px) {
   .SectionProject__infos {
-    width: 100%;
-    margin: 0px 0px 50px 0px;
+    width: 600px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .SectionProject__infos {
     width: 90%;
-    margin: 0px auto 40px auto;
   }
-}
-
-.SectionProject__infos__container {
-  width: 500px;
-  margin: 0px auto 0px auto;
 }
 
 .SectionProject__title {

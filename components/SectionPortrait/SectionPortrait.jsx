@@ -16,7 +16,7 @@ const SectionPortrait = ({ reversed, darkMode, portrait }) => {
           "SectionPortrait--reversed": reversed,
         })}
       >
-        <div className="SectionPortrait__container SectionPortrait__container__title">
+        <div className="SectionPortrait__container__title">
           <Title1
             className="SectionPortrait__title"
             text={get(portrait, "title", "")}
@@ -28,7 +28,7 @@ const SectionPortrait = ({ reversed, darkMode, portrait }) => {
             ))}
           </div>
         </div>
-        <div className="SectionPortrait__container SectionPortrait__container__portrait">
+        <div className="SectionPortrait__container__portrait">
           <Portrait className="SectionPortrait__portrait" darkMode={darkMode} />
         </div>
       </div>

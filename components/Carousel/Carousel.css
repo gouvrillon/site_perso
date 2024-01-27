@@ -5,25 +5,25 @@
 
 .Carousel__container {
   margin: 0px auto 0px auto;
-  width: 1260px;
-}
-
-@media screen and (max-width: 1420px) {
-  .Carousel__container {
-    width: 940px;
-  }
+  width: 1000px;
 }
 
 @media screen and (max-width: 1100px) {
   .Carousel__container {
-    width: 620px;
+    width: 600px;
   }
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 620px) {
   .Carousel__container {
-    width: 310px;
+    width: 300px;
   }
+}
+
+.Carousel__element {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .CarouselArrow::before {
@@ -42,6 +42,6 @@
 }
 
 .CarouselArrow--next {
-  left: calc(50% - 2px) !important;
+  left: calc(50% + 12px) !important;
   top: 420px !important;
 }

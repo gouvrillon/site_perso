@@ -1,6 +1,6 @@
 .Portrait {
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   border-radius: 100%;
   position: relative;
   overflow: hidden;
@@ -15,10 +15,10 @@
 
 .Portrait__slide1 {
   position: absolute;
-  width: 180px;
-  height: 180px;
+  width: 160px;
+  height: 160px;
   background: var(--color-green);
-  top: 140px;
+  top: 120px;
   left: 40px;
   transform: rotate(70deg);
 }
@@ -32,7 +32,7 @@
   width: 180px;
   height: 180px;
   background: var(--color-violet);
-  top: 140px;
+  top: 100px;
   left: 80px;
   transform: rotate(50deg);
 }

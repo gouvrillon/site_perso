@@ -37,17 +37,11 @@ CarouselArrow.propTypes = {
 const Carousel = ({ darkMode, slides }) => {
   var settings = {
     infinite: true,
-    slidesToShow: 4,
+    slidesToShow: 3,
     slidesToScroll: 1,
     prevArrow: <CarouselArrow darkMode={darkMode} type="PREV" />,
     nextArrow: <CarouselArrow darkMode={darkMode} type="NEXT" />,
     responsive: [
-      {
-        breakpoint: 1420,
-        settings: {
-          slidesToShow: 3,
-        },
-      },
       {
         breakpoint: 1100,
         settings: {
@@ -55,7 +49,7 @@ const Carousel = ({ darkMode, slides }) => {
         },
       },
       {
-        breakpoint: 780,
+        breakpoint: 620,
         settings: {
           slidesToShow: 1,
         },
@@ -65,7 +59,13 @@ const Carousel = ({ darkMode, slides }) => {
   return (
     <div className="Carousel">
       <div className="Carousel__container">
-        <Slider {...settings}>{slides}</Slider>
+        <Slider {...settings}>
+          {slides.map((slide, index) => (
+            <div key={index}>
+              <div className="Carousel__element">{slide}</div>
+            </div>
+          ))}
+        </Slider>
       </div>
     </div>
   );

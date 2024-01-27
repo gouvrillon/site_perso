@@ -3,6 +3,18 @@
 }
 
 .SectionProjects__title {
-  text-align: center;
-  margin: 0px 0px 60px 0px;
+  width: 1000px;
+  margin: 0px auto 60px auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionProjects__title {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .SectionProjects__title {
+    width: 90%;
+  }
 }

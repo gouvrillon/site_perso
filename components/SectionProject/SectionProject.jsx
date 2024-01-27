@@ -24,6 +24,7 @@ const SectionProject = ({ project, reversed, darkMode }) => {
           <a
             className={classnames("SectionProject__image__container", {
               "SectionProject__image__container--darkMode": darkMode,
+              "SectionProject__image__container--reversed": reversed,
             })}
             href={get(project, "href", "")}
           >
@@ -44,50 +45,44 @@ const SectionProject = ({ project, reversed, darkMode }) => {
           </a>
         </div>
         <div className="SectionProject__infos">
-          <div
-            className={classnames("SectionProject__infos__container", {
-              "SectionProject__infos__container--darkMode": darkMode,
-            })}
-          >
-            <Title3
-              className="SectionProject__title"
-              text={get(project, "title", "")}
-              darkMode={darkMode}
-            />
-            <Star
-              label="Top projet"
-              darkMode={darkMode}
-              className="SectionProject__star"
-            />
-            <div className="SectionProject__technos">
-              {get(project, "technos", []).map((techno, index) => (
-                <Techno
-                  key={index}
-                  name={techno}
-                  darkMode={darkMode}
-                  reversed={reversed}
-                />
-              ))}
-            </div>
-            <Paragraph
-              className="SectionProject__description"
-              text={get(project, "description", "")}
-              darkMode={darkMode}
-            />
-            <div className="SectionProject__tags">
-              {get(project, "tags", []).map((tag, index) => (
-                <Tag key={index} label={tag} darkMode={darkMode} />
-              ))}
-            </div>
-            <Link
-              label="Voir le projet"
-              href={get(project, "href", "")}
-              darkMode={darkMode}
-              isInternal={true}
-              className="SectionProject__link"
-              reversed={reversed}
-            />
+          <Title3
+            className="SectionProject__title"
+            text={get(project, "title", "")}
+            darkMode={darkMode}
+          />
+          <Star
+            label="Top projet"
+            darkMode={darkMode}
+            className="SectionProject__star"
+          />
+          <div className="SectionProject__technos">
+            {get(project, "technos", []).map((techno, index) => (
+              <Techno
+                key={index}
+                name={techno}
+                darkMode={darkMode}
+                reversed={reversed}
+              />
+            ))}
           </div>
+          <Paragraph
+            className="SectionProject__description"
+            text={get(project, "description", "")}
+            darkMode={darkMode}
+          />
+          <div className="SectionProject__tags">
+            {get(project, "tags", []).map((tag, index) => (
+              <Tag key={index} label={tag} darkMode={darkMode} />
+            ))}
+          </div>
+          <Link
+            label="Voir le projet"
+            href={get(project, "href", "")}
+            darkMode={darkMode}
+            isInternal={true}
+            className="SectionProject__link"
+            reversed={reversed}
+          />
         </div>
       </div>
     </Section>

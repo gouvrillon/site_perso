@@ -3,44 +3,75 @@
   justify-content: center;
 }
 
-@media screen and (max-width: 1100px) {
-  .SectionProfile {
-    flex-direction: column;
-    align-items: center;
-    gap: 40px;
-  }
-}
-
 .SectionProfile__container {
-  width: 30%;
+  width: 1000px;
   display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 @media screen and (max-width: 1100px) {
   .SectionProfile__container {
-    width: 500px;
+    width: 600px;
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .SectionProfile__container {
     width: 90%;
   }
 }
 
-.SectionProfile__container--left,
-.SectionProfile__container--center {
+.SectionProfile__container__left {
+  width: 500px;
+  display: flex;
   flex-direction: column;
 }
 
-.SectionProfile__container--right {
-  justify-content: center;
-  gap: 80px;
+@media screen and (max-width: 1100px) {
+  .SectionProfile__container__left {
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 600px) {
-  .SectionProfile__container--right {
-    gap: 20px;
+.SectionProfile__container__center {
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionProfile__container__center {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .SectionProfile__container__center {
+    width: 100%;
+    margin: 0px 0px 40px 0px;
+  }
+}
+
+.SectionProfile__container__right {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionProfile__container__right {
+    width: 50%;
+    align-items: center;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .SectionProfile__container__right {
+    width: 100%;
   }
 }
 
@@ -48,21 +79,8 @@
   margin: 0px 0px 40px 0px;
 }
 
-@media screen and (max-width: 1100px) {
-  .SectionProfile__title {
-    margin: 0px auto 40px auto;
-    text-align: center;
-  }
-}
-
 .SectionProfile__description {
   margin: 0px 0px 20px 0px;
-}
-
-@media screen and (max-width: 1100px) {
-  .SectionProfile__description {
-    text-align: center;
-  }
 }
 
 .SectionProfile__tags {
@@ -73,7 +91,7 @@
 
 @media screen and (max-width: 1100px) {
   .SectionProfile__tags {
-    margin: 0px auto 0px auto;
+    justify-content: center;
   }
 }
 
@@ -89,10 +107,19 @@
   display: flex;
   flex-direction: column;
   gap: 15px;
+  align-items: end;
 }
 
-.SectionProfile__softs {
-  display: flex;
-  flex-direction: column;
-  gap: 23px;
+@media screen and (max-width: 1100px) {
+  .SectionProfile__technos {
+    align-items: start;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .SectionProfile__technos {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
