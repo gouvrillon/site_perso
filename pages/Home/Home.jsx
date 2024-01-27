@@ -14,11 +14,11 @@ const PROFILE = {
   image: "/images/ME.jpeg",
   title: "Thomas Gouvrillon, développeur javascript",
   href: "profile",
-  tags: ["freealance", "indé", "développement"],
+  tags: ["freelance", "développement", "indé"],
   technos: ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE"],
   softs: ["GESTION", "TEAM", "LEADER", "COMMUNICATION", "MENTORING"],
   description:
-    "Développeur expérimenté, je transforme vos idées en sites web percutants. Expert en HTML, CSS, et JavaScript, je crée des expériences utilisateurs modernes et réactives. Parlons de votre projet et faisons-le décoller",
+    "Développeur expérimenté, je transforme vos idées en sites web percutants. Expert en HTML, CSS, et JavaScript, je crée des expériences utilisateurs modernes et réactives. Parlons de votre projet et faisons-le décoller.",
 };
 
 const PROJECT_1 = {

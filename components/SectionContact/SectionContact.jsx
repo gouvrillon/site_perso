@@ -155,6 +155,7 @@ const SectionContact = ({ darkMode, reversed }) => {
                   icon="SEND"
                   disabled={isSubmitting}
                   onClick={async () => {
+                    setMessage("");
                     const newErrors = await validateForm(values);
                     if (isEmpty(newErrors)) {
                       submitForm();
@@ -169,7 +170,7 @@ const SectionContact = ({ darkMode, reversed }) => {
                         top:
                           firstErrorElement.getBoundingClientRect().top -
                           document.body.getBoundingClientRect().top -
-                          50,
+                          100,
                       });
                     }
                   }}

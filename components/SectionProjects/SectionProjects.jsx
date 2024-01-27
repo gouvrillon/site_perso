@@ -9,7 +9,7 @@ import "./SectionProjects.css";
 const SectionProjects = ({ projects, reversed, darkMode }) => {
   return (
     <Section reversed={reversed} darkMode={darkMode}>
-      <div>
+      <div className="SectionProjects">
         <Title2
           className="SectionProjects__title"
           text="Les derniers projets"
