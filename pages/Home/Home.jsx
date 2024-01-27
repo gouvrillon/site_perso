@@ -2,7 +2,6 @@
 
 import React, { useState } from "react";
 import "./Home.css";
-import SectionTitle from "../../components/SectionTitle/SectionTitle.jsx";
 import SectionProject from "../../components/SectionProject/SectionProject.jsx";
 import SectionSkills from "../../components/SectionSkills/SectionSkills.jsx";
 import SectionContact from "../../components/SectionContact/SectionContact.jsx";
@@ -64,28 +63,14 @@ const Home = () => {
   return (
     <div className={classnames("Home", { "Home--darkMode": darkMode })}>
       <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <SectionTitle
-        level={1}
-        darkMode={darkMode}
-        text="Homepage"
-        reversed={true}
-      />
-      <SectionTitle level={2} darkMode={darkMode} text="Présentation" />
       <SectionProfile darkMode={darkMode} reversed={true} profile={PROFILE} />
       <SectionProfile darkMode={darkMode} profile={PROFILE} />
-      <SectionTitle
-        level={2}
-        darkMode={darkMode}
-        text="Tous les projets"
-        reversed={true}
-      />
       <SectionProjects darkMode={darkMode} projects={PROJECTS} />
       <SectionProjects
         darkMode={darkMode}
         reversed={true}
         projects={PROJECTS}
       />
-      <SectionTitle darkMode={darkMode} text="Les derniers projets" level={2} />
       {PROJECTS.map((project, index) => (
         <SectionProject
           key={index}
@@ -94,17 +79,9 @@ const Home = () => {
           darkMode={darkMode}
         />
       ))}
-      <SectionTitle
-        level={2}
-        darkMode={darkMode}
-        text="Compétences"
-        reversed={true}
-      />
       <SectionSkills darkMode={darkMode} />
       <SectionSkills darkMode={darkMode} reversed={true} />
-      <SectionTitle level={2} darkMode={darkMode} text="Contact" />
       <SectionContact darkMode={darkMode} reversed={true} />
-      <SectionContact darkMode={darkMode} />
       <Footer darkMode={darkMode} />
     </div>
   );

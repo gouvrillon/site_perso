@@ -57,7 +57,7 @@
   background: var(--color-grey);
   color: var(--color-violet);
   font-family: var(--font-rubik);
-  height: 188px;
+  height: 187px;
 }
 
 .Area__input::placeholder {

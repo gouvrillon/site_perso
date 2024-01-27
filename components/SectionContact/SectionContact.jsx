@@ -9,6 +9,7 @@ import { Formik } from "formik";
 import get from "lodash/get";
 import isEmpty from "lodash/isEmpty";
 import Section from "../Section/Section.jsx";
+import Title2 from "../Title2/Title2.jsx";
 import { getInitialValues, validate, post } from "./SectionContactUtils";
 
 const SectionContact = ({ darkMode, reversed }) => {
@@ -40,6 +41,11 @@ const SectionContact = ({ darkMode, reversed }) => {
         }) => (
           <form noValidate onSubmit={handleSubmit} className="SectionContact">
             <div className="SectionContact__container">
+              <Title2
+                className="SectionContact__title"
+                text="Contact"
+                darkMode={darkMode}
+              />
               <Field
                 reversed={reversed}
                 darkMode={darkMode}
@@ -112,7 +118,7 @@ const SectionContact = ({ darkMode, reversed }) => {
                 label="Sujet"
                 errors={errors}
                 touched={touched}
-                className="SectionContact__input"
+                className="SectionContact__subject"
                 placeholder="Hello !"
                 name="subject"
                 icon="PEN"
