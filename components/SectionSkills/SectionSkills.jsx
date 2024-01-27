@@ -71,7 +71,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
           <div className="SectionSkills__list SectionSkills__list--second">
             <Title3
               className="SectionSkills__title3"
-              text="Large skills"
+              text="Global skills"
               darkMode={darkMode}
             />
             {SECTIONS_SKILLS_TAGS_CONST.map((tag, index) => (

@@ -6,7 +6,7 @@ import classnames from "classnames";
 import Techno from "../Techno/Techno.jsx";
 import Link from "../Link/Link.jsx";
 import Tag from "../Tag/Tag.jsx";
-import Title3 from "../Title3/Title3.jsx";
+import Title1 from "../Title1/Title1.jsx";
 import Paragraph from "../Paragraph/Paragraph.jsx";
 import Section from "../Section/Section.jsx";
 import Soft from "../Soft/Soft.jsx";
@@ -20,7 +20,7 @@ const SectionProfile = ({ reversed, darkMode, profile }) => {
         })}
       >
         <div className="SectionProfile__container SectionProfile__container--left">
-          <Title3
+          <Title1
             className="SectionProfile__title"
             text={get(profile, "title", "")}
             darkMode={darkMode}

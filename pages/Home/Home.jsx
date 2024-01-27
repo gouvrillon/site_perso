@@ -1,20 +1,18 @@
 "use client";
 
-import React, { useState } from "react";
-import "./Home.css";
+import React from "react";
+import Layout from "../../components/Layout/Layout.jsx";
 import SectionProject from "../../components/SectionProject/SectionProject.jsx";
 import SectionSkills from "../../components/SectionSkills/SectionSkills.jsx";
 import SectionContact from "../../components/SectionContact/SectionContact.jsx";
 import SectionProjects from "../../components/SectionProjects/SectionProjects.jsx";
 import SectionProfile from "../../components/SectionProfile/SectionProfile.jsx";
-import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import isEqual from "lodash/isEqual";
-import classnames from "classnames";
 
 const PROFILE = {
   image: "/images/ME.jpeg",
-  title: "Thomas Gouvrillon",
+  title: "Thomas Gouvrillon, développeur javascript",
   href: "profile",
   tags: ["freealance", "indé", "développement"],
   technos: ["HTML", "CSS", "JAVASCRIPT", "REACT", "NODE"],
@@ -59,32 +57,21 @@ const PROJECTS = [
 ];
 
 const Home = () => {
-  const [darkMode, setDarkMode] = useState(false);
   return (
-    <div className={classnames("Home", { "Home--darkMode": darkMode })}>
-      <Header darkMode={darkMode} setDarkMode={setDarkMode} />
-      <SectionProfile darkMode={darkMode} reversed={true} profile={PROFILE} />
-      <SectionProfile darkMode={darkMode} profile={PROFILE} />
-      <SectionProjects darkMode={darkMode} projects={PROJECTS} />
-      <SectionProjects
-        darkMode={darkMode}
-        reversed={true}
-        projects={PROJECTS}
-      />
+    <Layout>
+      <SectionProfile profile={PROFILE} />
+      <SectionProjects projects={PROJECTS} reversed={true} />
       {PROJECTS.map((project, index) => (
         <SectionProject
           key={index}
           project={project}
-          reversed={isEqual(index % 2, 0)}
-          darkMode={darkMode}
+          reversed={isEqual(index % 2, 1)}
         />
       ))}
-      <SectionSkills darkMode={darkMode} />
-      <SectionSkills darkMode={darkMode} reversed={true} />
-      <SectionContact darkMode={darkMode} />
-      <SectionContact darkMode={darkMode} reversed={true} />
-      <Footer darkMode={darkMode} />
-    </div>
+      <SectionSkills />
+      <SectionContact reversed={true} />
+      <Footer />
+    </Layout>
   );
 };
 
