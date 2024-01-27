@@ -81,6 +81,7 @@ const Home = () => {
       ))}
       <SectionSkills darkMode={darkMode} />
       <SectionSkills darkMode={darkMode} reversed={true} />
+      <SectionContact darkMode={darkMode} />
       <SectionContact darkMode={darkMode} reversed={true} />
       <Footer darkMode={darkMode} />
     </div>

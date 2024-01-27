@@ -25,13 +25,27 @@
   flex-direction: column;
 }
 
+.SectionSkills__list--second {
+  margin: 90px auto 0px auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionSkills__list--second {
+    margin: 0px auto 0px auto;
+  }
+}
+
 @media screen and (max-width: 600px) {
   .SectionSkills__list {
     width: 90%;
   }
 }
 
-.SectionSkills__title {
+.SectionSkills__title2 {
+  margin: 0px 0px 60px 0px;
+}
+
+.SectionSkills__title3 {
   margin: 0px 0px 40px 0px;
 }
 

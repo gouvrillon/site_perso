@@ -7,6 +7,7 @@ import Techno from "../Techno/Techno.jsx";
 import Tag from "../Tag/Tag.jsx";
 import Soft from "../Soft/Soft.jsx";
 import Value from "../Value/Value.jsx";
+import Title2 from "../Title2/Title2.jsx";
 import Title3 from "../Title3/Title3.jsx";
 import Icon from "../Icon/Icon.jsx";
 import {
@@ -23,8 +24,13 @@ const SectionSkills = ({ darkMode, reversed }) => {
       <div className="SectionSkills">
         <div className="SectionSkills__line">
           <div className="SectionSkills__list">
+            <Title2
+              className="SectionSkills__title2"
+              text="Compétences"
+              darkMode={darkMode}
+            />
             <Title3
-              className="SectionSkills__title"
+              className="SectionSkills__title3"
               text="Hard skills"
               darkMode={darkMode}
             />
@@ -62,9 +68,9 @@ const SectionSkills = ({ darkMode, reversed }) => {
               </div>
             ))}
           </div>
-          <div className="SectionSkills__list">
+          <div className="SectionSkills__list SectionSkills__list--second">
             <Title3
-              className="SectionSkills__title"
+              className="SectionSkills__title3"
               text="Large skills"
               darkMode={darkMode}
             />
@@ -105,7 +111,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
         <div className="SectionSkills__line">
           <div className="SectionSkills__list">
             <Title3
-              className="SectionSkills__title"
+              className="SectionSkills__title3"
               text="Soft skills"
               darkMode={darkMode}
             />
@@ -121,7 +127,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
           </div>
           <div className="SectionSkills__list">
             <Title3
-              className="SectionSkills__title"
+              className="SectionSkills__title3"
               text="Valeurs"
               darkMode={darkMode}
             />
