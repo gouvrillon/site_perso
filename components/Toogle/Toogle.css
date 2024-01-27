@@ -15,7 +15,6 @@
 }
 
 .Toogle__container {
-  color: white;
   width: 35px;
   height: 20px;
   border: solid 2px var(--color-grey);

@@ -1,22 +1,25 @@
 .SectionProfile {
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 @media screen and (max-width: 1100px) {
   .SectionProfile {
-    flex-direction: column-reverse;
+    flex-direction: column;
     gap: 40px;
   }
 }
 
 .SectionProfile__container {
-  width: 500px;
-  margin: 0px auto 0px auto;
+  width: 30%;
   display: flex;
 }
 
-.SectionProfile__container--left {
-  flex-direction: column;
+@media screen and (max-width: 1100px) {
+  .SectionProfile__container {
+    width: 500px;
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -25,83 +28,82 @@
   }
 }
 
+.SectionProfile__container--left,
+.SectionProfile__container--center {
+  flex-direction: column;
+}
+
+.SectionProfile__container--right {
+  justify-content: center;
+  gap: 40px;
+}
+
+@media screen and (max-width: 600px) {
+  .SectionProfile__container--right {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+}
+
 .SectionProfile__title {
   margin: 0px 0px 40px 0px;
 }
 
-.SectionProfile__tags {
-  margin: 0px 0px 20px 0px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
+@media screen and (max-width: 1100px) {
+  .SectionProfile__title {
+    margin: 0px auto 40px auto;
+  }
 }
 
 .SectionProfile__description {
   margin: 0px 0px 20px 0px;
 }
 
-.SectionProfile__label {
-  margin: 0px 0px 20px 0px;
+@media screen and (max-width: 1100px) {
+  .SectionProfile__description {
+    text-align: center;
+  }
+}
+
+.SectionProfile__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionProfile__tags {
+    margin: 0px auto 0px auto;
+  }
 }
 
 .SectionProfile__image {
-  width: 200px;
-  height: 200px;
-  border-radius: 8px;
+  width: 100px;
+  height: 100px;
+  border-radius: 100%;
   background-size: cover;
-  margin: auto 40px auto 0px;
-  position: relative;
-  overflow: hidden;
+  margin: 20px auto 20px auto;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1100px) {
   .SectionProfile__image {
-    width: 150px;
-    height: 150px;
+    margin: 0px auto 20px auto;
   }
 }
 
-.SectionProfile__image:hover {
-  .SectionProfile__filter {
-    opacity: 0.3;
-  }
-  .SectionProfile__label {
-    opacity: 1;
-  }
-}
-
-.SectionProfile__filter {
-  width: 100%;
-  height: 100%;
-  background: var(--color-violet);
-  opacity: 0;
-  position: absolute;
-  top: 0px;
-}
-
-.SectionProfile__filter--darkMode {
-  background: var(--color-dark-violet);
-}
-
-.SectionProfile__label {
-  position: absolute;
-  z-index: 1;
-  opacity: 0;
-  top: 80px;
-  left: 23px;
-}
-
-@media screen and (max-width: 600px) {
-  .SectionProfile__label {
-    opacity: 1;
-    top: 55px;
-    left: -2px;
-  }
+.SectionProfile__link {
+  margin: 0px auto 0px auto;
 }
 
 .SectionProfile__technos {
   display: flex;
   flex-direction: column;
-  margin: auto 0px auto 0px;
   gap: 10px;
+}
+
+.SectionProfile__softs {
+  display: flex;
+  flex-direction: column;
+  gap: 17px;
 }

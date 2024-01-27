@@ -5,11 +5,11 @@ import { object, bool } from "prop-types";
 import classnames from "classnames";
 import Techno from "../Techno/Techno.jsx";
 import Link from "../Link/Link.jsx";
-import Label from "../Label/Label.jsx";
 import Tag from "../Tag/Tag.jsx";
 import Title3 from "../Title3/Title3.jsx";
 import Paragraph from "../Paragraph/Paragraph.jsx";
 import Section from "../Section/Section.jsx";
+import Soft from "../Soft/Soft.jsx";
 
 const SectionProfile = ({ reversed, darkMode, profile }) => {
   return (
@@ -35,6 +35,12 @@ const SectionProfile = ({ reversed, darkMode, profile }) => {
               <Tag key={index} label={tag} darkMode={darkMode} />
             ))}
           </div>
+        </div>
+        <div className="SectionProfile__container SectionProfile__container--center">
+          <div
+            className="SectionProfile__image"
+            style={{ backgroundImage: `url(${get(profile, "image", "")})` }}
+          ></div>
           <Link
             label="Voir le profil"
             href={get(profile, "href", "")}
@@ -44,23 +50,7 @@ const SectionProfile = ({ reversed, darkMode, profile }) => {
             reversed={reversed}
           />
         </div>
-        <div className="SectionProfile__container">
-          <a
-            href={get(profile, "href", "")}
-            className="SectionProfile__image"
-            style={{ backgroundImage: `url(${get(profile, "image", "")})` }}
-          >
-            <div
-              className={classnames("SectionProfile__filter", {
-                "SectionProfile__filter--darkMode": darkMode,
-              })}
-            />
-            <Label
-              label="Voir le profil"
-              darkMode={darkMode}
-              className="SectionProfile__label"
-            />
-          </a>
+        <div className="SectionProfile__container SectionProfile__container--right">
           <div className="SectionProfile__technos">
             {get(profile, "technos", []).map((techno, index) => (
               <Techno
@@ -69,6 +59,11 @@ const SectionProfile = ({ reversed, darkMode, profile }) => {
                 darkMode={darkMode}
                 reversed={reversed}
               />
+            ))}
+          </div>
+          <div className="SectionProfile__softs">
+            {get(profile, "softs", []).map((soft, index) => (
+              <Soft key={index} name={soft} darkMode={darkMode} />
             ))}
           </div>
         </div>
