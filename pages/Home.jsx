@@ -9,6 +9,7 @@ import SectionProfile from "../components/SectionProfile/SectionProfile.jsx";
 import SectionPortrait from "../components/SectionPortrait/SectionPortrait.jsx";
 import SectionPresentation from "../components/SectionPresentation/SectionPresentation.jsx";
 import SectionSkills from "../components/SectionSkills/SectionSkills.jsx";
+import SectionExperience from "../components/SectionExperience/SectionExperience.jsx";
 import isEqual from "lodash/isEqual";
 
 const PORTRAIT = {
@@ -73,9 +74,19 @@ const PROFILE = {
     "Développeur expérimenté, je transforme vos idées en sites web percutants. Expert en HTML, CSS, et JavaScript, je crée des expériences utilisateurs modernes et réactives. Parlons de votre projet et faisons-le décoller.",
 };
 
+const EXPERIENCE = {
+  client: {
+    name: "Valwin",
+    logo: "/images/logo/VALWIN.png",
+    tags: ["pharmacie", "e-sante"],
+  },
+};
+
 const Home = () => {
   return (
     <Layout>
+      <SectionExperience experience={EXPERIENCE} />
+      <SectionExperience experience={EXPERIENCE} reversed={true} />
       <SectionPortrait portrait={PORTRAIT} />
       <SectionPortrait portrait={PORTRAIT} reversed={true} />
       <SectionProfile profile={PROFILE} />

@@ -1,0 +1,42 @@
+.Client {
+  background: var(--color-grey);
+  padding: 10px 10px 10px 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.Client--reversed {
+  background: var(--color-white);
+}
+
+.Client--darkMode {
+  background: var(--color-dark-grey);
+}
+
+.Client--darkMode--reversed {
+  background: var(--color-dark-black);
+}
+
+.Client__logo {
+  width: 50px;
+  margin: 0px auto 0px auto;
+}
+
+.Client__name {
+  color: var(--color-violet);
+  margin: 0px auto 10px auto;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.Client__name--darkMode {
+  color: var(--color-dark-white);
+}
+
+.Client__tags {
+  margin: 0px auto 0px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

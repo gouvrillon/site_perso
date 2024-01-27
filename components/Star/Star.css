@@ -1,16 +1,16 @@
 .Star {
   font-size: 14px;
   font-weight: 400;
-  padding: 2px 7px 2px 7px;
+  padding: 4px 10px 4px 10px;
   width: max-content;
   border-radius: 20px;
   display: flex;
   gap: 5px;
-  color: var(--color-violet);
-  border: solid 2px var(--color-violet);
+  color: var(--color-white);
+  background: var(--color-violet);
 }
 
 .Star--darkMode {
-  color: var(--color-dark-violet);
-  border: solid 2px var(--color-dark-violet);
+  color: var(--color-dark-white);
+  background: var(--color-dark-violet);
 }
