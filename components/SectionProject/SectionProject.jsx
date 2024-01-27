@@ -8,6 +8,7 @@ import Link from "../Link/Link.jsx";
 import Label from "../Label/Label.jsx";
 import Tag from "../Tag/Tag.jsx";
 import Title3 from "../Title3/Title3.jsx";
+import Star from "../Star/Star.jsx";
 import Paragraph from "../Paragraph/Paragraph.jsx";
 import Section from "../Section/Section.jsx";
 
@@ -52,6 +53,11 @@ const SectionProject = ({ project, reversed, darkMode }) => {
               className="SectionProject__title"
               text={get(project, "title", "")}
               darkMode={darkMode}
+            />
+            <Star
+              label="Top projet"
+              darkMode={darkMode}
+              className="SectionProject__star"
             />
             <div className="SectionProject__technos">
               {get(project, "technos", []).map((techno, index) => (

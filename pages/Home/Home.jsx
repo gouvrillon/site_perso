@@ -29,6 +29,7 @@ const PROJECT_1 = {
   technos: ["HTML", "CSS", "JAVASCRIPT", "NODE"],
   tags: ["front", "back", "design", "architecture"],
   href: "/project",
+  star: true,
 };
 
 const PROJECT_2 = {
@@ -39,20 +40,18 @@ const PROJECT_2 = {
   technos: ["HTML", "CSS", "JAVASCRIPT", "REACT"],
   tags: ["front", "back", "design", "architecture"],
   href: "/project",
+  star: false,
 };
 
 const PROJECTS = [
   PROJECT_1,
-  PROJECT_2,
+  PROJECT_1,
   PROJECT_1,
   PROJECT_2,
-  PROJECT_1,
   PROJECT_2,
-  PROJECT_1,
   PROJECT_2,
-  PROJECT_1,
   PROJECT_2,
-  PROJECT_1,
+  PROJECT_2,
   PROJECT_2,
 ];
 
@@ -61,15 +60,15 @@ const Home = () => {
     <Layout>
       <SectionProfile profile={PROFILE} />
       <SectionProjects projects={PROJECTS} reversed={true} />
-      {PROJECTS.map((project, index) => (
+      {PROJECTS.filter((project) => project.star).map((project, index) => (
         <SectionProject
           key={index}
           project={project}
           reversed={isEqual(index % 2, 1)}
         />
       ))}
-      <SectionSkills />
-      <SectionContact reversed={true} />
+      <SectionSkills reversed={true} />
+      <SectionContact />
       <Footer />
     </Layout>
   );

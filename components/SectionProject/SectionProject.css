@@ -116,7 +116,11 @@
 }
 
 .SectionProject__title {
-  margin: 0px 0px 40px 0px;
+  margin: 0px 0px 20px 0px;
+}
+
+.SectionProject__star {
+  margin: 0px 0px 20px 0px;
 }
 
 .SectionProject__technos {

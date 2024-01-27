@@ -12,7 +12,7 @@ const SectionProjects = ({ projects, reversed, darkMode }) => {
       <div>
         <Title2
           className="SectionProjects__title"
-          text="Tous les projets"
+          text="Les derniers projets"
           darkMode={darkMode}
         />
         <Carousel

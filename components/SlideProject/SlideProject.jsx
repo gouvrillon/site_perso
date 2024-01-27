@@ -7,6 +7,7 @@ import get from "lodash/get";
 import Techno from "../Techno/Techno.jsx";
 import Tag from "../Tag/Tag.jsx";
 import Title3 from "../Title3/Title3.jsx";
+import Star from "../Star/Star.jsx";
 
 const SlideProject = ({ project, darkMode, reversed }) => {
   return (
@@ -24,8 +25,15 @@ const SlideProject = ({ project, darkMode, reversed }) => {
         })}
         style={{ backgroundImage: `url(${get(project, "image", "")})` }}
       />
+      {get(project, "star") && (
+        <Star
+          label="Top projet"
+          className="SlideProject__star"
+          darkMode={darkMode}
+        />
+      )}
       <div
-        className={classnames("SlideProject__filter ", {
+        className={classnames("SlideProject__filter", {
           "SlideProject__filter--darkMode": darkMode,
         })}
       />
