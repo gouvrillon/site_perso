@@ -1,8 +1,8 @@
 import React from "react";
-import Home from "../pages/Home.jsx";
+import Profile from "../../pages/Profile.jsx";
 
 const Page = () => {
-  return <Home />;
+  return <Profile />;
 };
 
 export default Page;

@@ -1,13 +1,12 @@
 "use client";
 
 import React from "react";
-import Layout from "../../components/Layout/Layout.jsx";
-import SectionProject from "../../components/SectionProject/SectionProject.jsx";
-import SectionSkills from "../../components/SectionSkills/SectionSkills.jsx";
-import SectionContact from "../../components/SectionContact/SectionContact.jsx";
-import SectionProjects from "../../components/SectionProjects/SectionProjects.jsx";
-import SectionProfile from "../../components/SectionProfile/SectionProfile.jsx";
-import Footer from "../../components/Footer/Footer.jsx";
+import Layout from "../components/Layout/Layout.jsx";
+import SectionProject from "../components/SectionProject/SectionProject.jsx";
+import SectionSkills from "../components/SectionSkills/SectionSkills.jsx";
+import SectionContact from "../components/SectionContact/SectionContact.jsx";
+import SectionProjects from "../components/SectionProjects/SectionProjects.jsx";
+import SectionProfile from "../components/SectionProfile/SectionProfile.jsx";
 import isEqual from "lodash/isEqual";
 
 const PROFILE = {
@@ -69,7 +68,6 @@ const Home = () => {
       ))}
       <SectionSkills reversed={true} />
       <SectionContact />
-      <Footer />
     </Layout>
   );
 };

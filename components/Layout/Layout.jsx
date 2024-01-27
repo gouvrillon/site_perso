@@ -1,5 +1,6 @@
 import React, { useState, Children, cloneElement } from "react";
 import Header from "../../components/Header/Header.jsx";
+import Footer from "../../components/Footer/Footer.jsx";
 import { node } from "prop-types";
 import "./Layout.css";
 
@@ -13,6 +14,7 @@ const Layout = ({ children }) => {
           darkMode: darkMode,
         })
       )}
+      <Footer darkMode={darkMode} />
     </div>
   );
 };
