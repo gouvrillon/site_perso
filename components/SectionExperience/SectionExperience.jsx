@@ -5,9 +5,13 @@ import { object, bool } from "prop-types";
 import classnames from "classnames";
 import Client from "../Client/Client.jsx";
 import Section from "../Section/Section.jsx";
-import Title2 from "../Title2/Title2.jsx";
+import Title3 from "../Title3/Title3.jsx";
 import City from "../City/City.jsx";
 import Date from "../Date/Date.jsx";
+import Techno from "../Techno/Techno.jsx";
+import Paragraph from "../Paragraph/Paragraph.jsx";
+import Tag from "../Tag/Tag.jsx";
+import Soft from "../Soft/Soft.jsx";
 
 const SectionExperience = ({ reversed, darkMode, experience }) => {
   return (
@@ -37,7 +41,7 @@ const SectionExperience = ({ reversed, darkMode, experience }) => {
                   reversed && darkMode,
               })}
             >
-              <Title2
+              <Title3
                 className="SectionExperience__title"
                 text={get(experience, "title", "")}
                 darkMode={darkMode}
@@ -52,6 +56,31 @@ const SectionExperience = ({ reversed, darkMode, experience }) => {
                 date={get(experience, "date", "")}
                 darkMode={darkMode}
               />
+              <div className="SectionExperience__technos">
+                {get(experience, "technos", []).map((techno, index) => (
+                  <Techno
+                    key={index}
+                    name={techno}
+                    darkMode={darkMode}
+                    reversed={!reversed}
+                  />
+                ))}
+              </div>
+              <Paragraph
+                className="SectionExperience__paragraph"
+                text={get(experience, "description", "")}
+                darkMode={darkMode}
+              />
+              <div className="SectionExperience__tags">
+                {get(experience, "tags", []).map((tag, index) => (
+                  <Tag key={index} label={tag} darkMode={darkMode} />
+                ))}
+              </div>
+              <div className="SectionExperience__softs">
+                {get(experience, "softs", []).map((soft, index) => (
+                  <Soft key={index} name={soft} darkMode={darkMode} />
+                ))}
+              </div>
             </div>
           ))}
         </div>

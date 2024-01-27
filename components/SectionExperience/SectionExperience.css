@@ -34,3 +34,23 @@
 .SectionExperience__container__info--darkMode--reversed {
   background: var(--color-dark-black);
 }
+
+.SectionExperience__title {
+  border: solid 1px red;
+}
+
+.SectionExperience__city {
+  border: solid 1px green;
+}
+
+.SectionExperience__date {
+  border: solid 1px blue;
+}
+
+.SectionExperience__paragraph {
+  border: solid 1px orange;
+}
+
+.SectionExperience__tags {
+  border: solid 1px pink;
+}
