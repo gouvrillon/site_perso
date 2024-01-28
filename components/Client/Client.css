@@ -1,9 +1,18 @@
 .Client {
   background: var(--color-grey);
-  padding: 10px 10px 10px 10px;
+  padding: 20px 20px 20px 20px;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
+  width: max-content;
+  height: max-content;
+  min-width: 180px;
+}
+
+@media screen and (max-width: 1100px) {
+  .Client {
+    flex-direction: row;
+  }
 }
 
 .Client--reversed {
@@ -19,8 +28,19 @@
 }
 
 .Client__logo {
-  width: 50px;
-  margin: 0px auto 0px auto;
+  width: 70px;
+  margin: 0px auto 20px auto;
+}
+
+@media screen and (max-width: 1100px) {
+  .Client__logo {
+    margin: 0px 20px 0px 0px;
+  }
+}
+
+.Client__infos {
+  display: flex;
+  flex-direction: column;
 }
 
 .Client__name {

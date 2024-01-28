@@ -29,7 +29,7 @@ const SectionExperience = ({ reversed, darkMode, experience }) => {
           />
         </div>
         <div className="SectionExperience__container__infos">
-          {get(experience, "experiences", []).map((experience, index) => (
+          {get(experience, "jobs", []).map((job, index) => (
             <div
               key={index}
               className={classnames("SectionExperience__container__info", {
@@ -43,21 +43,21 @@ const SectionExperience = ({ reversed, darkMode, experience }) => {
             >
               <Title3
                 className="SectionExperience__title"
-                text={get(experience, "title", "")}
+                text={get(job, "title", "")}
                 darkMode={darkMode}
               />
               <City
                 className="SectionExperience__city"
-                city={get(experience, "city", "")}
+                city={get(job, "city", "")}
                 darkMode={darkMode}
               />
               <Date
                 className="SectionExperience__date"
-                date={get(experience, "date", "")}
+                date={get(job, "date", "")}
                 darkMode={darkMode}
               />
               <div className="SectionExperience__list">
-                {get(experience, "technos", []).map((techno, index) => (
+                {get(job, "technos", []).map((techno, index) => (
                   <Techno
                     key={index}
                     name={techno}
@@ -68,16 +68,16 @@ const SectionExperience = ({ reversed, darkMode, experience }) => {
               </div>
               <Paragraph
                 className="SectionExperience__paragraph"
-                text={get(experience, "description", "")}
+                text={get(job, "description", "")}
                 darkMode={darkMode}
               />
               <div className="SectionExperience__list">
-                {get(experience, "tags", []).map((tag, index) => (
+                {get(job, "tags", []).map((tag, index) => (
                   <Tag key={index} label={tag} darkMode={darkMode} />
                 ))}
               </div>
               <div className="SectionExperience__list">
-                {get(experience, "softs", []).map((soft, index) => (
+                {get(job, "softs", []).map((soft, index) => (
                   <Soft key={index} name={soft} darkMode={darkMode} />
                 ))}
               </div>

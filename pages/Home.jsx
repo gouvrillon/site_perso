@@ -82,7 +82,7 @@ const CLIENT_VALWIN = {
 
 const EXPERIENCE = {
   client: CLIENT_VALWIN,
-  experiences: [
+  jobs: [
     {
       title: "Directeur Produit",
       city: "Nantes",
@@ -119,8 +119,6 @@ const EXPERIENCE = {
 const Home = () => {
   return (
     <Layout>
-      <SectionExperience experience={EXPERIENCE} />
-      <SectionExperience experience={EXPERIENCE} reversed={true} />
       <SectionPortrait portrait={PORTRAIT} />
       <SectionPortrait portrait={PORTRAIT} reversed={true} />
       <SectionProfile profile={PROFILE} />
@@ -136,6 +134,8 @@ const Home = () => {
       <SectionProjects projects={PROJECTS} reversed={true} />
       <SectionPresentation presentation={PRESENTATION} />
       <SectionPresentation presentation={PRESENTATION} reversed={true} />
+      <SectionExperience experience={EXPERIENCE} />
+      <SectionExperience experience={EXPERIENCE} reversed={true} />
       <SectionSkills />
       <SectionSkills reversed={true} />
       <SectionContact />

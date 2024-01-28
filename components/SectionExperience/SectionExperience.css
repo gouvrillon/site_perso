@@ -1,17 +1,50 @@
 .SectionExperience {
   display: flex;
   justify-content: center;
-  align-items: center;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionExperience {
+    flex-direction: column;
+    align-items: center;
+  }
 }
 
 .SectionExperience__container__client {
-  width: 500px;
-  display: flex;
-  justify-content: center;
+  width: 200px;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionExperience__container__client {
+    width: 600px;
+    align-items: left;
+    margin: 0px 0px 20px 0px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .SectionExperience__container__client {
+    width: 90%;
+  }
 }
 
 .SectionExperience__container__infos {
-  width: 500px;
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media screen and (max-width: 1100px) {
+  .SectionExperience__container__infos {
+    width: 600px;
+  }
+}
+
+@media screen and (max-width: 620px) {
+  .SectionExperience__container__infos {
+    width: 90%;
+  }
 }
 
 .SectionExperience__container__info {
@@ -20,7 +53,6 @@
   flex-direction: column;
   border-radius: 8px;
   width: 100%;
-  margin: 0px 0px 20px 0px;
   padding: 20px 20px 20px 20px;
 }
 
@@ -41,19 +73,19 @@
 }
 
 .SectionExperience__city {
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 20px 0px;
 }
 
 .SectionExperience__date {
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 20px 0px;
 }
 
 .SectionExperience__list {
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 20px 0px;
 }
 .SectionExperience__paragraph {
-  margin: 0px 0px 10px 0px;
+  margin: 0px 0px 20px 0px;
 }
