@@ -10,15 +10,21 @@ import Icon from "../Icon/Icon.jsx";
 const Soft = ({ name, darkMode, className }) => {
   const soft = SOFT_CONST.find((soft) => isEqual(get(soft, "name"), name));
   return (
-    <div
-      className={classnames(`Soft ${className}`, {
-        "Soft--darkMode": darkMode,
-      })}
-    >
-      <div className="Soft__icon">
+    <div className={`Soft ${className}`}>
+      <div
+        className={classnames("Soft__icon", {
+          "Soft__icon--darkMode": darkMode,
+        })}
+      >
         <Icon icon={get(soft, "icon", "")} />
       </div>
-      <div className="Soft__label">{get(soft, "label", "")}</div>
+      <div
+        className={classnames("Soft__label", {
+          "Soft__label--darkMode": darkMode,
+        })}
+      >
+        {get(soft, "label", "")}
+      </div>
     </div>
   );
 };
