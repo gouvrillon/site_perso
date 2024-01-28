@@ -22,13 +22,15 @@ const SectionSkills = ({ darkMode, reversed }) => {
   return (
     <Section darkMode={darkMode} reversed={reversed}>
       <div className="SectionSkills">
-        <div className="SectionSkills__line">
+        <div className="SectionSkills__container__title2">
+          <Title2
+            className="SectionSkills__title2"
+            text="Compétences"
+            darkMode={darkMode}
+          />
+        </div>
+        <div className="SectionSkills__container__list">
           <div className="SectionSkills__list">
-            <Title2
-              className="SectionSkills__title2"
-              text="Compétences"
-              darkMode={darkMode}
-            />
             <Title3
               className="SectionSkills__title3"
               text="Hard skills"
@@ -68,7 +70,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
               </div>
             ))}
           </div>
-          <div className="SectionSkills__list SectionSkills__list--second">
+          <div className="SectionSkills__list">
             <Title3
               className="SectionSkills__title3"
               text="Global skills"
@@ -107,8 +109,6 @@ const SectionSkills = ({ darkMode, reversed }) => {
               </div>
             ))}
           </div>
-        </div>
-        <div className="SectionSkills__line">
           <div className="SectionSkills__list">
             <Title3
               className="SectionSkills__title3"
