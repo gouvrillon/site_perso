@@ -50,11 +50,13 @@ const SectionProject = ({ project, reversed, darkMode }) => {
             text={get(project, "title", "")}
             darkMode={darkMode}
           />
-          <Star
-            label="Top projet"
-            darkMode={darkMode}
-            className="SectionProject__star"
-          />
+          {get(project, "star") && (
+            <Star
+              label="Top projet"
+              darkMode={darkMode}
+              className="SectionProject__star"
+            />
+          )}
           <div className="SectionProject__technos">
             {get(project, "technos", []).map((techno, index) => (
               <Techno
