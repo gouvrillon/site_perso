@@ -23,7 +23,7 @@ const SlideProject = ({ project, darkMode, reversed }) => {
         className={classnames("SlideProject__image", {
           "SlideProject__image--darkMode": darkMode,
         })}
-        style={{ backgroundImage: `url(${get(project, "image", "")})` }}
+        style={{ backgroundImage: `url(${get(project, "images[0]", "")})` }}
       />
       {get(project, "star") && (
         <Star

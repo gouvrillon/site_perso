@@ -10,6 +10,7 @@ import SectionPortrait from "../components/SectionPortrait/SectionPortrait.jsx";
 import SectionPresentation from "../components/SectionPresentation/SectionPresentation.jsx";
 import SectionSkills from "../components/SectionSkills/SectionSkills.jsx";
 import SectionExperience from "../components/SectionExperience/SectionExperience.jsx";
+import SectionIntro from "../components/SectionIntro/SectionIntro.jsx";
 import isEqual from "lodash/isEqual";
 
 const PORTRAIT = {
@@ -32,7 +33,11 @@ const PRESENTATION = {
 };
 
 const PROJECT_1 = {
-  image: "/images/screenshots/AMAZON.png",
+  images: [
+    "/images/screenshots/AMAZON.png",
+    "/images/screenshots/AMAZON.png",
+    "/images/screenshots/AMAZON.png",
+  ],
   title: "Refonte complète de backoffice",
   description:
     "Implémentation e-commerce sur site existant. Gestion dynamique du catalogue depuis un backoffice vers Algolia.",
@@ -43,7 +48,11 @@ const PROJECT_1 = {
 };
 
 const PROJECT_2 = {
-  image: "/images/screenshots/APTIPHAR.png",
+  images: [
+    "/images/screenshots/APTIPHAR.png",
+    "/images/screenshots/APTIPHAR.png",
+    "/images/screenshots/APTIPHAR.png",
+  ],
   title: "Implémentation e-commerce sur site existant",
   description:
     "Implémentation e-commerce sur site existant. Gestion dynamique du catalogue depuis un backoffice vers Algolia.",
@@ -121,6 +130,8 @@ const Home = () => {
     <Layout>
       <SectionPortrait portrait={PORTRAIT} />
       <SectionPortrait portrait={PORTRAIT} reversed={true} />
+      <SectionIntro project={PROJECT_1} />
+      <SectionIntro project={PROJECT_1} reversed={true} />
       <SectionProfile profile={PROFILE} />
       <SectionProfile profile={PROFILE} reversed={true} />
       {PROJECTS.filter((project) => project.star).map((project, index) => (

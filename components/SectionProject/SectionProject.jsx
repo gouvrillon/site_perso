@@ -30,7 +30,7 @@ const SectionProject = ({ project, reversed, darkMode }) => {
           >
             <img
               className="SectionProject__image__image"
-              src={get(project, "image", "")}
+              src={get(project, "images[0]", "")}
             />
             <div
               className={classnames("SectionProject__image__filter", {
