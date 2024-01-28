@@ -41,14 +41,19 @@
 }
 
 .SectionSkills__list {
-  width: 25%;
+  width: 30%;
   display: flex;
   flex-direction: column;
   margin: 40px 0px 0px 0px;
 }
 
+.SectionSkills__list--last {
+  width: 10%;
+}
+
 @media screen and (max-width: 1100px) {
-  .SectionSkills__list {
+  .SectionSkills__list,
+  .SectionSkills__list--last {
     width: 50%;
   }
 }
@@ -65,7 +70,7 @@
 
 .SectionSkills__row {
   display: flex;
-  width: 200px;
+  width: 220px;
   height: 28px;
   margin: 0px 0px 10px 0px;
 }
@@ -76,7 +81,7 @@
 
 .SectionSkills__star {
   color: var(--color-violet);
-  font-size: 8px;
+  font-size: 12px;
   margin: auto 5px auto 0px;
 }
 

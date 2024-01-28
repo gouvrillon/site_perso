@@ -125,7 +125,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
               </div>
             ))}
           </div>
-          <div className="SectionSkills__list">
+          <div className="SectionSkills__list SectionSkills__list--last">
             <Title3
               className="SectionSkills__title3"
               text="Valeurs"
