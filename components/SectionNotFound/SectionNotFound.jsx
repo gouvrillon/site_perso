@@ -2,6 +2,7 @@ import React from "react";
 import "./SectionNotFound.css";
 import { bool, object } from "prop-types";
 import Title1 from "../Title1/Title1.jsx";
+import Title2 from "../Title2/Title2.jsx";
 import Section from "../Section/Section.jsx";
 import Portrait from "../Portrait/Portrait.jsx";
 import Link from "../Link/Link.jsx";
@@ -12,12 +13,17 @@ const SectionNotFound = ({ darkMode, notFound }) => {
     <Section darkMode={darkMode}>
       <div className="SectionNotFound">
         <div className="SectionNotFound__container">
+          <Title1
+            className="SectionNotFound__title"
+            text={get(notFound, "title", "")}
+            darkMode={darkMode}
+          />
           <Portrait
             className="SectionNotFound__portrait"
             darkMode={darkMode}
             image={get(notFound, "image", "")}
           />
-          <Title1
+          <Title2
             className="SectionNotFound__title"
             text={get(notFound, "text", "")}
             darkMode={darkMode}

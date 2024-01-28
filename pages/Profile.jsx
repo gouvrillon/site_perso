@@ -8,11 +8,17 @@ import SectionPortrait from "../components/SectionPortrait/SectionPortrait.jsx";
 import SectionPresentation from "../components/SectionPresentation/SectionPresentation.jsx";
 import SectionSkills from "../components/SectionSkills/SectionSkills.jsx";
 import SectionExperience from "../components/SectionExperience/SectionExperience.jsx";
-import { PORTRAIT, PRESENTATION, EXPERIENCE, PROJECTS } from "../const.js";
+import {
+  PORTRAIT,
+  PRESENTATION,
+  EXPERIENCE,
+  PROJECTS,
+  HEADER_CONST,
+} from "../const.js";
 
 const Profile = () => {
   return (
-    <Layout>
+    <Layout headerConst={HEADER_CONST}>
       <SectionPortrait portrait={PORTRAIT} />
       <SectionPresentation presentation={PRESENTATION} reversed={true} />
       <SectionExperience experience={EXPERIENCE} />

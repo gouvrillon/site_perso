@@ -8,11 +8,11 @@ import SectionProjects from "../components/SectionProjects/SectionProjects.jsx";
 import SectionProfile from "../components/SectionProfile/SectionProfile.jsx";
 import SectionSkills from "../components/SectionSkills/SectionSkills.jsx";
 import isEqual from "lodash/isEqual";
-import { PROFILE, PROJECTS } from "../const.js";
+import { PROFILE, PROJECTS, HEADER_CONST } from "../const.js";
 
 const Home = () => {
   return (
-    <Layout>
+    <Layout headerConst={HEADER_CONST}>
       <SectionProfile profile={PROFILE} />
       <SectionProjects projects={PROJECTS} reversed={true} />
       {PROJECTS.filter((project) => project.star).map((project, index) => (

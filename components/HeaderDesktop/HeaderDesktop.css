@@ -6,14 +6,44 @@
   width: 100%;
   z-index: 99;
   background: var(--color-black);
+  display: flex;
+  gap: 20px;
 }
 
 .HeaderDesktop--darkMode {
-  background: var(--color-dark-black);
+  background: var(--color-dark-white);
 }
 
 @media (max-width: 600px) {
   .HeaderDesktop {
     display: none;
   }
+}
+
+.HeaderDesktop__logo {
+  font-size: 30px;
+  color: var(--color-white);
+  margin: 10px 20px auto 50px;
+}
+
+.HeaderDesktop__logo--darkMode {
+  color: var(--color-dark-black);
+}
+
+.HeaderDesktop__nav {
+  margin: auto 20px auto 0px;
+}
+
+.HeaderDesktop__icon {
+  font-size: 20px;
+  color: var(--color-white);
+  margin: 16px 0px auto 0px;
+}
+
+.HeaderDesktop__icon--darkMode {
+  color: var(--color-dark-black);
+}
+
+.HeaderDesktop__toogle {
+  margin: auto 50px auto auto;
 }

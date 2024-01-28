@@ -12,18 +12,18 @@ const Toogle = ({ className, label, onChange, darkMode }) => {
     >
       <div
         onClick={() => onChange()}
-        className={classnames(`Toogle__container ${className}`, {
+        className={classnames("Toogle__container", {
           "Toogle__container--darkMode": darkMode,
         })}
       >
         <div
-          className={classnames(`Toogle__circle ${className}`, {
+          className={classnames("Toogle__circle", {
             "Toogle__circle--darkMode": darkMode,
           })}
         />
       </div>
       <div
-        className={classnames(`Toogle__label ${className}`, {
+        className={classnames("Toogle__label", {
           "Toogle__label--darkMode": darkMode,
         })}
       >

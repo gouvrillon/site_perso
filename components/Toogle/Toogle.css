@@ -6,12 +6,12 @@
 .Toogle__label {
   margin: auto 0px auto 0px;
   font-size: 14px;
-  font-weight: 300;
+  font-weight: 400;
   color: var(--color-white);
 }
 
 .Toogle__label--darkMode {
-  color: var(--color-dark-white);
+  color: var(--color-dark-black);
 }
 
 .Toogle__container {
@@ -24,15 +24,19 @@
   cursor: pointer;
 }
 
+.Toogle__container--darkMode {
+  border: solid 2px var(--color-dark-black);
+}
+
 .Toogle__circle {
-  width: 14px;
-  height: 14px;
+  width: 12px;
+  height: 12px;
   background: var(--color-grey);
   border-radius: 100%;
-  margin: auto 0px auto 1px;
+  margin: auto 0px auto 3px;
 }
 
 .Toogle__circle--darkMode {
-  background: var(--color-dark-green);
+  background: var(--color-dark-black);
   margin: auto 0px auto 16px;
 }

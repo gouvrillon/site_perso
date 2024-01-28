@@ -25,6 +25,8 @@ import { AiOutlineTool } from "react-icons/ai";
 import { FaRegCommentDots } from "react-icons/fa";
 import { FaPaperPlane } from "react-icons/fa";
 import { PiMapPinFill } from "react-icons/pi";
+import { FaLinkedin } from "react-icons/fa";
+import { FaGithubSquare } from "react-icons/fa";
 
 const Icon = ({ icon }) => {
   return (
@@ -77,6 +79,10 @@ const Icon = ({ icon }) => {
         <FaPaperPlane />
       ) : isEqual(icon, "CITY") ? (
         <PiMapPinFill />
+      ) : isEqual(icon, "LINKEDIN") ? (
+        <FaLinkedin />
+      ) : isEqual(icon, "GITHUB") ? (
+        <FaGithubSquare />
       ) : null}
     </>
   );
