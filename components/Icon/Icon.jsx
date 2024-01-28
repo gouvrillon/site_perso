@@ -27,6 +27,8 @@ import { FaPaperPlane } from "react-icons/fa";
 import { PiMapPinFill } from "react-icons/pi";
 import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
+import { IoIosMoon } from "react-icons/io";
+import { TbSunHigh } from "react-icons/tb";
 
 const Icon = ({ icon }) => {
   return (
@@ -83,6 +85,10 @@ const Icon = ({ icon }) => {
         <FaLinkedin />
       ) : isEqual(icon, "GITHUB") ? (
         <FaGithubSquare />
+      ) : isEqual(icon, "MOON") ? (
+        <IoIosMoon />
+      ) : isEqual(icon, "SUN") ? (
+        <TbSunHigh />
       ) : null}
     </>
   );

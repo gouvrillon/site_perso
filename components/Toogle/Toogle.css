@@ -3,24 +3,13 @@
   height: max-content;
 }
 
-.Toogle__label {
-  margin: auto 0px auto 0px;
-  font-size: 14px;
-  font-weight: 400;
-  color: var(--color-white);
-}
-
-.Toogle__label--darkMode {
-  color: var(--color-dark-black);
-}
-
 .Toogle__container {
   width: 35px;
   height: 20px;
   border: solid 2px var(--color-grey);
   border-radius: 20px;
   display: flex;
-  margin: 0px 10px 0px 0px;
+  margin: 0px 10px 0px 10px;
   cursor: pointer;
 }
 
@@ -39,4 +28,14 @@
 .Toogle__circle--darkMode {
   background: var(--color-dark-black);
   margin: auto 0px auto 16px;
+}
+
+.Toogle__icon {
+  color: var(--color-white);
+  font-size: 18px;
+  margin: 0px 0px 0px 0px;
+}
+
+.Toogle__icon--darkMode {
+  color: var(--color-dark-black);
 }

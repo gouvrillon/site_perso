@@ -2,14 +2,22 @@ import React from "react";
 import "./Toogle.css";
 import { string, bool, func } from "prop-types";
 import classnames from "classnames";
+import Icon from "../Icon/Icon.jsx";
 
-const Toogle = ({ className, label, onChange, darkMode }) => {
+const Toogle = ({ className, iconTrue, iconFalse, onChange, darkMode }) => {
   return (
     <div
       className={classnames(`Toogle ${className}`, {
         "Toogle--darkMode": darkMode,
       })}
     >
+      <div
+        className={classnames("Toogle__icon", {
+          "Toogle__icon--darkMode": darkMode,
+        })}
+      >
+        <Icon icon={iconFalse} />
+      </div>
       <div
         onClick={() => onChange()}
         className={classnames("Toogle__container", {
@@ -23,18 +31,19 @@ const Toogle = ({ className, label, onChange, darkMode }) => {
         />
       </div>
       <div
-        className={classnames("Toogle__label", {
-          "Toogle__label--darkMode": darkMode,
+        className={classnames("Toogle__icon", {
+          "Toogle__icon--darkMode": darkMode,
         })}
       >
-        {label}
+        <Icon icon={iconTrue} />
       </div>
     </div>
   );
 };
 
 Toogle.propTypes = {
-  label: string.isRequired,
+  iconTrue: string.isRequired,
+  iconFalse: string.isRequired,
   onChange: func.isRequired,
   darkMode: bool,
   className: string,
