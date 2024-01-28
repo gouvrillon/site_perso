@@ -8,7 +8,7 @@ import SectionPortrait from "../components/SectionPortrait/SectionPortrait.jsx";
 import SectionPresentation from "../components/SectionPresentation/SectionPresentation.jsx";
 import SectionSkills from "../components/SectionSkills/SectionSkills.jsx";
 import SectionExperience from "../components/SectionExperience/SectionExperience.jsx";
-import { PORTRAIT, PRESENTATION, EXPERIENCE, PROJECTS } from "./const.js";
+import { PORTRAIT, PRESENTATION, EXPERIENCE, PROJECTS } from "../const.js";
 
 const Profile = () => {
   return (

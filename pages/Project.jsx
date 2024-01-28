@@ -7,7 +7,7 @@ import SectionProjects from "../components/SectionProjects/SectionProjects.jsx";
 import SectionIntro from "../components/SectionIntro/SectionIntro.jsx";
 import SectionDetails from "../components/SectionDetails/SectionDetails.jsx";
 import SectionProfile from "../components/SectionProfile/SectionProfile.jsx";
-import { PROJECT_1, PROJECTS, PROFILE } from "./const.js";
+import { PROJECT_1, PROJECTS, PROFILE } from "../const.js";
 
 const Project = () => {
   return (

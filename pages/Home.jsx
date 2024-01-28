@@ -8,7 +8,7 @@ import SectionProjects from "../components/SectionProjects/SectionProjects.jsx";
 import SectionProfile from "../components/SectionProfile/SectionProfile.jsx";
 import SectionSkills from "../components/SectionSkills/SectionSkills.jsx";
 import isEqual from "lodash/isEqual";
-import { PROFILE, PROJECTS } from "./const.js";
+import { PROFILE, PROJECTS } from "../const.js";
 
 const Home = () => {
   return (
