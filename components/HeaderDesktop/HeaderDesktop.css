@@ -11,9 +11,9 @@
 .HeaderDesktop--darkMode {
   background: var(--color-dark-black);
 }
-
+/* 
 @media (max-width: 600px) {
   .HeaderDesktop {
     display: none;
   }
-}
+} */
