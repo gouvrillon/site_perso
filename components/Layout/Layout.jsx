@@ -4,28 +4,32 @@ import Footer from "../../components/Footer/Footer.jsx";
 import { node, object } from "prop-types";
 import "./Layout.css";
 
-const Layout = ({ children, headerConst }) => {
+const Layout = ({ children, navConst }) => {
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className="Layout">
       <Header
         darkMode={darkMode}
         setDarkMode={setDarkMode}
-        headerConst={headerConst}
+        navConst={navConst}
       />
       {Children.map(children, (child) =>
         cloneElement(child, {
           darkMode: darkMode,
         })
       )}
-      <Footer darkMode={darkMode} />
+      <Footer
+        darkMode={darkMode}
+        navConst={navConst}
+        setDarkMode={setDarkMode}
+      />
     </div>
   );
 };
 
 Layout.propTypes = {
   children: node.isRequired,
-  headerConst: object.isRequired,
+  navConst: object.isRequired,
 };
 
 export default Layout;

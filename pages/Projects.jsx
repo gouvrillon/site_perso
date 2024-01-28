@@ -7,11 +7,11 @@ import SectionContact from "../components/SectionContact/SectionContact.jsx";
 import SectionProjects from "../components/SectionProjects/SectionProjects.jsx";
 import SectionProfile from "../components/SectionProfile/SectionProfile.jsx";
 import isEqual from "lodash/isEqual";
-import { PROFILE, PROJECTS, HEADER_CONST } from "../const.js";
+import { PROFILE, PROJECTS, NAV_CONST } from "../const.js";
 
 const Home = () => {
   return (
-    <Layout headerConst={HEADER_CONST}>
+    <Layout navConst={NAV_CONST}>
       <SectionProjects projects={PROJECTS} reversed={true} />
       {PROJECTS.map((project, index) => (
         <SectionProject

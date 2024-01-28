@@ -141,7 +141,7 @@ const NOT_FOUND = {
   href: "/",
 };
 
-const HEADER_CONST = {
+const NAV_CONST = {
   home: {
     label: "Accueil",
     href: "/",
@@ -174,5 +174,5 @@ export {
   PRESENTATION,
   EXPERIENCE,
   NOT_FOUND,
-  HEADER_CONST,
+  NAV_CONST,
 };

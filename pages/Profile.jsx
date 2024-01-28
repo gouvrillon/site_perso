@@ -13,12 +13,12 @@ import {
   PRESENTATION,
   EXPERIENCE,
   PROJECTS,
-  HEADER_CONST,
+  NAV_CONST,
 } from "../const.js";
 
 const Profile = () => {
   return (
-    <Layout headerConst={HEADER_CONST}>
+    <Layout navConst={NAV_CONST}>
       <SectionPortrait portrait={PORTRAIT} />
       <SectionPresentation presentation={PRESENTATION} reversed={true} />
       <SectionExperience experience={EXPERIENCE} />

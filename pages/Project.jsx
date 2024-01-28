@@ -7,11 +7,11 @@ import SectionProjects from "../components/SectionProjects/SectionProjects.jsx";
 import SectionIntro from "../components/SectionIntro/SectionIntro.jsx";
 import SectionDetails from "../components/SectionDetails/SectionDetails.jsx";
 import SectionProfile from "../components/SectionProfile/SectionProfile.jsx";
-import { PROJECT_1, PROJECTS, PROFILE, HEADER_CONST } from "../const.js";
+import { PROJECT_1, PROJECTS, PROFILE, NAV_CONST } from "../const.js";
 
 const Project = () => {
   return (
-    <Layout headerConst={HEADER_CONST}>
+    <Layout navConst={NAV_CONST}>
       <SectionIntro project={PROJECT_1} />
       <SectionDetails project={PROJECT_1} reversed={true} />
       <SectionProjects projects={PROJECTS} />

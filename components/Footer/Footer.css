@@ -1,11 +1,42 @@
 .Footer {
-  height: 50px;
+  height: 300px;
   background: var(--color-black);
   width: 100%;
   position: absolute;
   bottom: 0px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .Footer--darkMode {
-  background: var(--color-dark-black);
+  background: var(--color-dark-white);
+}
+
+.Footer__container__logo {
+  border: solid 1px red;
+  height: 100px;
+  width: 25%;
+}
+
+.Footer__container__navs {
+  border: solid 1px green;
+  height: 100px;
+  width: 25%;
+}
+
+.Footer__container__icons {
+  border: solid 1px blue;
+  height: 100px;
+  width: 25%;
+}
+
+.Footer__container__toogle {
+  border: solid 1px orange;
+  height: 100px;
+  width: 25%;
+}
+.Footer__container__sign {
+  border: solid 1px black;
+  height: 100px;
+  width: 100%;
 }

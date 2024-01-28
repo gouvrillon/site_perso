@@ -7,7 +7,7 @@ import Icon from "../Icon/Icon.jsx";
 import Nav from "../Nav/Nav.jsx";
 import get from "lodash/get";
 
-const HeaderDesktop = ({ setDarkMode, darkMode, headerConst }) => {
+const HeaderDesktop = ({ setDarkMode, darkMode, navConst }) => {
   return (
     <div
       className={classnames("HeaderDesktop", {
@@ -22,33 +22,33 @@ const HeaderDesktop = ({ setDarkMode, darkMode, headerConst }) => {
         <Icon icon={"CODE"} />
       </a>
       <Nav
-        label={get(headerConst, "home.label", "")}
-        href={get(headerConst, "home.href", "")}
+        label={get(navConst, "home.label", "")}
+        href={get(navConst, "home.href", "")}
         darkMode={darkMode}
         className="HeaderDesktop__nav"
       />
       <Nav
-        label={get(headerConst, "profile.label", "")}
-        href={get(headerConst, "profile.href", "")}
+        label={get(navConst, "profile.label", "")}
+        href={get(navConst, "profile.href", "")}
         darkMode={darkMode}
         className="HeaderDesktop__nav"
       />
       <Nav
-        label={get(headerConst, "projects.label", "")}
-        href={get(headerConst, "projects.href", "")}
+        label={get(navConst, "projects.label", "")}
+        href={get(navConst, "projects.href", "")}
         darkMode={darkMode}
         className="HeaderDesktop__nav"
       />
       <Nav
-        label={get(headerConst, "contact.label", "")}
-        href={get(headerConst, "contact.href", "")}
+        label={get(navConst, "contact.label", "")}
+        href={get(navConst, "contact.href", "")}
         darkMode={darkMode}
         className="HeaderDesktop__nav"
       />
       <a
         target="_blank"
         rel="noreferrer"
-        href={get(headerConst, "linkedin.href", "")}
+        href={get(navConst, "linkedin.href", "")}
         className={classnames("HeaderDesktop__icon", {
           "HeaderDesktop__icon--darkMode": darkMode,
         })}
@@ -58,7 +58,7 @@ const HeaderDesktop = ({ setDarkMode, darkMode, headerConst }) => {
       <a
         target="_blank"
         rel="noreferrer"
-        href={get(headerConst, "github.href", "")}
+        href={get(navConst, "github.href", "")}
         className={classnames("HeaderDesktop__icon", {
           "HeaderDesktop__icon--darkMode": darkMode,
         })}
@@ -77,7 +77,7 @@ const HeaderDesktop = ({ setDarkMode, darkMode, headerConst }) => {
 };
 
 HeaderDesktop.propTypes = {
-  headerConst: object.isRequired,
+  navConst: object.isRequired,
   setDarkMode: func.isRequired,
   darkMode: bool,
 };

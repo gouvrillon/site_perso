@@ -3,11 +3,11 @@
 import React from "react";
 import Layout from "../components/Layout/Layout.jsx";
 import SectionNotFound from "../components/SectionNotFound/SectionNotFound.jsx";
-import { NOT_FOUND, HEADER_CONST } from "../const.js";
+import { NOT_FOUND, NAV_CONST } from "../const.js";
 
 const Home = () => {
   return (
-    <Layout headerConst={HEADER_CONST}>
+    <Layout navConst={NAV_CONST}>
       <SectionNotFound notFound={NOT_FOUND} />
     </Layout>
   );
