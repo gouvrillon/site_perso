@@ -3,12 +3,12 @@ import "./Portrait.css";
 import { string, bool } from "prop-types";
 import classnames from "classnames";
 
-const Portrait = ({ className, darkMode }) => {
+const Portrait = ({ className, darkMode, image }) => {
   return (
     <div className={`Portrait ${className}`}>
       <div
         className="Portrait__image"
-        style={{ backgroundImage: 'url("/images/ME.jpeg")' }}
+        style={{ backgroundImage: `url(${image})` }}
       ></div>
       <div
         className={classnames("Portrait__slide1", {
@@ -25,6 +25,7 @@ const Portrait = ({ className, darkMode }) => {
 };
 
 Portrait.propTypes = {
+  image: string.isRequired,
   darkMode: bool,
   className: string,
 };

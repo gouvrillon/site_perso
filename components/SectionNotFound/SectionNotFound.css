@@ -1,0 +1,29 @@
+.SectionNotFound {
+  height: calc(100vh - 300px);
+  display: flex;
+}
+
+@media screen and (max-width: 600px) {
+  .SectionNotFound {
+    height: calc(100vh - 200px);
+    display: flex;
+  }
+}
+
+.SectionNotFound__container {
+  margin: auto auto auto auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.SectionNotFound__portrait {
+  margin: 0px auto 20px auto;
+}
+
+.SectionNotFound__title {
+  margin: 0px auto 20px auto;
+}
+
+.SectionNotFound__link {
+  margin: 0px auto 0px auto;
+}

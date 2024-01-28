@@ -36,6 +36,7 @@ const SectionProfile = ({ reversed, darkMode, profile }) => {
             <Portrait
               className="SectionProfile__portrait"
               darkMode={darkMode}
+              image={get(profile, "image", "")}
             />
             <Link
               label="Voir le profil"

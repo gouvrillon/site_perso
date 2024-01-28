@@ -1,5 +1,5 @@
 const PORTRAIT = {
-  image: "/images/ME.jpeg",
+  image: "/images/portraits/ME.jpeg",
   title: "Thomas Gouvrillon, développeur javascript",
   tags: ["freelance", "développement", "indé"],
 };
@@ -83,7 +83,7 @@ const PROJECTS = [
 ];
 
 const PROFILE = {
-  image: "/images/ME.jpeg",
+  image: "/images/portraits/ME.jpeg",
   title: "Thomas Gouvrillon, développeur javascript",
   href: "profil",
   tags: ["freelance", "développement", "indé"],
@@ -94,7 +94,7 @@ const PROFILE = {
 
 const CLIENT_VALWIN = {
   name: "Valwin",
-  logo: "/images/logo/VALWIN.png",
+  logo: "/images/logos/VALWIN.png",
   tags: ["pharmacie", "e-sante"],
 };
 
@@ -134,4 +134,18 @@ const EXPERIENCE = {
   ],
 };
 
-export { PROFILE, PROJECTS, PROJECT_1, PORTRAIT, PRESENTATION, EXPERIENCE };
+const NOT_FOUND = {
+  text: "Erreur 400 Cat",
+  image: "/images/portraits/CAT.jpg",
+  href: "/",
+};
+
+export {
+  PROFILE,
+  PROJECTS,
+  PROJECT_1,
+  PORTRAIT,
+  PRESENTATION,
+  EXPERIENCE,
+  NOT_FOUND,
+};
