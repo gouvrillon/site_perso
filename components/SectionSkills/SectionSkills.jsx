@@ -30,7 +30,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
           />
         </div>
         <div className="SectionSkills__container__list">
-          <div className="SectionSkills__list">
+          <div className="SectionSkills__list SectionSkills__list--one">
             <Title3
               className="SectionSkills__title3"
               text="Hard skills"
@@ -70,7 +70,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
               </div>
             ))}
           </div>
-          <div className="SectionSkills__list">
+          <div className="SectionSkills__list SectionSkills__list--two">
             <Title3
               className="SectionSkills__title3"
               text="Global skills"
@@ -109,7 +109,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
               </div>
             ))}
           </div>
-          <div className="SectionSkills__list">
+          <div className="SectionSkills__list SectionSkills__list--three">
             <Title3
               className="SectionSkills__title3"
               text="Soft skills"
@@ -125,7 +125,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
               </div>
             ))}
           </div>
-          <div className="SectionSkills__list SectionSkills__list--last">
+          <div className="SectionSkills__list SectionSkills__list--four">
             <Title3
               className="SectionSkills__title3"
               text="Valeurs"

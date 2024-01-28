@@ -111,7 +111,7 @@ const SectionContact = ({ darkMode, reversed }) => {
                 onFocus={() => setMessage("")}
               />
             </div>
-            <div className="SectionContact__container">
+            <div className="SectionContact__container SectionContact__container--left">
               <Field
                 reversed={reversed}
                 darkMode={darkMode}
