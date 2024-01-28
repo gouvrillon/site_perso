@@ -66,10 +66,7 @@ const HeaderDesktop = ({ setDarkMode, darkMode, navConst }) => {
         <Icon icon={"GITHUB"} />
       </a>
       <Toogle
-        iconTrue="MOON"
-        iconFalse="SUN"
         onChange={() => setDarkMode(!darkMode)}
-        value={darkMode}
         darkMode={darkMode}
         className="HeaderDesktop__toogle"
       />

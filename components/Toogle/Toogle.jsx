@@ -4,7 +4,7 @@ import { string, bool, func } from "prop-types";
 import classnames from "classnames";
 import Icon from "../Icon/Icon.jsx";
 
-const Toogle = ({ className, iconTrue, iconFalse, onChange, darkMode }) => {
+const Toogle = ({ className, onChange, darkMode }) => {
   return (
     <div
       className={classnames(`Toogle ${className}`, {
@@ -16,7 +16,7 @@ const Toogle = ({ className, iconTrue, iconFalse, onChange, darkMode }) => {
           "Toogle__icon--darkMode": darkMode,
         })}
       >
-        <Icon icon={iconFalse} />
+        <Icon icon={"SUN"} />
       </div>
       <div
         onClick={() => onChange()}
@@ -35,15 +35,13 @@ const Toogle = ({ className, iconTrue, iconFalse, onChange, darkMode }) => {
           "Toogle__icon--darkMode": darkMode,
         })}
       >
-        <Icon icon={iconTrue} />
+        <Icon icon={"MOON"} />
       </div>
     </div>
   );
 };
 
 Toogle.propTypes = {
-  iconTrue: string.isRequired,
-  iconFalse: string.isRequired,
   onChange: func.isRequired,
   darkMode: bool,
   className: string,

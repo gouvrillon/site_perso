@@ -75,10 +75,7 @@ const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
         </a>
       </div>
       <Toogle
-        iconTrue="MOON"
-        iconFalse="SUN"
         onChange={() => setDarkMode(!darkMode)}
-        value={darkMode}
         darkMode={darkMode}
         className={classnames("HeaderMobil__toogle", {
           "HeaderMobil__toogle--display": displayMenu,

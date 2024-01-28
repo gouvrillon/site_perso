@@ -68,10 +68,7 @@ const Footer = ({ darkMode, navConst, setDarkMode }) => {
 
       <div className="Footer__container">
         <Toogle
-          iconTrue="MOON"
-          iconFalse="SUN"
           onChange={() => setDarkMode(!darkMode)}
-          value={darkMode}
           darkMode={darkMode}
           className="Footer__toogle"
         />
