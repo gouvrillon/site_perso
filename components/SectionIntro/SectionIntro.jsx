@@ -2,7 +2,6 @@ import React from "react";
 import "./SectionIntro.css";
 import get from "lodash/get";
 import { object, bool } from "prop-types";
-import classnames from "classnames";
 import Tag from "../Tag/Tag.jsx";
 import Title1 from "../Title1/Title1.jsx";
 import Section from "../Section/Section.jsx";
@@ -10,11 +9,7 @@ import Section from "../Section/Section.jsx";
 const SectionIntro = ({ reversed, darkMode, project }) => {
   return (
     <Section reversed={reversed} darkMode={darkMode}>
-      <div
-        className={classnames("SectionIntro", {
-          "SectionIntro--reversed": reversed,
-        })}
-      >
+      <div className="SectionIntro">
         <div className="SectionIntro__container__title">
           <Title1
             className="SectionIntro__title"

@@ -2,7 +2,6 @@ import React from "react";
 import "./SectionPortrait.css";
 import get from "lodash/get";
 import { object, bool } from "prop-types";
-import classnames from "classnames";
 import Tag from "../Tag/Tag.jsx";
 import Title1 from "../Title1/Title1.jsx";
 import Section from "../Section/Section.jsx";
@@ -11,11 +10,7 @@ import Portrait from "../Portrait/Portrait.jsx";
 const SectionPortrait = ({ reversed, darkMode, portrait }) => {
   return (
     <Section reversed={reversed} darkMode={darkMode}>
-      <div
-        className={classnames("SectionPortrait", {
-          "SectionPortrait--reversed": reversed,
-        })}
-      >
+      <div className="SectionPortrait">
         <div className="SectionPortrait__container__title">
           <Title1
             className="SectionPortrait__title"

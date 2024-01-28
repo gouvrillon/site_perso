@@ -1,0 +1,11 @@
+.SectionDetails {
+  display: flex;
+  justify-content: center;
+  border: solid 10px red;
+  height: 300px;
+}
+
+.SectionDetails__container {
+  border: solid 1px green;
+  display: flex;
+}

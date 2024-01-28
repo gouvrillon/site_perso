@@ -11,6 +11,7 @@ import SectionPresentation from "../components/SectionPresentation/SectionPresen
 import SectionSkills from "../components/SectionSkills/SectionSkills.jsx";
 import SectionExperience from "../components/SectionExperience/SectionExperience.jsx";
 import SectionIntro from "../components/SectionIntro/SectionIntro.jsx";
+import SectionDetails from "../components/SectionDetails/SectionDetails.jsx";
 import isEqual from "lodash/isEqual";
 
 const PORTRAIT = {
@@ -128,6 +129,8 @@ const EXPERIENCE = {
 const Home = () => {
   return (
     <Layout>
+      <SectionDetails project={PROJECT_1} />
+      <SectionDetails project={PROJECT_1} reversed={true} />
       <SectionPortrait portrait={PORTRAIT} />
       <SectionPortrait portrait={PORTRAIT} reversed={true} />
       <SectionIntro project={PROJECT_1} />

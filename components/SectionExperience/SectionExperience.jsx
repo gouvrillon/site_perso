@@ -16,11 +16,7 @@ import Soft from "../Soft/Soft.jsx";
 const SectionExperience = ({ reversed, darkMode, experience }) => {
   return (
     <Section reversed={reversed} darkMode={darkMode}>
-      <div
-        className={classnames("SectionExperience", {
-          "SectionExperience--reversed": reversed,
-        })}
-      >
+      <div className="SectionExperience">
         <div className="SectionExperience__container__client">
           <Client
             client={get(experience, "client", {})}
