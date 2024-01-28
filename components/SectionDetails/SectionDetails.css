@@ -84,7 +84,7 @@
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .SectionDetails__image {
     width: 90%;
   }

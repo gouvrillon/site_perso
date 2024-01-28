@@ -12,7 +12,7 @@
   background: var(--color-dark-white);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .Footer {
     flex-direction: column;
     height: 400px;
@@ -29,7 +29,7 @@
   width: 25%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .Footer__container {
     padding: 0px 0px 0px 0px;
     margin: 0px 0px 30px 0px;
@@ -50,7 +50,7 @@
   color: var(--color-dark-black);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .Footer__logo {
     font-size: 40px;
   }
@@ -65,7 +65,7 @@
   color: var(--color-dark-black);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .Footer__icon {
     font-size: 40px;
   }
@@ -81,7 +81,7 @@
   color: var(--color-dark-black);
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .Footer__toogle {
     margin: 0px 0px 20px 0px;
   }

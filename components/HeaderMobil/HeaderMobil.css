@@ -5,10 +5,11 @@
   background: var(--color-black);
   width: 100%;
   z-index: 99;
+  display: flex;
 }
 
 .HeaderMobil--darkMode {
-  background: var(--color-dark-grey);
+  background: var(--color-dark-white);
 }
 
 .HeaderMobil--displayMenu {
@@ -21,4 +22,53 @@
   .HeaderMobil {
     display: none;
   }
+}
+
+/* hamburger  */
+.HeaderMobil__hamburger {
+  border: solid 1px red;
+}
+
+/* navs */
+
+.HeaderMobil__navs {
+  border: solid 1px blue;
+  display: none;
+}
+
+.HeaderMobil__navs--display {
+  border: solid 1px blue;
+  display: flex;
+}
+
+/* icon */
+
+.HeaderMobil__icon {
+  font-size: 20px;
+  color: var(--color-white);
+  border: solid 1px orange;
+}
+
+.HeaderMobil__icon--darkMode {
+  color: var(--color-dark-black);
+}
+
+.HeaderMobil__icons {
+  font-size: 20px;
+  color: var(--color-white);
+  border: solid 1px orange;
+  display: none;
+}
+
+.HeaderMobil__icons--display {
+  font-size: 20px;
+  color: var(--color-white);
+  border: solid 1px orange;
+  display: flex;
+}
+
+/* toogle */
+
+.HeaderMobil__toogle {
+  border: solid 1px black;
 }

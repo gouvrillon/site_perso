@@ -4,7 +4,7 @@
   min-height: 100vh;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 620px) {
   .Layout {
     padding: 50px 0px 400px 0px;
   }

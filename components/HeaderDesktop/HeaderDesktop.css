@@ -14,7 +14,7 @@
   background: var(--color-dark-white);
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
   .HeaderDesktop {
     display: none;
   }
