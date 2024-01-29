@@ -18,13 +18,15 @@ const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
     >
       <div
         onClick={() => setDisplayMenu(!displayMenu)}
-        className="HeaderMobil__hamburger"
+        className={classnames("HeaderMobil__hamburger", {
+          "HeaderMobil__hamburger--darkMode": darkMode,
+        })}
       >
         {displayMenu ? <Icon icon="CROSS" /> : <Icon icon="HAMBURGER" />}
       </div>
       <div
         className={classnames("HeaderMobil__navs", {
-          "HeaderMobil__navs--display": displayMenu,
+          "HeaderMobil__navs--displayMenu": displayMenu,
         })}
       >
         <Nav
@@ -50,7 +52,7 @@ const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
       </div>
       <div
         className={classnames("HeaderMobil__icons", {
-          "HeaderMobil__icons--display": displayMenu,
+          "HeaderMobil__icons--displayMenu": displayMenu,
         })}
       >
         <a
@@ -58,7 +60,7 @@ const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
           rel="noreferrer"
           href={get(navConst, "linkedin.href", "")}
           className={classnames("HeaderMobil__icon", {
-            "HeaderMobil__icon--darkMode": darkMode,
+            "HeaderMobil__icon--displayMenu": darkMode,
           })}
         >
           <Icon icon={"LINKEDIN"} />
@@ -68,7 +70,7 @@ const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
           rel="noreferrer"
           href={get(navConst, "github.href", "")}
           className={classnames("HeaderMobil__icon", {
-            "HeaderMobil__icon--darkMode": darkMode,
+            "HeaderMobil__icon--displayMenu": darkMode,
           })}
         >
           <Icon icon={"GITHUB"} />
@@ -78,7 +80,7 @@ const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
         onChange={() => setDarkMode(!darkMode)}
         darkMode={darkMode}
         className={classnames("HeaderMobil__toogle", {
-          "HeaderMobil__toogle--display": displayMenu,
+          "HeaderMobil__toogle--displayMenu": displayMenu,
         })}
       />
     </div>

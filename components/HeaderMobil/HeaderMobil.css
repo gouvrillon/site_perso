@@ -16,6 +16,7 @@
   position: fixed;
   height: 100vh;
   width: 300px;
+  flex-direction: column;
 }
 
 @media (min-width: 600px) {
@@ -24,29 +25,31 @@
   }
 }
 
-/* hamburger  */
 .HeaderMobil__hamburger {
-  border: solid 1px red;
+  font-size: 30px;
+  color: var(--color-white);
+  cursor: pointer;
+  margin: 9px 0px 0px 10px;
 }
 
-/* navs */
+.HeaderMobil__hamburger--darkMode {
+  color: var(--color-dark-black);
+}
 
 .HeaderMobil__navs {
-  border: solid 1px blue;
   display: none;
+  flex-direction: column;
+  gap: 20px;
+  margin: 50px 0px 0px 40px;
 }
 
-.HeaderMobil__navs--display {
-  border: solid 1px blue;
+.HeaderMobil__navs--displayMenu {
   display: flex;
 }
 
-/* icon */
-
 .HeaderMobil__icon {
-  font-size: 20px;
+  font-size: 40px;
   color: var(--color-white);
-  border: solid 1px orange;
 }
 
 .HeaderMobil__icon--darkMode {
@@ -54,21 +57,21 @@
 }
 
 .HeaderMobil__icons {
+  display: none;
   font-size: 20px;
   color: var(--color-white);
-  border: solid 1px orange;
-  display: none;
+  margin: 50px 0px 0px 40px;
+  gap: 10px;
 }
 
-.HeaderMobil__icons--display {
-  font-size: 20px;
-  color: var(--color-white);
-  border: solid 1px orange;
+.HeaderMobil__icons--displayMenu {
   display: flex;
 }
 
-/* toogle */
-
 .HeaderMobil__toogle {
-  border: solid 1px black;
+  margin: 15px 10px 0px auto;
+}
+
+.HeaderMobil__toogle--displayMenu {
+  margin: 45px 0px 0px 40px;
 }
