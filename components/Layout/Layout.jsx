@@ -5,6 +5,7 @@ import { node, object } from "prop-types";
 import "./Layout.css";
 
 const Layout = ({ children, navConst }) => {
+  // TODO install redux
   const [darkMode, setDarkMode] = useState(false);
   return (
     <div className="Layout">
