@@ -26,12 +26,24 @@
   margin: 10px 20px auto 50px;
 }
 
+@media screen and (max-width: 720px) {
+  .HeaderDesktop__logo {
+    margin: 10px 0px auto 20px;
+  }
+}
+
 .HeaderDesktop__logo--darkMode {
   color: var(--color-dark-black);
 }
 
 .HeaderDesktop__nav {
   margin: auto 20px auto 0px;
+}
+
+@media screen and (max-width: 720px) {
+  .HeaderDesktop__nav {
+    margin: auto 15px auto 0px;
+  }
 }
 
 .HeaderDesktop__icon {
@@ -45,5 +57,11 @@
 }
 
 .HeaderDesktop__toogle {
-  margin: auto 50px auto auto;
+  margin: 15px 50px auto auto;
+}
+
+@media screen and (max-width: 720px) {
+  .HeaderDesktop__toogle {
+    margin: 15px 20px auto auto;
+  }
 }

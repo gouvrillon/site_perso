@@ -60,7 +60,7 @@ const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
           rel="noreferrer"
           href={get(navConst, "linkedin.href", "")}
           className={classnames("HeaderMobil__icon", {
-            "HeaderMobil__icon--displayMenu": darkMode,
+            "HeaderMobil__icon--darkMode": darkMode,
           })}
         >
           <Icon icon={"LINKEDIN"} />
@@ -70,7 +70,7 @@ const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
           rel="noreferrer"
           href={get(navConst, "github.href", "")}
           className={classnames("HeaderMobil__icon", {
-            "HeaderMobil__icon--displayMenu": darkMode,
+            "HeaderMobil__icon--darkMode": darkMode,
           })}
         >
           <Icon icon={"GITHUB"} />
