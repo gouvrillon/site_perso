@@ -9,11 +9,6 @@ const Layout = ({ children, navConst, darkModeCookie }) => {
   const [darkMode, setDarkMode] = useState(darkModeCookie);
 
   useEffect(() => {
-    console.log(`/  __ \     | | |                 `);
-    console.log(`| /  \/ __ _| | |  _ __ ___   ___ `);
-    console.log(`| |    / _  | | | | _    _ \ / _ \`);   
-    console.log(`| \__/\ (_| | | | | | | | | |  __/``);
-     console.log(`\____/\__,_|_|_| |_| |_| |_|\___|`);  
     if (!isEqual(typeof window, "undefined")) {
       document.cookie = `darkMode=${darkMode}`;
     }
