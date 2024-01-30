@@ -1,5 +1,3 @@
-"use client";
-
 import React, { useState, Children, cloneElement, useEffect } from "react";
 import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
@@ -7,15 +5,20 @@ import { node, object } from "prop-types";
 import "./Layout.css";
 
 const Layout = ({ children, navConst }) => {
-  const [darkMode, setDarkMode] = useState(true);
+  const [loading, setLoading] = useState(true);
+
+  const [darkMode, setDarkMode] = useState(
+    typeof window !== "undefined" && localStorage.getItem("darkMode") === "true"
+  );
 
   useEffect(() => {
     if (
       typeof window !== "undefined" &&
-      localStorage.getItem("darkMode") === "false"
+      localStorage.getItem("darkMode") === "true"
     ) {
-      setDarkMode(false);
+      setDarkMode(true);
     }
+    setLoading(false);
   }, []);
 
   useEffect(() => {
@@ -25,23 +28,29 @@ const Layout = ({ children, navConst }) => {
   }, [darkMode]);
 
   return (
-    <div className="Layout">
-      <Header
-        darkMode={darkMode}
-        setDarkMode={setDarkMode}
-        navConst={navConst}
-      />
-      {Children.map(children, (child) =>
-        cloneElement(child, {
-          darkMode: darkMode,
-        })
+    <>
+      {loading ? (
+        <div>loading</div>
+      ) : (
+        <div className="Layout">
+          <Header
+            darkMode={darkMode}
+            setDarkMode={setDarkMode}
+            navConst={navConst}
+          />
+          {Children.map(children, (child) =>
+            cloneElement(child, {
+              darkMode: darkMode,
+            })
+          )}
+          <Footer
+            darkMode={darkMode}
+            navConst={navConst}
+            setDarkMode={setDarkMode}
+          />
+        </div>
       )}
-      <Footer
-        darkMode={darkMode}
-        navConst={navConst}
-        setDarkMode={setDarkMode}
-      />
-    </div>
+    </>
   );
 };
 
