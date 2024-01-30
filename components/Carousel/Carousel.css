@@ -11,9 +11,18 @@
   align-items: center;
 }
 
+.Carousel__loading--displayCarousel {
+  display: none;
+}
+
 .Carousel__container {
   margin: 0px auto 0px auto;
   width: 1000px;
+  display: none;
+}
+
+.Carousel__container--displayCarousel {
+  display: block;
 }
 
 @media screen and (max-width: 1100px) {

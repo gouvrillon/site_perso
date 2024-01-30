@@ -13,6 +13,7 @@ import { bool } from "prop-types";
 const Projects = ({ darkModeCookie }) => {
   return (
     <Layout navConst={NAV_CONST} darkModeCookie={darkModeCookie}>
+      <SectionProjects projects={PROJECTS} reversed={true} />
       {PROJECTS.map((project, index) => (
         <SectionProject
           key={index}
@@ -20,9 +21,8 @@ const Projects = ({ darkModeCookie }) => {
           reversed={isEqual(index % 2, 1)}
         />
       ))}
-      <SectionProjects projects={PROJECTS} />
-      <SectionProfile profile={PROFILE} reversed={true} />
-      <SectionContact />
+      <SectionProfile profile={PROFILE} />
+      <SectionContact reversed={true} />
     </Layout>
   );
 };

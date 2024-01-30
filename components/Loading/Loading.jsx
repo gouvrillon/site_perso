@@ -1,6 +1,6 @@
 import React from "react";
 import "./Loading.css";
-import { string, bool } from "prop-types";
+import { string } from "prop-types";
 
 const Loading = ({ className }) => {
   return (
@@ -9,8 +9,6 @@ const Loading = ({ className }) => {
 };
 
 Loading.propTypes = {
-  label: string.isRequired,
-  darkMode: bool,
   className: string,
 };
 

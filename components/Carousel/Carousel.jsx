@@ -36,11 +36,7 @@ CarouselArrow.propTypes = {
 };
 
 const Carousel = ({ darkMode, slides }) => {
-  const [display, setDisplay] = useState(false);
-
-  useEffect(() => {
-    setDisplay(true);
-  });
+  const [displayCarousel, setDisplayCarousel] = useState(false);
 
   var settings = {
     infinite: true,
@@ -62,25 +58,34 @@ const Carousel = ({ darkMode, slides }) => {
         },
       },
     ],
+    onInit: () => {
+      setDisplayCarousel(true);
+    },
   };
 
   return (
     <div className="Carousel">
-      {display ? (
-        <div className="Carousel__container">
-          <Slider {...settings}>
-            {slides.map((slide, index) => (
-              <div key={index}>
-                <div className="Carousel__element">{slide}</div>
-              </div>
-            ))}
-          </Slider>
-        </div>
-      ) : (
-        <div className="Carousel__loading">
-          <Loading />
-        </div>
-      )}
+      <div
+        className={classnames("Carousel__container", {
+          "Carousel__container--displayCarousel": displayCarousel,
+        })}
+      >
+        <Slider {...settings}>
+          {slides.map((slide, index) => (
+            <div key={index}>
+              <div className="Carousel__element">{slide}</div>
+            </div>
+          ))}
+        </Slider>
+      </div>
+
+      <div
+        className={classnames("Carousel__loading", {
+          "Carousel__loading--displayCarousel": displayCarousel,
+        })}
+      >
+        <Loading />
+      </div>
     </div>
   );
 };
