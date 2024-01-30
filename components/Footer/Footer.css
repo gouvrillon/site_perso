@@ -5,7 +5,7 @@
   bottom: 0px;
   display: flex;
   justify-content: center;
-  height: 150px;
+  height: 350px;
 }
 
 .Footer--darkMode {
@@ -15,24 +15,24 @@
 @media screen and (max-width: 620px) {
   .Footer {
     flex-direction: column;
-    height: 400px;
+    height: 500px;
     align-items: center;
+    gap: 40px;
   }
 }
 
 .Footer__container {
-  padding: 20px 0px 0px 0px;
+  padding: 100px 0px 0px 0px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 10px;
+  gap: 25px;
   width: 25%;
 }
 
 @media screen and (max-width: 620px) {
   .Footer__container {
     padding: 0px 0px 0px 0px;
-    margin: 0px 0px 30px 0px;
     width: 100%;
   }
   .Footer__container_icons {
