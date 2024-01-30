@@ -25,17 +25,6 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
           })}
         >
           <div className="SectionDetails__element">
-            <div className="SectionDetails__values">
-              {get(project, "values", []).map((value, index) => (
-                <Value key={index} label={value} darkMode={darkMode} />
-              ))}
-            </div>
-            <img
-              className="SectionDetails__image"
-              src={get(project, "images[1]", "")}
-            />
-          </div>
-          <div className="SectionDetails__element">
             <Title3
               className="SectionDetails__title"
               text="Objectifs"
@@ -48,24 +37,38 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
                 darkMode={darkMode}
               />
             )}
+            <div className="SectionDetails__values">
+              {get(project, "values", []).map((value, index) => (
+                <Value key={index} label={value} darkMode={darkMode} />
+              ))}
+            </div>
             <Paragraph
               text={get(project, "objective", "")}
               darkMode={darkMode}
               className="SectionDetails__paragraph"
             />
           </div>
+          <div className="SectionDetails__element">
+            <img
+              className="SectionDetails__image"
+              src={get(project, "images[1]", "")}
+            />
+          </div>
         </div>
         <div
-          className={classnames("SectionDetails__container", {
-            "SectionDetails__container--reversed": reversed && !darkMode,
-            "SectionDetails__container--darkMode": !reversed && darkMode,
-            "SectionDetails__container--darkMode--reversed":
-              reversed && darkMode,
-          })}
+          className={classnames(
+            "SectionDetails__container SectionDetails__container--reverse",
+            {
+              "SectionDetails__container--reversed": reversed && !darkMode,
+              "SectionDetails__container--darkMode": !reversed && darkMode,
+              "SectionDetails__container--darkMode--reversed":
+                reversed && darkMode,
+            }
+          )}
         >
           <div className="SectionDetails__element">
             <img
-              className="SectionDetails__image SectionDetails__image--top"
+              className="SectionDetails__image"
               src={get(project, "images[1]", "")}
             />
           </div>
@@ -100,12 +103,6 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
           })}
         >
           <div className="SectionDetails__element">
-            <img
-              className="SectionDetails__image SectionDetails__image--top"
-              src={get(project, "images[1]", "")}
-            />
-          </div>
-          <div className="SectionDetails__element">
             <Title3
               className="SectionDetails__title"
               text="Rôle"
@@ -126,6 +123,12 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
                 <Tag key={index} label={tag} darkMode={darkMode} />
               ))}
             </div>
+          </div>
+          <div className="SectionDetails__element">
+            <img
+              className="SectionDetails__image"
+              src={get(project, "images[1]", "")}
+            />
           </div>
         </div>
       </div>
