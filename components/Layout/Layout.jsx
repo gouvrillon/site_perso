@@ -7,16 +7,22 @@ import { node, object } from "prop-types";
 import "./Layout.css";
 
 const Layout = ({ children, navConst }) => {
-  const [darkMode, setDarkMode] = useState(false);
+  const [darkMode, setDarkMode] = useState(true);
 
   useEffect(() => {
     if (
       typeof window !== "undefined" &&
-      localStorage.getItem("darkMode") === "true"
+      localStorage.getItem("darkMode") === "false"
     ) {
-      setDarkMode(true);
+      setDarkMode(false);
     }
   }, []);
+
+  useEffect(() => {
+    if (typeof window !== "undefined") {
+      localStorage.setItem("darkMode", darkMode);
+    }
+  }, [darkMode]);
 
   return (
     <div className="Layout">
