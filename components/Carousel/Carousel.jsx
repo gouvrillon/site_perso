@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -6,6 +6,7 @@ import { bool, arrayOf, node, string, func, object } from "prop-types";
 import "./Carousel.css";
 import classnames from "classnames";
 import isEqual from "lodash/isEqual";
+import Loading from "../Loading/Loading.jsx";
 
 const CarouselArrow = ({ className, style, onClick, darkMode, type }) => {
   return (
@@ -35,6 +36,12 @@ CarouselArrow.propTypes = {
 };
 
 const Carousel = ({ darkMode, slides }) => {
+  const [display, setDisplay] = useState(false);
+
+  useEffect(() => {
+    setDisplay(true);
+  });
+
   var settings = {
     infinite: true,
     slidesToShow: 3,
@@ -56,17 +63,24 @@ const Carousel = ({ darkMode, slides }) => {
       },
     ],
   };
+
   return (
     <div className="Carousel">
-      <div className="Carousel__container">
-        <Slider {...settings}>
-          {slides.map((slide, index) => (
-            <div key={index}>
-              <div className="Carousel__element">{slide}</div>
-            </div>
-          ))}
-        </Slider>
-      </div>
+      {display ? (
+        <div className="Carousel__container">
+          <Slider {...settings}>
+            {slides.map((slide, index) => (
+              <div key={index}>
+                <div className="Carousel__element">{slide}</div>
+              </div>
+            ))}
+          </Slider>
+        </div>
+      ) : (
+        <div className="Carousel__loading">
+          <Loading />
+        </div>
+      )}
     </div>
   );
 };
