@@ -1,7 +1,7 @@
 import React from "react";
 import "./SectionSkills.css";
 import get from "lodash/get";
-import { bool } from "prop-types";
+import { bool, object } from "prop-types";
 import classnames from "classnames";
 import Techno from "../Techno/Techno.jsx";
 import Tag from "../Tag/Tag.jsx";
@@ -10,15 +10,9 @@ import Value from "../Value/Value.jsx";
 import Title2 from "../Title2/Title2.jsx";
 import Title3 from "../Title3/Title3.jsx";
 import Icon from "../Icon/Icon.jsx";
-import {
-  SECTIONS_SKILLS_TECHNOS_CONST,
-  SECTIONS_SKILLS_TAGS_CONST,
-  SECTIONS_SKILLS_SOFTS_CONST,
-  SECTIONS_SKILLS_VALUES_CONST,
-} from "./SectionSkillsConst.jsx";
 import Section from "../Section/Section.jsx";
 
-const SectionSkills = ({ darkMode, reversed }) => {
+const SectionSkills = ({ darkMode, reversed, profile }) => {
   return (
     <Section darkMode={darkMode} reversed={reversed}>
       <div className="SectionSkills">
@@ -36,7 +30,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
               text="Hard skills"
               darkMode={darkMode}
             />
-            {SECTIONS_SKILLS_TECHNOS_CONST.map((techno, index) => (
+            {get(profile, "skills.technos", []).map((techno, index) => (
               <div className="SectionSkills__row" key={index}>
                 <Techno
                   name={get(techno, "name", "")}
@@ -76,7 +70,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
               text="Global skills"
               darkMode={darkMode}
             />
-            {SECTIONS_SKILLS_TAGS_CONST.map((tag, index) => (
+            {get(profile, "skills.tags", []).map((tag, index) => (
               <div className="SectionSkills__row" key={index}>
                 <Tag
                   label={get(tag, "label", "")}
@@ -115,7 +109,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
               text="Soft skills"
               darkMode={darkMode}
             />
-            {SECTIONS_SKILLS_SOFTS_CONST.map((soft, index) => (
+            {get(profile, "skills.softs", []).map((soft, index) => (
               <div className="SectionSkills__row" key={index}>
                 <Soft
                   name={get(soft, "name", "")}
@@ -131,7 +125,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
               text="Valeurs"
               darkMode={darkMode}
             />
-            {SECTIONS_SKILLS_VALUES_CONST.map((value, index) => (
+            {get(profile, "skills.values", []).map((value, index) => (
               <div className="SectionSkills__row" key={index}>
                 <Value
                   label={get(value, "label", "")}
@@ -148,6 +142,7 @@ const SectionSkills = ({ darkMode, reversed }) => {
 };
 
 SectionSkills.propTypes = {
+  profile: object.isRequired,
   darkMode: bool,
   reversed: bool,
 };

@@ -8,29 +8,29 @@ import Portrait from "../Portrait/Portrait.jsx";
 import Link from "../Link/Link.jsx";
 import get from "lodash/get";
 
-const SectionNotFound = ({ darkMode, notFound }) => {
+const SectionNotFound = ({ darkMode, nav }) => {
   return (
     <Section darkMode={darkMode}>
       <div className="SectionNotFound">
         <div className="SectionNotFound__container">
           <Title1
             className="SectionNotFound__title"
-            text={get(notFound, "title", "")}
+            text={get(nav, "notFound.title", "")}
             darkMode={darkMode}
           />
           <Portrait
             className="SectionNotFound__portrait"
             darkMode={darkMode}
-            image={get(notFound, "image", "")}
+            image={get(nav, "notFound.image", "")}
           />
           <Title2
             className="SectionNotFound__title"
-            text={get(notFound, "text", "")}
+            text={get(nav, "notFound.text", "")}
             darkMode={darkMode}
           />
           <Link
             label="Retour"
-            href={get(notFound, "href", "")}
+            href={get(nav, "notFound.href", "")}
             darkMode={darkMode}
             isInternal={true}
             className="SectionNotFound__link"
@@ -42,7 +42,7 @@ const SectionNotFound = ({ darkMode, notFound }) => {
 };
 
 SectionNotFound.propTypes = {
-  notFound: object.isRequired,
+  nav: object.isRequired,
   darkMode: bool,
 };
 

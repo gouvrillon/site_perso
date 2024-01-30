@@ -7,7 +7,7 @@ import Icon from "../Icon/Icon.jsx";
 import Nav from "../Nav/Nav.jsx";
 import get from "lodash/get";
 
-const Footer = ({ darkMode, navConst, setDarkMode }) => {
+const Footer = ({ darkMode, nav, setDarkMode }) => {
   return (
     <div
       className={classnames("Footer", {
@@ -25,7 +25,7 @@ const Footer = ({ darkMode, navConst, setDarkMode }) => {
         <a
           target="_blank"
           rel="noreferrer"
-          href={get(navConst, "linkedin.href", "")}
+          href={get(nav, "linkedin.href", "")}
           className={classnames("Footer__icon", {
             "Footer__icon--darkMode": darkMode,
           })}
@@ -35,7 +35,7 @@ const Footer = ({ darkMode, navConst, setDarkMode }) => {
         <a
           target="_blank"
           rel="noreferrer"
-          href={get(navConst, "github.href", "")}
+          href={get(nav, "github.href", "")}
           className={classnames("Footer__icon", {
             "Footer__icon--darkMode": darkMode,
           })}
@@ -45,23 +45,23 @@ const Footer = ({ darkMode, navConst, setDarkMode }) => {
       </div>
       <div className="Footer__container">
         <Nav
-          label={get(navConst, "home.label", "")}
-          href={get(navConst, "home.href", "")}
+          label={get(nav, "home.label", "")}
+          href={get(nav, "home.href", "")}
           darkMode={darkMode}
         />
         <Nav
-          label={get(navConst, "profile.label", "")}
-          href={get(navConst, "profile.href", "")}
+          label={get(nav, "profile.label", "")}
+          href={get(nav, "profile.href", "")}
           darkMode={darkMode}
         />
         <Nav
-          label={get(navConst, "projects.label", "")}
-          href={get(navConst, "projects.href", "")}
+          label={get(nav, "projects.label", "")}
+          href={get(nav, "projects.href", "")}
           darkMode={darkMode}
         />
         <Nav
-          label={get(navConst, "contact.label", "")}
-          href={get(navConst, "contact.href", "")}
+          label={get(nav, "contact.label", "")}
+          href={get(nav, "contact.href", "")}
           darkMode={darkMode}
         />
       </div>
@@ -93,7 +93,7 @@ const Footer = ({ darkMode, navConst, setDarkMode }) => {
 
 Footer.propTypes = {
   setDarkMode: func.isRequired,
-  navConst: object.isRequired,
+  nav: object.isRequired,
   darkMode: bool,
 };
 

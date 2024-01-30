@@ -8,22 +8,22 @@ import Section from "../Section/Section.jsx";
 import Soft from "../Soft/Soft.jsx";
 import Tag from "../Tag/Tag.jsx";
 
-const SectionPresentation = ({ reversed, darkMode, presentation }) => {
+const SectionPresentation = ({ reversed, darkMode, profile }) => {
   return (
     <Section reversed={reversed} darkMode={darkMode}>
       <div className="SectionPresentation">
         <div className="SectionPresentation__container">
           <Title2
             className="SectionPresentation__title"
-            text={get(presentation, "title", "")}
+            text="Présentation"
             darkMode={darkMode}
           />
           <div className="SectionPresentation__softs">
-            {get(presentation, "softs", []).map((soft, index) => (
+            {get(profile, "softs", []).map((soft, index) => (
               <Soft key={index} name={soft} darkMode={darkMode} />
             ))}
           </div>
-          {get(presentation, "paragraphs", []).map((paragraph, index) => (
+          {get(profile, "presentation", []).map((paragraph, index) => (
             <Paragraph
               key={index}
               className="SectionPresentation__paragraph"
@@ -32,7 +32,7 @@ const SectionPresentation = ({ reversed, darkMode, presentation }) => {
             />
           ))}
           <div className="SectionPresentation__tags">
-            {get(presentation, "tags", []).map((tag, index) => (
+            {get(profile, "tags", []).map((tag, index) => (
               <Tag key={index} label={tag} darkMode={darkMode} />
             ))}
           </div>
@@ -43,7 +43,7 @@ const SectionPresentation = ({ reversed, darkMode, presentation }) => {
 };
 
 SectionPresentation.propTypes = {
-  presentation: object.isRequired,
+  profile: object.isRequired,
   reversed: bool,
   darkMode: bool,
 };

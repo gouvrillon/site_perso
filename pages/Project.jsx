@@ -7,16 +7,15 @@ import SectionProjects from "../components/SectionProjects/SectionProjects.jsx";
 import SectionIntro from "../components/SectionIntro/SectionIntro.jsx";
 import SectionDetails from "../components/SectionDetails/SectionDetails.jsx";
 import SectionProfile from "../components/SectionProfile/SectionProfile.jsx";
-import { PROJECT_1, PROJECTS, PROFILE, NAV_CONST } from "../const.js";
-import { bool } from "prop-types";
+import { bool, object, arrayOf } from "prop-types";
 
-const Project = ({ darkModeCookie }) => {
+const Project = ({ darkModeCookie, nav, project, projects, profile }) => {
   return (
-    <Layout navConst={NAV_CONST} darkModeCookie={darkModeCookie}>
-      <SectionIntro project={PROJECT_1} />
-      <SectionDetails project={PROJECT_1} reversed={true} />
-      <SectionProjects projects={PROJECTS} />
-      <SectionProfile profile={PROFILE} reversed={true} />
+    <Layout nav={nav} darkModeCookie={darkModeCookie}>
+      <SectionIntro project={project} />
+      <SectionDetails project={project} reversed={true} />
+      <SectionProjects projects={projects} />
+      <SectionProfile profile={profile} reversed={true} />
       <SectionContact />
     </Layout>
   );
@@ -24,6 +23,10 @@ const Project = ({ darkModeCookie }) => {
 
 Project.propTypes = {
   darkModeCookie: bool.isRequired,
+  nav: object.isRequired,
+  profile: object.isRequired,
+  project: object.isRequired,
+  projects: arrayOf(object).isRequired,
 };
 
 export default Project;

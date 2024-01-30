@@ -8,24 +8,26 @@ import SectionPortrait from "../components/SectionPortrait/SectionPortrait.jsx";
 import SectionPresentation from "../components/SectionPresentation/SectionPresentation.jsx";
 import SectionSkills from "../components/SectionSkills/SectionSkills.jsx";
 import SectionExperience from "../components/SectionExperience/SectionExperience.jsx";
-import {
-  PORTRAIT,
-  PRESENTATION,
-  EXPERIENCE,
-  PROJECTS,
-  NAV_CONST,
-} from "../const.js";
-import { bool } from "prop-types";
+import { bool, object, arrayOf } from "prop-types";
+import isArray from "lodash/isArray";
+import isEqual from "lodash/isEqual";
+import get from "lodash/get";
 
-const Profile = ({ darkModeCookie }) => {
+const Profile = ({ darkModeCookie, nav, profile, projects }) => {
   return (
-    <Layout navConst={NAV_CONST} darkModeCookie={darkModeCookie}>
-      <SectionPortrait portrait={PORTRAIT} />
-      <SectionPresentation presentation={PRESENTATION} reversed={true} />
-      <SectionExperience experience={EXPERIENCE} />
-      <SectionExperience experience={EXPERIENCE} reversed={true} />
-      <SectionSkills />
-      <SectionProjects projects={PROJECTS} reversed={true} />
+    <Layout nav={nav} darkModeCookie={darkModeCookie}>
+      <SectionPortrait profile={profile} />
+      <SectionPresentation profile={profile} reversed={true} />
+      {isArray(get(profile, "experiences")) &&
+        profile.experiences.map((experience, index) => (
+          <SectionExperience
+            key={index}
+            experience={experience}
+            reversed={isEqual(index % 2, 1)}
+          />
+        ))}
+      <SectionSkills profile={profile} />
+      <SectionProjects projects={projects} reversed={true} />
       <SectionContact />
     </Layout>
   );
@@ -33,6 +35,9 @@ const Profile = ({ darkModeCookie }) => {
 
 Profile.propTypes = {
   darkModeCookie: bool.isRequired,
+  nav: object.isRequired,
+  profile: object.isRequired,
+  projects: arrayOf(object).isRequired,
 };
 
 export default Profile;

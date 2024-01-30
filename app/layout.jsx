@@ -10,11 +10,6 @@ const rubik = Rubik({
   display: "swap",
 });
 
-export const metadata = {
-  title: "Homepage",
-  description: "Homepage",
-};
-
 const Layout = ({ children }) => {
   return (
     <html lang="fr">

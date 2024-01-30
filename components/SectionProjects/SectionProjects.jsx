@@ -1,4 +1,5 @@
 import React from "react";
+import isArray from "lodash/isArray";
 import { object, bool, arrayOf } from "prop-types";
 import Section from "../Section/Section.jsx";
 import Carousel from "../Carousel/Carousel.jsx";
@@ -17,14 +18,17 @@ const SectionProjects = ({ projects, reversed, darkMode }) => {
         />
         <Carousel
           darkMode={darkMode}
-          slides={projects.map((project, index) => (
-            <SlideProject
-              key={index}
-              project={project}
-              darkMode={darkMode}
-              reversed={reversed}
-            />
-          ))}
+          slides={
+            isArray(projects) &&
+            projects.map((project, index) => (
+              <SlideProject
+                key={index}
+                project={project}
+                darkMode={darkMode}
+                reversed={reversed}
+              />
+            ))
+          }
         />
       </div>
     </Section>

@@ -26,7 +26,7 @@ const SectionProject = ({ project, reversed, darkMode }) => {
               "SectionProject__image__container--darkMode": darkMode,
               "SectionProject__image__container--reversed": reversed,
             })}
-            href={get(project, "href", "")}
+            href={`/projet?id=${get(project, "id", "")}`}
           >
             <img
               className="SectionProject__image__image"
@@ -79,7 +79,7 @@ const SectionProject = ({ project, reversed, darkMode }) => {
           </div>
           <Link
             label="Voir le projet"
-            href={get(project, "href", "")}
+            href={`/projet?id=${get(project, "id", "")}`}
             darkMode={darkMode}
             isInternal={true}
             className="SectionProject__link"

@@ -3,12 +3,12 @@
 import React from "react";
 import Layout from "../components/Layout/Layout.jsx";
 import SectionNotFound from "../components/SectionNotFound/SectionNotFound.jsx";
-import { NOT_FOUND, NAV_CONST } from "../const.js";
+import nav from "../const/nav.js";
 
 const NotFound = () => {
   return (
-    <Layout navConst={NAV_CONST}>
-      <SectionNotFound notFound={NOT_FOUND} />
+    <Layout nav={nav}>
+      <SectionNotFound nav={nav} />
     </Layout>
   );
 };

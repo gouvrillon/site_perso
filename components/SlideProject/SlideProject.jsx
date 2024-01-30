@@ -12,7 +12,7 @@ import Star from "../Star/Star.jsx";
 const SlideProject = ({ project, darkMode, reversed }) => {
   return (
     <a
-      href={get(project, "href", "")}
+      href={`/projet?id=${get(project, "id", "")}`}
       className={classnames("SlideProject", {
         "SlideProject--reversed": !darkMode && reversed,
         "SlideProject--darkMode": darkMode && !reversed,

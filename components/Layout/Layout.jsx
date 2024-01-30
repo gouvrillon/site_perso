@@ -5,7 +5,7 @@ import { node, object, bool } from "prop-types";
 import "./Layout.css";
 import isEqual from "lodash/isEqual";
 
-const Layout = ({ children, navConst, darkModeCookie }) => {
+const Layout = ({ children, nav, darkModeCookie }) => {
   const [darkMode, setDarkMode] = useState(darkModeCookie);
 
   useEffect(() => {
@@ -19,7 +19,7 @@ const Layout = ({ children, navConst, darkModeCookie }) => {
       <Header
         darkMode={darkMode}
         setDarkMode={setDarkMode}
-        navConst={navConst}
+        nav={nav}
       />
       {Children.map(children, (child) =>
         cloneElement(child, {
@@ -28,7 +28,7 @@ const Layout = ({ children, navConst, darkModeCookie }) => {
       )}
       <Footer
         darkMode={darkMode}
-        navConst={navConst}
+        nav={nav}
         setDarkMode={setDarkMode}
       />
     </div>
@@ -37,7 +37,7 @@ const Layout = ({ children, navConst, darkModeCookie }) => {
 
 Layout.propTypes = {
   children: node.isRequired,
-  navConst: object.isRequired,
+  nav: object.isRequired,
   darkModeCookie: bool,
 };
 

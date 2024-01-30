@@ -7,7 +7,7 @@ import Nav from "../Nav/Nav.jsx";
 import { func, bool, object } from "prop-types";
 import get from "lodash/get";
 
-const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
+const HeaderMobil = ({ darkMode, setDarkMode, nav }) => {
   const [displayMenu, setDisplayMenu] = useState(false);
   return (
     <div
@@ -30,23 +30,23 @@ const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
         })}
       >
         <Nav
-          label={get(navConst, "home.label", "")}
-          href={get(navConst, "home.href", "")}
+          label={get(nav, "home.label", "")}
+          href={get(nav, "home.href", "")}
           darkMode={darkMode}
         />
         <Nav
-          label={get(navConst, "profile.label", "")}
-          href={get(navConst, "profile.href", "")}
+          label={get(nav, "profile.label", "")}
+          href={get(nav, "profile.href", "")}
           darkMode={darkMode}
         />
         <Nav
-          label={get(navConst, "projects.label", "")}
-          href={get(navConst, "projects.href", "")}
+          label={get(nav, "projects.label", "")}
+          href={get(nav, "projects.href", "")}
           darkMode={darkMode}
         />
         <Nav
-          label={get(navConst, "contact.label", "")}
-          href={get(navConst, "contact.href", "")}
+          label={get(nav, "contact.label", "")}
+          href={get(nav, "contact.href", "")}
           darkMode={darkMode}
         />
       </div>
@@ -58,7 +58,7 @@ const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
         <a
           target="_blank"
           rel="noreferrer"
-          href={get(navConst, "linkedin.href", "")}
+          href={get(nav, "linkedin.href", "")}
           className={classnames("HeaderMobil__icon", {
             "HeaderMobil__icon--darkMode": darkMode,
           })}
@@ -68,7 +68,7 @@ const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
         <a
           target="_blank"
           rel="noreferrer"
-          href={get(navConst, "github.href", "")}
+          href={get(nav, "github.href", "")}
           className={classnames("HeaderMobil__icon", {
             "HeaderMobil__icon--darkMode": darkMode,
           })}
@@ -88,7 +88,7 @@ const HeaderMobil = ({ darkMode, setDarkMode, navConst }) => {
 };
 
 HeaderMobil.propTypes = {
-  navConst: object.isRequired,
+  nav: object.isRequired,
   setDarkMode: func.isRequired,
   darkMode: bool,
 };

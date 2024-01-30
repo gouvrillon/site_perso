@@ -3,25 +3,25 @@ import HeaderDesktop from "../HeaderDesktop/HeaderDesktop.jsx";
 import HeaderMobil from "../HeaderMobil/HeaderMobil.jsx";
 import { func, bool, object } from "prop-types";
 
-const Header = ({ darkMode, setDarkMode, navConst }) => {
+const Header = ({ darkMode, setDarkMode, nav }) => {
   return (
     <>
       <HeaderDesktop
         darkMode={darkMode}
         setDarkMode={setDarkMode}
-        navConst={navConst}
+        nav={nav}
       />
       <HeaderMobil
         darkMode={darkMode}
         setDarkMode={setDarkMode}
-        navConst={navConst}
+        nav={nav}
       />
     </>
   );
 };
 
 Header.propTypes = {
-  navConst: object.isRequired,
+  nav: object.isRequired,
   setDarkMode: func.isRequired,
   darkMode: bool,
 };
