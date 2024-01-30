@@ -1,12 +1,23 @@
-import React, { useState, Children, cloneElement } from "react";
+"use client";
+
+import React, { useState, Children, cloneElement, useEffect } from "react";
 import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import { node, object } from "prop-types";
 import "./Layout.css";
 
 const Layout = ({ children, navConst }) => {
-  // TODO install redux
   const [darkMode, setDarkMode] = useState(false);
+
+  useEffect(() => {
+    if (
+      typeof window !== "undefined" &&
+      localStorage.getItem("darkMode") === "true"
+    ) {
+      setDarkMode(true);
+    }
+  }, []);
+
   return (
     <div className="Layout">
       <Header
