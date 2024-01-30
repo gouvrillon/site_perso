@@ -135,8 +135,8 @@ const EXPERIENCE = {
 };
 
 const NOT_FOUND = {
-  title: "Cat not found",
-  text: "Erreur 400 Cat",
+  title: "Erreur 400 Cat",
+  text: "Cat not found",
   image: "/images/portraits/CAT.jpg",
   href: "/",
 };

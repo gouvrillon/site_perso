@@ -15,10 +15,11 @@ import {
   PROJECTS,
   NAV_CONST,
 } from "../const.js";
+import { bool } from "prop-types";
 
-const Profile = () => {
+const Profile = ({ darkModeCookie }) => {
   return (
-    <Layout navConst={NAV_CONST}>
+    <Layout navConst={NAV_CONST} darkModeCookie={darkModeCookie}>
       <SectionPortrait portrait={PORTRAIT} />
       <SectionPresentation presentation={PRESENTATION} reversed={true} />
       <SectionExperience experience={EXPERIENCE} />
@@ -28,6 +29,10 @@ const Profile = () => {
       <SectionContact />
     </Layout>
   );
+};
+
+Profile.propTypes = {
+  darkModeCookie: bool.isRequired,
 };
 
 export default Profile;

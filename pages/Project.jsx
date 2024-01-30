@@ -8,10 +8,11 @@ import SectionIntro from "../components/SectionIntro/SectionIntro.jsx";
 import SectionDetails from "../components/SectionDetails/SectionDetails.jsx";
 import SectionProfile from "../components/SectionProfile/SectionProfile.jsx";
 import { PROJECT_1, PROJECTS, PROFILE, NAV_CONST } from "../const.js";
+import { bool } from "prop-types";
 
-const Project = () => {
+const Project = ({ darkModeCookie }) => {
   return (
-    <Layout navConst={NAV_CONST}>
+    <Layout navConst={NAV_CONST} darkModeCookie={darkModeCookie}>
       <SectionIntro project={PROJECT_1} />
       <SectionDetails project={PROJECT_1} reversed={true} />
       <SectionProjects projects={PROJECTS} />
@@ -19,6 +20,10 @@ const Project = () => {
       <SectionContact />
     </Layout>
   );
+};
+
+Project.propTypes = {
+  darkModeCookie: bool.isRequired,
 };
 
 export default Project;

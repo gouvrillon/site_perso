@@ -5,7 +5,7 @@ import Layout from "../components/Layout/Layout.jsx";
 import SectionNotFound from "../components/SectionNotFound/SectionNotFound.jsx";
 import { NOT_FOUND, NAV_CONST } from "../const.js";
 
-const Home = () => {
+const NotFound = () => {
   return (
     <Layout navConst={NAV_CONST}>
       <SectionNotFound notFound={NOT_FOUND} />
@@ -13,4 +13,4 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default NotFound;

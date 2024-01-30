@@ -8,10 +8,11 @@ import SectionProjects from "../components/SectionProjects/SectionProjects.jsx";
 import SectionProfile from "../components/SectionProfile/SectionProfile.jsx";
 import isEqual from "lodash/isEqual";
 import { PROFILE, PROJECTS, NAV_CONST } from "../const.js";
+import { bool } from "prop-types";
 
-const Home = () => {
+const Projects = ({ darkModeCookie }) => {
   return (
-    <Layout navConst={NAV_CONST}>
+    <Layout navConst={NAV_CONST} darkModeCookie={darkModeCookie}>
       <SectionProjects projects={PROJECTS} reversed={true} />
       {PROJECTS.map((project, index) => (
         <SectionProject
@@ -26,4 +27,8 @@ const Home = () => {
   );
 };
 
-export default Home;
+Projects.propTypes = {
+  darkModeCookie: bool.isRequired,
+};
+
+export default Projects;
