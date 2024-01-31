@@ -29,6 +29,12 @@ import { FaLinkedin } from "react-icons/fa";
 import { FaGithubSquare } from "react-icons/fa";
 import { IoIosMoon } from "react-icons/io";
 import { TbSunHigh } from "react-icons/tb";
+import { SiTypescript } from "react-icons/si";
+import { FaAngular } from "react-icons/fa";
+import { FaJava } from "react-icons/fa";
+import { SiSpring } from "react-icons/si";
+import { GiRabbitHead } from "react-icons/gi";
+import { DiMongodb } from "react-icons/di";
 
 const Icon = ({ icon }) => {
   return (
@@ -89,6 +95,18 @@ const Icon = ({ icon }) => {
         <IoIosMoon />
       ) : isEqual(icon, "SUN") ? (
         <TbSunHigh />
+      ) : isEqual(icon, "TYPESCRIPT") ? (
+        <SiTypescript />
+      ) : isEqual(icon, "ANGULAR") ? (
+        <FaAngular />
+      ) : isEqual(icon, "JAVA") ? (
+        <FaJava />
+      ) : isEqual(icon, "SPRING") ? (
+        <SiSpring />
+      ) : isEqual(icon, "JADE") ? (
+        <GiRabbitHead />
+      ) : isEqual(icon, "MONGO") ? (
+        <DiMongodb />
       ) : null}
     </>
   );
