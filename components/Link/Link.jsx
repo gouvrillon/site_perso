@@ -13,7 +13,7 @@ const Link = ({ className, label, href, darkMode, isInternal, reversed }) => {
       })}
       href={href}
       target={isInternal ? "" : "_blank"}
-      rel="noreferrer"
+      rel={isInternal ? "" : "noreferrer"}
     >
       {label}
     </a>

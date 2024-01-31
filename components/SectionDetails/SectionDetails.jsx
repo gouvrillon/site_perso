@@ -11,7 +11,7 @@ import Techno from "../Techno/Techno.jsx";
 import Star from "../Star/Star.jsx";
 import Soft from "../Soft/Soft.jsx";
 import Value from "../Value/Value.jsx";
-import Label from "../Label/Label.jsx";
+import Action from "../Action/Action.jsx";
 import isEmpty from "lodash/isEmpty";
 
 const SectionDetails = ({ reversed, darkMode, project }) => {
@@ -134,22 +134,13 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
           </div>
         </div>
         {!isEmpty(get(project, "link", "")) && (
-          <a
-            className="SectionDetails__link"
+          <Action
             href={get(project, "link", "")}
-            target="_blank"
-            rel="noreferrer"
-          >
-            <img
-              className="SectionDetails__link__image"
-              src={get(project, "images[0]", "")}
-            />
-            <Label
-              label="Voir le site"
-              darkMode={darkMode}
-              className="SectionDetails__link__label"
-            />
-          </a>
+            image={get(project, "images[0]", "")}
+            label="Voir le site"
+            darkMode={darkMode}
+            className="SectionDetails__action"
+          />
         )}
       </div>
     </Section>

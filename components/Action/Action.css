@@ -1,0 +1,34 @@
+.Action {
+  height: 200px;
+  border-radius: 8px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  border: solid 1px var(--color-grey);
+}
+
+.Action--darkMode {
+  border: solid 1px var(--color-dark-grey);
+}
+
+.Action:hover {
+  .Action__image {
+    width: 220%;
+  }
+}
+
+.Action__image {
+  width: 250%;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  opacity: 0.3;
+}
+
+.Action__label {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}

@@ -17,13 +17,16 @@ export const metadata = {
 const Page = ({ searchParams }) => {
   const id = get(searchParams, "id");
   const project = projects.find((project) => isEqual(get(project, "id"), id));
+  const projectsFiltered = projects.filter(
+    (project) => !isEqual(get(project, "id"), id)
+  );
   const darkModeCookie = getDarkModeCookie();
   return (
     <Project
       darkModeCookie={darkModeCookie}
       profile={profile}
       nav={nav}
-      projects={projects}
+      projects={projectsFiltered}
       project={project}
     />
   );
