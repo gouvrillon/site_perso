@@ -9,7 +9,13 @@ import SectionDetails from "../components/SectionDetails/SectionDetails.jsx";
 import SectionProfile from "../components/SectionProfile/SectionProfile.jsx";
 import { bool, object, arrayOf } from "prop-types";
 
-const Project = ({ darkModeCookie, nav, project, projects, profile }) => {
+const Project = ({
+  darkModeCookie = false,
+  nav = {},
+  projects = [],
+  profile = {},
+  project = {},
+}) => {
   return (
     <Layout nav={nav} darkModeCookie={darkModeCookie}>
       <SectionIntro project={project} />

@@ -10,7 +10,12 @@ import isEqual from "lodash/isEqual";
 import isArray from "lodash/isArray";
 import { bool, object, arrayOf } from "prop-types";
 
-const Projects = ({ darkModeCookie, nav, projects, profile }) => {
+const Projects = ({
+  darkModeCookie = false,
+  nav = {},
+  projects = [],
+  profile = {},
+}) => {
   return (
     <Layout nav={nav} darkModeCookie={darkModeCookie}>
       <SectionProjects projects={projects} reversed={true} />
