@@ -4,7 +4,7 @@ import Footer from "../../components/Footer/Footer.jsx";
 import { node, object, bool } from "prop-types";
 import "./Layout.css";
 import isEqual from "lodash/isEqual";
-import isArray from "lodash/isArray";
+import isEmpty from "lodash/isEmpty";
 
 const Layout = ({ children, nav, darkModeCookie }) => {
   const [darkMode, setDarkMode] = useState(darkModeCookie);
@@ -18,7 +18,7 @@ const Layout = ({ children, nav, darkModeCookie }) => {
   return (
     <div className="Layout">
       <Header darkMode={darkMode} setDarkMode={setDarkMode} nav={nav} />
-      {isArray(Children) &&
+      {!isEmpty(Children) &&
         Children.map(children, (child) =>
           cloneElement(child, {
             darkMode: darkMode,
