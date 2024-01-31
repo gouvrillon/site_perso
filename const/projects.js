@@ -1,5 +1,6 @@
 const projects = [
   {
+    link: "https://www.pharmabest.com/",
     id: "1",
     images: [
       "/images/screenshots/BO_1.png",
@@ -44,6 +45,7 @@ const projects = [
     role: "Notre projet web tech vise à créer une plateforme innovante qui révolutionnera l'expérience en ligne. En combinant des technologies de pointe avec une conception intuitive, nous aspirons à offrir aux utilisateurs une expérience fluide et immersive.",
   },
   {
+    link: "https://www.pharmabest.com/",
     id: "3",
     images: [
       "/images/screenshots/BO_1.png",
@@ -86,6 +88,7 @@ const projects = [
     role: "Notre projet web tech vise à créer une plateforme innovante qui révolutionnera l'expérience en ligne. En combinant des technologies de pointe avec une conception intuitive, nous aspirons à offrir aux utilisateurs une expérience fluide et immersive.",
   },
   {
+    link: "https://www.pharmabest.com/",
     id: "5",
     images: [
       "/images/screenshots/BO_1.png",
