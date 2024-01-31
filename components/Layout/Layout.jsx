@@ -18,12 +18,15 @@ const Layout = ({ children, nav, darkModeCookie }) => {
   return (
     <div className="Layout">
       <Header darkMode={darkMode} setDarkMode={setDarkMode} nav={nav} />
-      {!isEmpty(Children) &&
+      {!isEmpty(Children) ? (
         Children.map(children, (child) =>
           cloneElement(child, {
             darkMode: darkMode,
           })
-        )}
+        )
+      ) : (
+        <div>Empty</div>
+      )}
       <Footer darkMode={darkMode} nav={nav} setDarkMode={setDarkMode} />
     </div>
   );
