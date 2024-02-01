@@ -9,7 +9,7 @@
 }
 
 .Footer--darkMode {
-  background: var(--color-dark-white);
+  background: var(--color-dark-header);
 }
 
 @media screen and (max-width: 620px) {
@@ -47,7 +47,7 @@
 }
 
 .Footer__logo--darkMode {
-  color: var(--color-dark-black);
+  color: var(--color-dark-white);
 }
 
 @media screen and (max-width: 620px) {
@@ -62,7 +62,7 @@
 }
 
 .Footer__icon--darkMode {
-  color: var(--color-dark-black);
+  color: var(--color-dark-white);
 }
 
 @media screen and (max-width: 620px) {
@@ -78,7 +78,7 @@
 }
 
 .Footer__sign--darkMode {
-  color: var(--color-dark-black);
+  color: var(--color-dark-white);
 }
 
 @media screen and (max-width: 620px) {

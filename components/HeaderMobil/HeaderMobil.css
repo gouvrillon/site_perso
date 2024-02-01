@@ -9,7 +9,7 @@
 }
 
 .HeaderMobil--darkMode {
-  background: var(--color-dark-white);
+  background: var(--color-dark-header);
 }
 
 .HeaderMobil--displayMenu {
@@ -33,7 +33,7 @@
 }
 
 .HeaderMobil__hamburger--darkMode {
-  color: var(--color-dark-black);
+  color: var(--color-dark-white);
 }
 
 .HeaderMobil__navs {
@@ -53,7 +53,7 @@
 }
 
 .HeaderMobil__icon--darkMode {
-  color: var(--color-dark-black);
+  color: var(--color-dark-white);
 }
 
 .HeaderMobil__icons {

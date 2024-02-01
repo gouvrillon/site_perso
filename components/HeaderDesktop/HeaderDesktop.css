@@ -11,7 +11,7 @@
 }
 
 .HeaderDesktop--darkMode {
-  background: var(--color-dark-white);
+  background: var(--color-dark-header);
 }
 
 @media (max-width: 620px) {
@@ -33,7 +33,7 @@
 }
 
 .HeaderDesktop__logo--darkMode {
-  color: var(--color-dark-black);
+  color: var(--color-dark-white);
 }
 
 .HeaderDesktop__nav {
@@ -53,7 +53,7 @@
 }
 
 .HeaderDesktop__icon--darkMode {
-  color: var(--color-dark-black);
+  color: var(--color-dark-white);
 }
 
 .HeaderDesktop__toogle {
