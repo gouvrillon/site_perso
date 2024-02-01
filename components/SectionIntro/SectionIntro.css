@@ -39,6 +39,11 @@
 
 .SectionIntro__image {
   width: 300px;
+  border: solid 1px var(--color-grey);
+}
+
+.SectionIntro__image--darkMode {
+  border: solid 1px var(--color-dark-grey);
 }
 
 @media screen and (max-width: 1100px) {

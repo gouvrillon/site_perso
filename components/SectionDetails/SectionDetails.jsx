@@ -52,8 +52,10 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
           </div>
           <div className="SectionDetails__element">
             <img
-              className="SectionDetails__image"
-              src={get(project, "images[0]", "")}
+              className={classnames("SectionDetails__image", {
+                "SectionDetails__image--darkMode": darkMode,
+              })}
+              src={get(project, "images[1]", "")}
             />
           </div>
         </div>
@@ -70,8 +72,10 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
         >
           <div className="SectionDetails__element">
             <img
-              className="SectionDetails__image"
-              src={get(project, "images[1]", "")}
+              className={classnames("SectionDetails__image", {
+                "SectionDetails__image--darkMode": darkMode,
+              })}
+              src={get(project, "images[2]", "")}
             />
           </div>
           <div className="SectionDetails__element">
@@ -128,8 +132,10 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
           </div>
           <div className="SectionDetails__element">
             <img
-              className="SectionDetails__image"
-              src={get(project, "images[2]", "")}
+              className={classnames("SectionDetails__image", {
+                "SectionDetails__image--darkMode": darkMode,
+              })}
+              src={get(project, "images[0]", "")}
             />
           </div>
         </div>

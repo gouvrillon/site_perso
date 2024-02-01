@@ -5,6 +5,7 @@ import { object, bool } from "prop-types";
 import Tag from "../Tag/Tag.jsx";
 import Title1 from "../Title1/Title1.jsx";
 import Section from "../Section/Section.jsx";
+import classnames from "classnames";
 
 const SectionIntro = ({ reversed, darkMode, project }) => {
   return (
@@ -24,7 +25,9 @@ const SectionIntro = ({ reversed, darkMode, project }) => {
         </div>
         <div className="SectionIntro__container__image">
           <img
-            className="SectionIntro__image"
+            className={classnames("SectionIntro__image", {
+              "SectionIntro__image--darkMode": darkMode,
+            })}
             src={get(project, "images[0]", "")}
           />
         </div>

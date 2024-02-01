@@ -68,6 +68,11 @@
 .SectionDetails__image {
   width: 350px;
   margin: auto auto auto auto;
+  border: solid 1px var(--color-grey);
+}
+
+.SectionDetails__image--darkMode {
+  border: solid 1px var(--color-dark-grey);
 }
 
 @media screen and (max-width: 1100px) {
