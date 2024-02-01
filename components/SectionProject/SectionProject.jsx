@@ -29,7 +29,9 @@ const SectionProject = ({ project, reversed, darkMode }) => {
             href={`/projet?id=${get(project, "id", "")}`}
           >
             <img
-              className="SectionProject__image__image"
+              className={classnames("SectionProject__image__image", {
+                "SectionProject__image__image--darkMode": darkMode,
+              })}
               src={get(project, "images[0]", "")}
             />
             <div

@@ -41,15 +41,16 @@
   border-right: solid 1px var(--color-grey);
 }
 
+.SlideProject__image--darkMode {
+  border-left: solid 1px var(--color-dark-grey);
+  border-right: solid 1px var(--color-dark-grey);
+  filter: brightness(0.8) contrast(1.2);
+}
+
 .SlideProject__star {
   position: absolute;
   top: 130px;
   left: 10px;
-}
-
-.SlideProject__image--darkMode {
-  border-left: solid 1px var(--color-dark-grey);
-  border-right: solid 1px var(--color-dark-grey);
 }
 
 .SlideProject__filter {
