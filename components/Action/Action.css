@@ -5,25 +5,31 @@
   position: relative;
   overflow: hidden;
   border: solid 1px var(--color-grey);
+  background: var(--color-white);
 }
 
 .Action--darkMode {
   border: solid 1px var(--color-dark-grey);
+  background: var(--color-dark-white);
 }
 
 .Action:hover {
   .Action__image {
-    width: 220%;
+    width: 210%;
   }
 }
 
 .Action__image {
-  width: 250%;
+  width: 200%;
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(45deg);
-  opacity: 0.3;
+  transform: translate(-50%, -50%) rotate(010deg);
+  filter: grayscale(0.5);
+}
+
+.Action__image--darkMode {
+  filter: brightness(0.8) contrast(1.2);
 }
 
 .Action__label {

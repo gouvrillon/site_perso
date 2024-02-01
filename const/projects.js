@@ -72,7 +72,7 @@ const projects = [
       "/images/screenshots/CORPO_3.webp",
     ],
     link: "www.google.com",
-    title: "Site de présentation",
+    title: "Site de présentation corporate",
     star: true,
     description:
       "Implémentation e-commerce sur site existant. Gestion dynamique du catalogue depuis un backoffice vers Algolia.",
@@ -116,7 +116,7 @@ const projects = [
       "/images/screenshots/PHARMABEST_3.webp",
     ],
     link: "www.google.com",
-    title: "Implémentation CLick and Collect",
+    title: "Implémentation Click and Collect",
     star: true,
     description:
       "Implémentation e-commerce sur site existant. Gestion dynamique du catalogue depuis un backoffice vers Algolia.",

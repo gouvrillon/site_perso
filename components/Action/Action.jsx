@@ -14,7 +14,12 @@ const Action = ({ className, label, href, isInternal, darkMode, image }) => {
       target={isInternal ? "" : "_blank"}
       rel={isInternal ? "" : "noreferrer"}
     >
-      <img className="Action__image" src={image} />
+      <img
+        src={image}
+        className={classnames(`Action__image`, {
+          "Action__image--darkMode": darkMode,
+        })}
+      />
       <Label label={label} darkMode={darkMode} className="Action__label" />
     </a>
   );
