@@ -31,8 +31,8 @@ const Home = ({
               reversed={isEqual(index % 2, 1)}
             />
           ))}
-      <SectionSkills profile={profile} reversed={true} />
-      <SectionContact />
+      <SectionSkills profile={profile} />
+      <SectionContact reversed={true} />
     </Layout>
   );
 };
