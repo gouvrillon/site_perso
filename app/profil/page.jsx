@@ -6,9 +6,19 @@ import nav from "../../const/nav.js";
 import projects from "../../const/projects.js";
 
 export const metadata = {
+  metadataBase: new URL("https://www.technica.dev"),
   title: "Profil",
-  description:
-    "Profil de Thomas Gouvrillon, développeur javascript Freelance à Nantes",
+  description: "Profil de Thomas Gouvrillon, développeur javascript freelance",
+  openGraph: {
+    title: "Profil",
+    description:
+      "Profil de Thomas Gouvrillon, développeur javascript freelance",
+    url: "https://www.technica.dev",
+    siteName: "Thomas Gouvrillon Développeur Javascript",
+    images: "/images/utils/OG.webp",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 const Page = () => {

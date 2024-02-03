@@ -1,5 +1,5 @@
 const profile = {
-  image: "/images/portraits/ME.jpeg",
+  image: "/images/portraits/ME.webp",
   title: "Thomas Gouvrillon, développeur javascript",
   href: "profil",
   tags: ["freelance", "développement", "javascript"],

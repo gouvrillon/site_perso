@@ -6,9 +6,20 @@ import projects from "../const/projects.js";
 import { getDarkModeCookie } from "./utils.js";
 
 export const metadata = {
+  metadataBase: new URL("https://www.technica.dev"),
   title: "Accueil",
   description:
-    "Accueil du site de Thomas Gouvrillon, développeur javascript Freelance à Nantes",
+    "Accueil du site de Thomas Gouvrillon, développeur javascript freelance",
+  openGraph: {
+    title: "Accueil",
+    description:
+      "Accueil du site de Thomas Gouvrillon, développeur javascript freelance",
+    url: "https://www.technica.dev",
+    siteName: "Thomas Gouvrillon Développeur Javascript",
+    images: "/images/utils/OG.webp",
+    locale: "fr_FR",
+    type: "website",
+  },
 };
 
 const Page = () => {

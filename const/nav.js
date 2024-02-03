@@ -24,7 +24,7 @@ const nav = {
   notFound: {
     title: "Erreur 400 Cat",
     text: "Cat not found",
-    image: "/images/portraits/CAT.jpg",
+    image: "/images/portraits/CAT.webp",
     href: "/",
   },
 };
