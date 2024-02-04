@@ -11,6 +11,7 @@ import Title3 from "../Title3/Title3.jsx";
 import Star from "../Star/Star.jsx";
 import Paragraph from "../Paragraph/Paragraph.jsx";
 import Section from "../Section/Section.jsx";
+import Link from "next/link";
 
 const SectionProject = ({ project, reversed, darkMode }) => {
   return (
@@ -21,7 +22,7 @@ const SectionProject = ({ project, reversed, darkMode }) => {
         })}
       >
         <div className="SectionProject__image">
-          <a
+          <Link
             className={classnames("SectionProject__image__container", {
               "SectionProject__image__container--darkMode": darkMode,
               "SectionProject__image__container--reversed": reversed,
@@ -44,7 +45,7 @@ const SectionProject = ({ project, reversed, darkMode }) => {
               darkMode={darkMode}
               className="SectionProject__image__label"
             />
-          </a>
+          </Link>
         </div>
         <div className="SectionProject__infos">
           <Title3

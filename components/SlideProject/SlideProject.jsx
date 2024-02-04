@@ -8,10 +8,11 @@ import Techno from "../Techno/Techno.jsx";
 import Tag from "../Tag/Tag.jsx";
 import Title3 from "../Title3/Title3.jsx";
 import Star from "../Star/Star.jsx";
+import Link from "next/link";
 
 const SlideProject = ({ project, darkMode, reversed }) => {
   return (
-    <a
+    <Link
       href={`/projet?id=${get(project, "id", "")}`}
       className={classnames("SlideProject", {
         "SlideProject--reversed": !darkMode && reversed,
@@ -62,7 +63,7 @@ const SlideProject = ({ project, darkMode, reversed }) => {
           <Tag key={index} label={tag} darkMode={darkMode} />
         ))}
       </div>
-    </a>
+    </Link>
   );
 };
 
