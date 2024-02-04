@@ -4,7 +4,7 @@ import get from "lodash/get";
 import { object, bool } from "prop-types";
 import classnames from "classnames";
 import Techno from "../Techno/Techno.jsx";
-import Link from "../Link/Link.jsx";
+import Linky from "../Linky/Linky.jsx";
 import Label from "../Label/Label.jsx";
 import Tag from "../Tag/Tag.jsx";
 import Title3 from "../Title3/Title3.jsx";
@@ -79,12 +79,10 @@ const SectionProject = ({ project, reversed, darkMode }) => {
               <Tag key={index} label={tag} darkMode={darkMode} />
             ))}
           </div>
-          <Link
+          <Linky
             label="Voir le projet"
             href={`/projet?id=${get(project, "id", "")}`}
             darkMode={darkMode}
-            isInternal={true}
-            className="SectionProject__link"
             reversed={reversed}
           />
         </div>

@@ -3,7 +3,7 @@ import "./SectionProfile.css";
 import get from "lodash/get";
 import { object, bool } from "prop-types";
 import Techno from "../Techno/Techno.jsx";
-import Link from "../Link/Link.jsx";
+import Linky from "../Linky/Linky.jsx";
 import Tag from "../Tag/Tag.jsx";
 import Title1 from "../Title1/Title1.jsx";
 import Paragraph from "../Paragraph/Paragraph.jsx";
@@ -38,12 +38,11 @@ const SectionProfile = ({ reversed, darkMode, profile }) => {
               darkMode={darkMode}
               image={get(profile, "image", "")}
             />
-            <Link
+            <Linky
               label="Voir le profil"
               href={get(profile, "href", "")}
               darkMode={darkMode}
-              isInternal={true}
-              className="SectionProfile__link"
+              className="SectionProfile__linky"
               reversed={reversed}
             />
           </div>

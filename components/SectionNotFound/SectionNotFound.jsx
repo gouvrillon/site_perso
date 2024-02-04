@@ -5,7 +5,7 @@ import Title1 from "../Title1/Title1.jsx";
 import Title2 from "../Title2/Title2.jsx";
 import Section from "../Section/Section.jsx";
 import Portrait from "../Portrait/Portrait.jsx";
-import Link from "../Link/Link.jsx";
+import Linky from "../Linky/Linky.jsx";
 import get from "lodash/get";
 
 const SectionNotFound = ({ darkMode, nav }) => {
@@ -28,12 +28,11 @@ const SectionNotFound = ({ darkMode, nav }) => {
             text={get(nav, "notFound.text", "")}
             darkMode={darkMode}
           />
-          <Link
+          <Linky
             label="Retour"
             href={get(nav, "notFound.href", "")}
             darkMode={darkMode}
-            isInternal={true}
-            className="SectionNotFound__link"
+            className="SectionNotFound__linky"
           />
         </div>
       </div>

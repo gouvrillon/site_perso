@@ -4,15 +4,15 @@ import { string, bool } from "prop-types";
 import classnames from "classnames";
 import Label from "../Label/Label.jsx";
 
-const Action = ({ className, label, href, isInternal, darkMode, image }) => {
+const Action = ({ className, label, href, darkMode, image }) => {
   return (
     <a
       className={classnames(`Action ${className}`, {
         "Action--darkMode": darkMode,
       })}
       href={href}
-      target={isInternal ? "" : "_blank"}
-      rel={isInternal ? "" : "noreferrer"}
+      target="_blank"
+      rel="noreferrer"
     >
       <img
         src={image}
@@ -29,7 +29,6 @@ Action.propTypes = {
   label: string.isRequired,
   href: string.isRequired,
   image: string.isRequired,
-  isInternal: bool,
   darkMode: bool,
   className: string,
 };

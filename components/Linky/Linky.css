@@ -1,4 +1,4 @@
-.Link {
+.Linky {
   text-decoration: none;
   font-size: 18px;
   font-weight: 500;
@@ -9,28 +9,28 @@
   width: max-content;
 }
 
-.Link--reversed {
+.Linky--reversed {
   background: var(--color-white);
 }
 
-.Link:hover,
-.Link--reversed:hover {
+.Linky:hover,
+.Linky--reversed:hover {
   background: var(--color-violet);
   color: var(--color-white);
 }
 
-.Link--darkMode {
+.Linky--darkMode {
   color: var(--color-dark-white);
   background: var(--color-dark-grey);
 }
 
-.Link--darkMode--reversed {
+.Linky--darkMode--reversed {
   color: var(--color-dark-white);
   background: var(--color-dark-black);
 }
 
-.Link--darkMode:hover,
-.Link--darkMode--reversed:hover {
+.Linky--darkMode:hover,
+.Linky--darkMode--reversed:hover {
   background: var(--color-dark-violet);
   color: var(--color-dark-white);
 }
