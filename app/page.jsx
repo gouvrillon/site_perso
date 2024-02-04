@@ -7,18 +7,23 @@ import { getDarkModeCookie } from "./utils.js";
 
 export const metadata = {
   metadataBase: new URL("https://www.technica.dev"),
-  title: "Accueil - Thomas Gouvrillon Développeur Javascript",
-  description:
-    "Accueil du site de Thomas Gouvrillon, développeur javascript freelance",
+  title: "Technica Dev - Accueil",
+  description: "Accueil du site de Thomas Gouvrillon, développeur javascript",
   openGraph: {
-    title: "Accueil - Thomas Gouvrillon Développeur Javascript",
-    description:
-      "Accueil du site de Thomas Gouvrillon, développeur javascript freelance",
+    title: "Technica Dev - Accueil",
+    description: "Accueil du site de Thomas Gouvrillon, développeur javascript",
     url: "https://www.technica.dev",
     siteName: "Thomas Gouvrillon Développeur Javascript",
     images: "/images/utils/OG.webp",
     locale: "fr_FR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Technica Dev - Accueil",
+    description: "Accueil du site de Thomas Gouvrillon, développeur javascript",
+    creator: "Thomas Gouvrillon",
+    images: ["/images/utils/OG.webp"],
   },
 };
 

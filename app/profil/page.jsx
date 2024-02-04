@@ -7,17 +7,23 @@ import projects from "../../const/projects.js";
 
 export const metadata = {
   metadataBase: new URL("https://www.technica.dev"),
-  title: "Profil - Thomas Gouvrillon Développeur Javascript",
-  description: "Profil de Thomas Gouvrillon, développeur javascript freelance",
+  title: "Technica Dev - Profil",
+  description: "Profil de Thomas Gouvrillon, développeur javascript",
   openGraph: {
-    title: "Profil - Thomas Gouvrillon Développeur Javascript",
-    description:
-      "Profil de Thomas Gouvrillon, développeur javascript freelance",
+    title: "Technica Dev - Profil",
+    description: "Profil de Thomas Gouvrillon, développeur javascript",
     url: "https://www.technica.dev",
     siteName: "Thomas Gouvrillon Développeur Javascript",
     images: "/images/utils/OG.webp",
     locale: "fr_FR",
     type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Technica Dev - Profil",
+    description: "Profil de Thomas Gouvrillon, développeur javascript",
+    creator: "Thomas Gouvrillon",
+    images: ["/images/utils/OG.webp"],
   },
 };
 
