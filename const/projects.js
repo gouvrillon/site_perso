@@ -6,7 +6,7 @@ const projects = [
       "/images/screenshots/RECRUT_2.webp",
       "/images/screenshots/RECRUT_3.webp",
     ],
-    link: "www.google.com",
+    link: "https://www.pharmabest.com/",
     title: "Site de recrutement avec backoffice de gestion",
     star: true,
     description:
@@ -49,7 +49,7 @@ const projects = [
       "/images/screenshots/APTIPHAR_2.webp",
       "/images/screenshots/APTIPHAR_3.webp",
     ],
-    link: "www.google.com",
+    link: "https://www.pharmabest.com/",
     title: "Site de présentation avec carte dynamique",
     description:
       "Implémentation e-commerce sur site existant. Gestion dynamique du catalogue depuis un backoffice vers Algolia.",
@@ -70,7 +70,7 @@ const projects = [
       "/images/screenshots/VALWIN_PHARMA_2.webp",
       "/images/screenshots/VALWIN_PHARMA_3.webp",
     ],
-    link: "www.google.com",
+    link: "https://www.pharmabest.com/",
     title: "Implémentation Click and Collect",
     description:
       "Implémentation e-commerce sur site existant. Gestion dynamique du catalogue depuis un backoffice vers Algolia.",
@@ -91,7 +91,7 @@ const projects = [
       "/images/screenshots/CORPO_2.webp",
       "/images/screenshots/CORPO_3.webp",
     ],
-    link: "www.google.com",
+    link: "https://www.pharmabest.com/",
     title: "Site de présentation corporate",
     description:
       "Implémentation e-commerce sur site existant. Gestion dynamique du catalogue depuis un backoffice vers Algolia.",
@@ -112,7 +112,7 @@ const projects = [
       "/images/screenshots/COS_2.webp",
       "/images/screenshots/COS_3.webp",
     ],
-    link: "www.google.com",
+    link: "https://www.pharmabest.com/",
     title: "Site de présentation avec carte dynamique",
     description:
       "Implémentation e-commerce sur site existant. Gestion dynamique du catalogue depuis un backoffice vers Algolia.",
@@ -133,7 +133,7 @@ const projects = [
       "/images/screenshots/PHARMABEST_2.webp",
       "/images/screenshots/PHARMABEST_3.webp",
     ],
-    link: "www.google.com",
+    link: "https://www.pharmabest.com/",
     title: "Implémentation Click and Collect",
     description:
       "Implémentation e-commerce sur site existant. Gestion dynamique du catalogue depuis un backoffice vers Algolia.",
