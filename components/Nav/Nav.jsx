@@ -2,17 +2,19 @@ import React from "react";
 import "./Nav.css";
 import { string, bool } from "prop-types";
 import classnames from "classnames";
+import Link from "next/link";
 
-const Nav = ({ className, label, href, darkMode }) => {
+const Nav = ({ className, label, href, darkMode, isSelected }) => {
   return (
-    <a
+    <Link
       href={href}
       className={classnames(`Nav ${className}`, {
         "Nav--darkMode": darkMode,
+        "Nav--isSelected": isSelected,
       })}
     >
       {label}
-    </a>
+    </Link>
   );
 };
 
@@ -21,6 +23,7 @@ Nav.propTypes = {
   href: string.isRequired,
   darkMode: bool,
   className: string,
+  isSelected: bool,
 };
 
 export default Nav;

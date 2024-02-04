@@ -12,3 +12,7 @@
 .Nav--darkMode {
   color: var(--color-dark-white);
 }
+
+.Nav--isSelected {
+  text-decoration: underline;
+}

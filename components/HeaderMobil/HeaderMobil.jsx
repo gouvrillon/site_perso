@@ -4,10 +4,11 @@ import "./HeaderMobil.css";
 import Icon from "../Icon/Icon.jsx";
 import Toogle from "../Toogle/Toogle.jsx";
 import Nav from "../Nav/Nav.jsx";
-import { func, bool, object } from "prop-types";
+import { func, bool, object, string } from "prop-types";
 import get from "lodash/get";
+import isEqual from "lodash/isEqual";
 
-const HeaderMobil = ({ darkMode, setDarkMode, nav }) => {
+const HeaderMobil = ({ darkMode, setDarkMode, nav, pathname }) => {
   const [displayMenu, setDisplayMenu] = useState(false);
   return (
     <div
@@ -33,21 +34,25 @@ const HeaderMobil = ({ darkMode, setDarkMode, nav }) => {
           label={get(nav, "home.label", "")}
           href={get(nav, "home.href", "")}
           darkMode={darkMode}
+          isSelected={isEqual(pathname, get(nav, "home.href"))}
         />
         <Nav
           label={get(nav, "profile.label", "")}
           href={get(nav, "profile.href", "")}
           darkMode={darkMode}
+          isSelected={isEqual(pathname, get(nav, "profile.href"))}
         />
         <Nav
           label={get(nav, "projects.label", "")}
           href={get(nav, "projects.href", "")}
           darkMode={darkMode}
+          isSelected={isEqual(pathname, get(nav, "projects.href"))}
         />
         <Nav
           label={get(nav, "contact.label", "")}
           href={get(nav, "contact.href", "")}
           darkMode={darkMode}
+          isSelected={isEqual(pathname, get(nav, "contact.href"))}
         />
       </div>
       <div
@@ -90,6 +95,7 @@ const HeaderMobil = ({ darkMode, setDarkMode, nav }) => {
 HeaderMobil.propTypes = {
   nav: object.isRequired,
   setDarkMode: func.isRequired,
+  pathname: string.isRequired,
   darkMode: bool,
 };
 
