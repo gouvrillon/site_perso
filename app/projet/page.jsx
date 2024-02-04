@@ -10,10 +10,10 @@ import nav from "../../const/nav.js";
 
 export const metadata = {
   metadataBase: new URL("https://www.technica.dev"),
-  title: "Projet",
+  title: "Projet - Thomas Gouvrillon Développeur Javascript",
   description: "Projet de Thomas Gouvrillon, développeur javascript freelance",
   openGraph: {
-    title: "Projet",
+    title: "Projet - Thomas Gouvrillon Développeur Javascript",
     description:
       "Projet de Thomas Gouvrillon, développeur javascript freelance",
     url: "https://www.technica.dev",

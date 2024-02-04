@@ -7,11 +7,11 @@ import { getDarkModeCookie } from "./utils.js";
 
 export const metadata = {
   metadataBase: new URL("https://www.technica.dev"),
-  title: "Accueil",
+  title: "Accueil - Thomas Gouvrillon Développeur Javascript",
   description:
     "Accueil du site de Thomas Gouvrillon, développeur javascript freelance",
   openGraph: {
-    title: "Accueil",
+    title: "Accueil - Thomas Gouvrillon Développeur Javascript",
     description:
       "Accueil du site de Thomas Gouvrillon, développeur javascript freelance",
     url: "https://www.technica.dev",

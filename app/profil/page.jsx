@@ -7,10 +7,10 @@ import projects from "../../const/projects.js";
 
 export const metadata = {
   metadataBase: new URL("https://www.technica.dev"),
-  title: "Profil",
+  title: "Profil - Thomas Gouvrillon Développeur Javascript",
   description: "Profil de Thomas Gouvrillon, développeur javascript freelance",
   openGraph: {
-    title: "Profil",
+    title: "Profil - Thomas Gouvrillon Développeur Javascript",
     description:
       "Profil de Thomas Gouvrillon, développeur javascript freelance",
     url: "https://www.technica.dev",
