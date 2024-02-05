@@ -35,6 +35,7 @@ import { FaJava } from "react-icons/fa";
 import { SiSpring } from "react-icons/si";
 import { GiRabbitHead } from "react-icons/gi";
 import { DiMongodb } from "react-icons/di";
+import { SiStorybook } from "react-icons/si";
 
 const Icon = ({ icon }) => {
   return (
@@ -107,6 +108,8 @@ const Icon = ({ icon }) => {
         <GiRabbitHead />
       ) : isEqual(icon, "MONGO") ? (
         <DiMongodb />
+      ) : isEqual(icon, "STORYBOOK") ? (
+        <SiStorybook />
       ) : null}
     </>
   );

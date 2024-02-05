@@ -54,6 +54,11 @@ const TECHNO_CONST = [
     color: "#3679C7",
     label: "TypeScript",
   },
+  {
+    name: "STORYBOOK",
+    color: "#FF4D89",
+    label: "Storybook",
+  },
 ];
 
 export { TECHNO_CONST };

@@ -6,6 +6,8 @@ import Tag from "../Tag/Tag.jsx";
 import Title1 from "../Title1/Title1.jsx";
 import Section from "../Section/Section.jsx";
 import classnames from "classnames";
+import Star from "../Star/Star.jsx";
+import Paragraph from "../Paragraph/Paragraph.jsx";
 
 const SectionIntro = ({ reversed, darkMode, project }) => {
   return (
@@ -22,6 +24,17 @@ const SectionIntro = ({ reversed, darkMode, project }) => {
               <Tag key={index} label={tag} darkMode={darkMode} />
             ))}
           </div>
+          <Paragraph
+            text={get(project, "description", "")}
+            darkMode={darkMode}
+          />
+          {get(project, "star") && (
+            <Star
+              label="Top projet"
+              className="SectionIntro__star"
+              darkMode={darkMode}
+            />
+          )}
         </div>
         <div className="SectionIntro__container__image">
           <img

@@ -22,6 +22,7 @@
   .SectionIntro__container__title {
     width: 600px;
     text-align: center;
+    align-items: center;
   }
 }
 

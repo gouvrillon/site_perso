@@ -28,7 +28,7 @@ const profile = {
           date: "Mai 2022 - Février 2024",
           technos: ["JAVASCRIPT", "REACT", "NODE", "HTML", "CSS"],
           description:
-            "Management et organisation du Pôle Produit composé de cinq développeurs, un designer et un product manager. Organisation et suivi de roadmap. Validation de spécifications fonctionnels, techniques et design. Conception, réalisation et maintenance d'applications front complexes.",
+            "Management et organisation du Pôle Produit composé de cinq développeurs, un designer et un product manager. Organisation et suivi de roadmap. Validation de spécifications fonctionnelles, techniques et design. Conception, réalisation et maintenance d'applications front complexes.",
           tags: ["front", "design", "architecture"],
           softs: ["GESTION", "TEAM", "LEADER", "COMMUNICATION", "MENTORING"],
         },

@@ -8,7 +8,6 @@ import Title3 from "../Title3/Title3.jsx";
 import Section from "../Section/Section.jsx";
 import Paragraph from "../Paragraph/Paragraph.jsx";
 import Techno from "../Techno/Techno.jsx";
-import Star from "../Star/Star.jsx";
 import Soft from "../Soft/Soft.jsx";
 import Value from "../Value/Value.jsx";
 import Action from "../Action/Action.jsx";
@@ -32,13 +31,6 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
               text="Objectifs"
               darkMode={darkMode}
             />
-            {get(project, "star") && (
-              <Star
-                label="Top projet"
-                className="SectionDetails__star"
-                darkMode={darkMode}
-              />
-            )}
             <div className="SectionDetails__values">
               {get(project, "values", []).map((value, index) => (
                 <Value key={index} label={value} darkMode={darkMode} />
@@ -111,7 +103,7 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
           <div className="SectionDetails__element">
             <Title3
               className="SectionDetails__title"
-              text="Rôle"
+              text="Mon rôle"
               darkMode={darkMode}
             />
             <Paragraph
