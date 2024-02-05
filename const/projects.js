@@ -28,7 +28,7 @@ const projects = [
       // "/images/screenshots/BO_2.webp",
       "/images/screenshots/BO_3.webp",
     ],
-    title: "Création backoffice avec applications complexes",
+    title: "Création backoffice avec applications complexes !",
     star: true,
     description:
       "Implémentation e-commerce sur site existant. Gestion dynamique du catalogue depuis un backoffice vers Algolia.",
