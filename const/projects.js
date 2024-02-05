@@ -1,31 +1,31 @@
 const projects = [
-  {
-    id: "8de4f2af-d6f2-4b12-b4ff-946e7a9db287",
-    images: [
-      "/images/screenshots/RECRUT_1.webp",
-      "/images/screenshots/RECRUT_2.webp",
-      "/images/screenshots/RECRUT_3.webp",
-    ],
-    link: "https://www.pharmabest.com/",
-    title: "Site de recrutement avec backoffice de gestion",
-    star: true,
-    description:
-      "Implémentation e-commerce sur site existant. Gestion dynamique du catalogue depuis un backoffice vers Algolia.",
-    technos: ["HTML", "CSS", "JAVASCRIPT", "NODE"],
-    tags: ["front", "back", "design", "architecture"],
-    softs: ["GESTION", "TEAM", "LEADER", "COMMUNICATION", "MENTORING"],
-    values: ["gestion du legacy", "gestion du projet", "respet des délais"],
-    objective:
-      "Notre projet web tech vise à créer une plateforme innovante qui révolutionnera l'expérience en ligne. En combinant des technologies de pointe avec une conception intuitive, nous aspirons à offrir aux utilisateurs une expérience fluide et immersive.",
-    technology:
-      "Notre projet web tech vise à créer une plateforme innovante qui révolutionnera l'expérience en ligne. En combinant des technologies de pointe avec une conception intuitive, nous aspirons à offrir aux utilisateurs une expérience fluide et immersive.",
-    role: "Notre projet web tech vise à créer une plateforme innovante qui révolutionnera l'expérience en ligne. En combinant des technologies de pointe avec une conception intuitive, nous aspirons à offrir aux utilisateurs une expérience fluide et immersive.",
-  },
+  // {
+  //   id: "8de4f2af-d6f2-4b12-b4ff-946e7a9db287",
+  //   images: [
+  //     "/images/screenshots/RECRUT_1.webp",
+  //     "/images/screenshots/RECRUT_2.webp",
+  //     "/images/screenshots/RECRUT_3.webp",
+  //   ],
+  //   link: "https://www.pharmabest.com/",
+  //   title: "Site de recrutement avec backoffice de gestion",
+  //   star: true,
+  //   description:
+  //     "Implémentation e-commerce sur site existant. Gestion dynamique du catalogue depuis un backoffice vers Algolia.",
+  //   technos: ["HTML", "CSS", "JAVASCRIPT", "NODE"],
+  //   tags: ["front", "back", "design", "architecture"],
+  //   softs: ["GESTION", "TEAM", "LEADER", "COMMUNICATION", "MENTORING"],
+  //   values: ["gestion du legacy", "gestion du projet", "respet des délais"],
+  //   objective:
+  //     "Notre projet web tech vise à créer une plateforme innovante qui révolutionnera l'expérience en ligne. En combinant des technologies de pointe avec une conception intuitive, nous aspirons à offrir aux utilisateurs une expérience fluide et immersive.",
+  //   technology:
+  //     "Notre projet web tech vise à créer une plateforme innovante qui révolutionnera l'expérience en ligne. En combinant des technologies de pointe avec une conception intuitive, nous aspirons à offrir aux utilisateurs une expérience fluide et immersive.",
+  //   role: "Notre projet web tech vise à créer une plateforme innovante qui révolutionnera l'expérience en ligne. En combinant des technologies de pointe avec une conception intuitive, nous aspirons à offrir aux utilisateurs une expérience fluide et immersive.",
+  // },
   {
     id: "36724985-c81f-4de4-83b4-59b5cd1f4852",
     images: [
       "/images/screenshots/BO_1.webp",
-      "/images/screenshots/BO_2.webp",
+      // "/images/screenshots/BO_2.webp",
       "/images/screenshots/BO_3.webp",
     ],
     title: "Création backoffice avec applications complexes",
