@@ -6,7 +6,7 @@ const profile = {
   technos: ["JAVASCRIPT", "REACT", "NODE", "HTML", "CSS"],
   softs: ["GESTION", "TEAM", "LEADER", "COMMUNICATION", "MENTORING"],
   description:
-    "Développeur expérimenté, je transforme vos idées en sites web percutants. Expert en HTML, CSS, et JavaScript, je crée des expériences utilisateurs modernes et réactives. Parlons de votre projet et faisons-le décoller.",
+    "Développeur expérimenté, je transforme vos idées en sites web percutants. Expert en HTML, CSS, JavaScript et React, je crée des expériences utilisateurs modernes et réactives. Parlons de votre projet et faisons-le décoller.",
   presentation: [
     "Passionné de développement JavaScript, spécialisé dans React, je suis actuellement à la recherche de nouveaux défis passionnants en tant que freelance.",
     "Avec une solide expérience dans la création d'interfaces utilisateur dynamiques et réactives, j'ai travaillé sur une variété de projets qui vont de la conception de composants réutilisables à la mise en place d'architectures front-end robustes.",
@@ -28,27 +28,27 @@ const profile = {
           date: "Mai 2022 - Février 2024",
           technos: ["JAVASCRIPT", "REACT", "NODE", "HTML", "CSS"],
           description:
-            "Management et organisation du Pôle Produit composé de cinq développeurs, un designer et un product manager. Organisation et suivi de roadmap. Validation de spécifications fonctionnelles, techniques et design. Conception, réalisation et maintenance d'applications front complexes.",
+            "Management et organisation du Pôle Produit composé de cinq développeurs, un designer et un product manager. Organisation et suivi de roadmap. Validation de spécifications fonctionnelles, techniques et design. Conception, réalisation et maintenance d'applications front-end complexes.",
           tags: ["front", "design", "architecture"],
           softs: ["GESTION", "TEAM", "LEADER", "COMMUNICATION", "MENTORING"],
         },
         {
-          title: "Développeur Front Lead",
+          title: "Développeur Front-End Lead",
           city: "Nantes",
           date: "Mai 2021 - Avril 2022",
           technos: ["JAVASCRIPT", "REACT", "NODE", "HTML", "CSS"],
           description:
-            "Management technique et mentorat. Conception, réalisation et maintenance d'applications front complexes.",
+            "Management technique et mentorat. Conception, réalisation et maintenance d'applications front-end complexes.",
           tags: ["front", "design", "architecture"],
           softs: ["TEAM", "LEADER", "COMMUNICATION", "MENTORING"],
         },
         {
-          title: "Développeur Front",
+          title: "Développeur Front-End",
           city: "Nantes",
           date: "Mai 2020 - Avril 2021",
           technos: ["JAVASCRIPT", "REACT", "NODE", "HTML", "CSS"],
           description:
-            "Réalisation et maintenance d'applications front complexes.",
+            "Réalisation et maintenance d'applications front-end complexes.",
           tags: ["front", "design"],
           softs: ["TEAM", "COMMUNICATION"],
         },
@@ -67,7 +67,7 @@ const profile = {
           date: "Septembre 2019 - Avril 2020",
           technos: ["TYPESCRIPT", "ANGULAR", "JAVA", "SPRING", "HTML", "CSS"],
           description:
-            "Conception, réalisation et maintenance d'applications front et back.",
+            "Conception, réalisation et maintenance d'applications front-end et back-end.",
           tags: ["front", "back", "design", "architecture", "baseDeDonnée"],
           softs: ["GESTION", "COMMUNICATION"],
         },
@@ -86,7 +86,7 @@ const profile = {
           date: "Décembre 2017 - Août 2019",
           technos: ["TYPESCRIPT", "ANGULAR", "JAVA", "SPRING", "HTML", "CSS"],
           description:
-            "Réalisation et maintenance d'applications front et back.",
+            "Réalisation et maintenance d'applications front-end et back-end.",
           tags: ["front", "back", "baseDeDonnée"],
           softs: ["TEAM", "COMMUNICATION"],
         },
@@ -105,7 +105,7 @@ const profile = {
           date: "Décembre 2016 - Novembre 2017",
           technos: ["JAVASCRIPT", "JADE", "NODE", "MONGO", "HTML", "CSS"],
           description:
-            "Conception, réalisation et maintenance d'applications Front et Back.",
+            "Conception, réalisation et maintenance d'applications front-end et back-end.",
           tags: ["front", "back", "design", "architecture", "baseDeDonnée"],
           softs: ["GESTION", "COMMUNICATION"],
         },
