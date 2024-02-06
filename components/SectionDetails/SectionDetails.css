@@ -60,6 +60,7 @@
 
 .SectionDetails__values {
   display: flex;
+  flex-wrap: wrap;
   gap: 10px;
   margin: 0px 0px 20px 0px;
 }
