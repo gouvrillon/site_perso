@@ -2,11 +2,10 @@ import React from "react";
 import "./Linky.css";
 import { string, bool } from "prop-types";
 import classnames from "classnames";
-import Link from "next/link";
 
 const Linky = ({ className, label, href, darkMode, reversed }) => {
   return (
-    <Link
+    <a
       className={classnames(`Linky ${className}`, {
         "Linky--reversed": !darkMode && reversed,
         "Linky--darkMode": darkMode && !reversed,
@@ -15,7 +14,7 @@ const Linky = ({ className, label, href, darkMode, reversed }) => {
       href={href}
     >
       {label}
-    </Link>
+    </a>
   );
 };
 

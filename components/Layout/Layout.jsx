@@ -3,17 +3,15 @@ import Header from "../../components/Header/Header.jsx";
 import Footer from "../../components/Footer/Footer.jsx";
 import { node, object, bool } from "prop-types";
 import "./Layout.css";
-import isEqual from "lodash/isEqual";
 import { usePathname } from "next/navigation";
+import Cookies from "js-cookie";
 
 const Layout = ({ children, nav, darkModeCookie }) => {
   const [darkMode, setDarkMode] = useState(darkModeCookie);
   const pathname = usePathname();
 
   useEffect(() => {
-    if (!isEqual(typeof window, "undefined")) {
-      document.cookie = `darkMode=${darkMode}`;
-    }
+    Cookies.set("darkMode", darkMode);
   }, [darkMode]);
 
   return (
