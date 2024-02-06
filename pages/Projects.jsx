@@ -27,8 +27,8 @@ const Projects = ({
             reversed={isEqual(index % 2, 1)}
           />
         ))}
-      <SectionProfile profile={profile} reversed={true} />
-      <SectionContact />
+      <SectionProfile profile={profile} />
+      <SectionContact reversed={true} />
     </Layout>
   );
 };
