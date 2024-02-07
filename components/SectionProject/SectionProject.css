@@ -102,7 +102,6 @@
 }
 
 .SectionProject__image__label {
-  z-index: 1;
   position: absolute;
   opacity: 0;
 }

@@ -1,7 +1,7 @@
 import React from "react";
 import "./SectionDetails.css";
 import get from "lodash/get";
-import { object, bool } from "prop-types";
+import { object, bool, func } from "prop-types";
 import classnames from "classnames";
 import Tag from "../Tag/Tag.jsx";
 import Title3 from "../Title3/Title3.jsx";
@@ -11,9 +11,10 @@ import Techno from "../Techno/Techno.jsx";
 import Soft from "../Soft/Soft.jsx";
 import Value from "../Value/Value.jsx";
 import Action from "../Action/Action.jsx";
+import ModalImage from "../ModalImage/ModalImage.jsx";
 import isEmpty from "lodash/isEmpty";
 
-const SectionDetails = ({ reversed, darkMode, project }) => {
+const SectionDetails = ({ reversed, darkMode, project, setModal }) => {
   return (
     <Section reversed={reversed} darkMode={darkMode}>
       <div className="SectionDetails">
@@ -48,6 +49,12 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
                 "SectionDetails__image--darkMode": darkMode,
               })}
               src={get(project, "images[1]", "")}
+              onClick={() =>
+                setModal({
+                  title: get(project, "title", ""),
+                  content: <ModalImage src={get(project, "images[1]", "")} />,
+                })
+              }
             />
           </div>
         </div>
@@ -68,6 +75,12 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
                 "SectionDetails__image--darkMode": darkMode,
               })}
               src={get(project, "images[2]", "")}
+              onClick={() =>
+                setModal({
+                  title: get(project, "title", ""),
+                  content: <ModalImage src={get(project, "images[2]", "")} />,
+                })
+              }
             />
           </div>
           <div className="SectionDetails__element">
@@ -128,6 +141,12 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
                 "SectionDetails__image--darkMode": darkMode,
               })}
               src={get(project, "images[0]", "")}
+              onClick={() =>
+                setModal({
+                  title: get(project, "title", ""),
+                  content: <ModalImage src={get(project, "images[0]", "")} />,
+                })
+              }
             />
           </div>
         </div>
@@ -147,6 +166,7 @@ const SectionDetails = ({ reversed, darkMode, project }) => {
 
 SectionDetails.propTypes = {
   project: object.isRequired,
+  setModal: func,
   reversed: bool,
   darkMode: bool,
 };
