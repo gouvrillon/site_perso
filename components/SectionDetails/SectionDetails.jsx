@@ -12,6 +12,7 @@ import Soft from "../Soft/Soft.jsx";
 import Value from "../Value/Value.jsx";
 import Action from "../Action/Action.jsx";
 import ModalImage from "../ModalImage/ModalImage.jsx";
+import Label from "../Label/Label.jsx";
 import isEmpty from "lodash/isEmpty";
 
 const SectionDetails = ({ reversed, darkMode, project, setModal }) => {
@@ -44,18 +45,32 @@ const SectionDetails = ({ reversed, darkMode, project, setModal }) => {
             />
           </div>
           <div className="SectionDetails__element">
-            <img
-              className={classnames("SectionDetails__image", {
-                "SectionDetails__image--darkMode": darkMode,
-              })}
-              src={get(project, "images[1]", "")}
+            <div
+              className="SectionDetails__image__container"
               onClick={() =>
                 setModal({
                   title: get(project, "title", ""),
                   content: <ModalImage src={get(project, "images[1]", "")} />,
                 })
               }
-            />
+            >
+              <img
+                className={classnames("SectionDetails__image", {
+                  "SectionDetails__image--darkMode": darkMode,
+                })}
+                src={get(project, "images[1]", "")}
+              />
+              <div
+                className={classnames("SectionDetails__filter", {
+                  "SectionDetails__filter--darkMode": darkMode,
+                })}
+              />
+              <Label
+                label="Voir"
+                darkMode={darkMode}
+                className="SectionDetails__label"
+              />
+            </div>
           </div>
         </div>
         <div
@@ -70,18 +85,32 @@ const SectionDetails = ({ reversed, darkMode, project, setModal }) => {
           )}
         >
           <div className="SectionDetails__element">
-            <img
-              className={classnames("SectionDetails__image", {
-                "SectionDetails__image--darkMode": darkMode,
-              })}
-              src={get(project, "images[2]", "")}
+            <div
+              className="SectionDetails__image__container"
               onClick={() =>
                 setModal({
                   title: get(project, "title", ""),
                   content: <ModalImage src={get(project, "images[2]", "")} />,
                 })
               }
-            />
+            >
+              <img
+                className={classnames("SectionDetails__image", {
+                  "SectionDetails__image--darkMode": darkMode,
+                })}
+                src={get(project, "images[2]", "")}
+              />
+              <div
+                className={classnames("SectionDetails__filter", {
+                  "SectionDetails__filter--darkMode": darkMode,
+                })}
+              />
+              <Label
+                label="Voir"
+                darkMode={darkMode}
+                className="SectionDetails__label"
+              />
+            </div>
           </div>
           <div className="SectionDetails__element">
             <Title3
@@ -136,18 +165,32 @@ const SectionDetails = ({ reversed, darkMode, project, setModal }) => {
             </div>
           </div>
           <div className="SectionDetails__element">
-            <img
-              className={classnames("SectionDetails__image", {
-                "SectionDetails__image--darkMode": darkMode,
-              })}
-              src={get(project, "images[0]", "")}
+            <div
+              className="SectionDetails__image__container"
               onClick={() =>
                 setModal({
                   title: get(project, "title", ""),
                   content: <ModalImage src={get(project, "images[0]", "")} />,
                 })
               }
-            />
+            >
+              <img
+                className={classnames("SectionDetails__image", {
+                  "SectionDetails__image--darkMode": darkMode,
+                })}
+                src={get(project, "images[0]", "")}
+              />
+              <div
+                className={classnames("SectionDetails__filter", {
+                  "SectionDetails__filter--darkMode": darkMode,
+                })}
+              />
+              <Label
+                label="Voir"
+                darkMode={darkMode}
+                className="SectionDetails__label"
+              />
+            </div>
           </div>
         </div>
         {!isEmpty(get(project, "link", "")) && (
