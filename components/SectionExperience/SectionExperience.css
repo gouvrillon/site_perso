@@ -86,6 +86,13 @@
   gap: 10px;
   margin: 0px 0px 20px 0px;
 }
+
+.SectionExperience__softs {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
 .SectionExperience__paragraph {
   margin: 0px 0px 20px 0px;
 }

@@ -72,7 +72,7 @@ const SectionExperience = ({ reversed, darkMode, experience }) => {
                   <Tag key={index} label={tag} darkMode={darkMode} />
                 ))}
               </div>
-              <div className="SectionExperience__list">
+              <div className="SectionExperience__softs">
                 {get(job, "softs", []).map((soft, index) => (
                   <Soft key={index} name={soft} darkMode={darkMode} />
                 ))}
