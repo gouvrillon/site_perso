@@ -8,15 +8,18 @@ import Section from "../Section/Section.jsx";
 import classnames from "classnames";
 import Star from "../Star/Star.jsx";
 import Paragraph from "../Paragraph/Paragraph.jsx";
-import Date from "../Date/Date.jsx";
+import Daty from "../Daty/Daty.jsx";
 import { format, parseISO } from "date-fns";
 import { fr } from "date-fns/locale";
 import startCase from "lodash/startCase";
 
 const SectionIntro = ({ reversed, darkMode, project }) => {
-  const date = parseISO(get(project, "date", ""));
-  const formattedDate = startCase(
-    format(date, "eeee d MMMM yyyy", {
+  const dateString = get(project, "date")
+    ? project.date
+    : format(new Date(), "yyyy-MM-dd");
+  const dateISO = parseISO(dateString);
+  const date = startCase(
+    format(dateISO, "eeee d MMMM yyyy", {
       locale: fr,
     })
   );
@@ -38,7 +41,7 @@ const SectionIntro = ({ reversed, darkMode, project }) => {
             text={get(project, "description", "")}
             darkMode={darkMode}
           />
-          <Date date={formattedDate} darkMode={darkMode} />
+          <Daty date={date} darkMode={darkMode} />
           {get(project, "star") && (
             <Star
               label="Top projet"

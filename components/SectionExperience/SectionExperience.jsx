@@ -7,7 +7,7 @@ import Client from "../Client/Client.jsx";
 import Section from "../Section/Section.jsx";
 import Title3 from "../Title3/Title3.jsx";
 import City from "../City/City.jsx";
-import Date from "../Date/Date.jsx";
+import Daty from "../Daty/Daty.jsx";
 import Techno from "../Techno/Techno.jsx";
 import Paragraph from "../Paragraph/Paragraph.jsx";
 import Tag from "../Tag/Tag.jsx";
@@ -47,7 +47,7 @@ const SectionExperience = ({ reversed, darkMode, experience }) => {
                 city={get(job, "city", "")}
                 darkMode={darkMode}
               />
-              <Date
+              <Daty
                 className="SectionExperience__date"
                 date={get(job, "date", "")}
                 darkMode={darkMode}

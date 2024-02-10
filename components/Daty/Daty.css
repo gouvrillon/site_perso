@@ -1,9 +1,9 @@
-.Date {
+.Daty {
   font-size: 14px;
   font-weight: 400;
   color: var(--color-violet);
 }
 
-.Date--darkMode {
+.Daty--darkMode {
   color: var(--color-dark-violet);
 }

@@ -1,13 +1,13 @@
 import React from "react";
-import "./Date.css";
+import "./Daty.css";
 import { string, bool } from "prop-types";
 import classnames from "classnames";
 
-const Date = ({ className, date, darkMode }) => {
+const Daty = ({ className, date, darkMode }) => {
   return (
     <div
-      className={classnames(`Date ${className}`, {
-        "Date--darkMode": darkMode,
+      className={classnames(`Daty ${className}`, {
+        "Daty--darkMode": darkMode,
       })}
     >
       {date}
@@ -15,10 +15,10 @@ const Date = ({ className, date, darkMode }) => {
   );
 };
 
-Date.propTypes = {
+Daty.propTypes = {
   date: string.isRequired,
   darkMode: bool,
   className: string,
 };
 
-export default Date;
+export default Daty;
