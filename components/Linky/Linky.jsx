@@ -3,7 +3,7 @@ import "./Linky.css";
 import { string, bool } from "prop-types";
 import classnames from "classnames";
 
-const Linky = ({ className, label, href, darkMode, reversed }) => {
+const Linky = ({ className, label, href, darkMode, reversed, isExternal }) => {
   return (
     <a
       className={classnames(`Linky ${className}`, {
@@ -12,6 +12,8 @@ const Linky = ({ className, label, href, darkMode, reversed }) => {
         "Linky--darkMode--reversed": darkMode && reversed,
       })}
       href={href}
+      target={isExternal ? "_blank" : null}
+      rel={isExternal ? "noreferrer" : null}
     >
       {label}
     </a>
@@ -21,6 +23,7 @@ const Linky = ({ className, label, href, darkMode, reversed }) => {
 Linky.propTypes = {
   label: string.isRequired,
   href: string.isRequired,
+  isExternal: bool,
   darkMode: bool,
   reversed: bool,
   className: string,

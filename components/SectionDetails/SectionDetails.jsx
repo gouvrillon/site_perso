@@ -11,7 +11,7 @@ import Techno from "../Techno/Techno.jsx";
 import Soft from "../Soft/Soft.jsx";
 import Value from "../Value/Value.jsx";
 import Action from "../Action/Action.jsx";
-import ModalImage from "../ModalImage/ModalImage.jsx";
+import ModalProject from "../ModalProject/ModalProject.jsx";
 import Label from "../Label/Label.jsx";
 import isEmpty from "lodash/isEmpty";
 
@@ -50,7 +50,12 @@ const SectionDetails = ({ reversed, darkMode, project, setModal }) => {
               onClick={() =>
                 setModal({
                   title: get(project, "title", ""),
-                  content: <ModalImage src={get(project, "images[1]", "")} />,
+                  content: (
+                    <ModalProject
+                      src={get(project, "images[1]", "")}
+                      href={get(project, "link", "")}
+                    />
+                  ),
                 })
               }
             >
@@ -90,7 +95,12 @@ const SectionDetails = ({ reversed, darkMode, project, setModal }) => {
               onClick={() =>
                 setModal({
                   title: get(project, "title", ""),
-                  content: <ModalImage src={get(project, "images[2]", "")} />,
+                  content: (
+                    <ModalProject
+                      src={get(project, "images[2]", "")}
+                      href={get(project, "link", "")}
+                    />
+                  ),
                 })
               }
             >
@@ -170,7 +180,12 @@ const SectionDetails = ({ reversed, darkMode, project, setModal }) => {
               onClick={() =>
                 setModal({
                   title: get(project, "title", ""),
-                  content: <ModalImage src={get(project, "images[0]", "")} />,
+                  content: (
+                    <ModalProject
+                      src={get(project, "images[0]", "")}
+                      href={get(project, "link", "")}
+                    />
+                  ),
                 })
               }
             >
