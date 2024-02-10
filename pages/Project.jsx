@@ -20,7 +20,7 @@ const Project = ({
     <Layout nav={nav} darkModeCookie={darkModeCookie}>
       <SectionIntro project={project} />
       <SectionDetails project={project} reversed={true} />
-      <SectionProjects projects={projects} />
+      <SectionProjects projects={projects} nav={nav} />
       <SectionProfile profile={profile} reversed={true} />
       <SectionContact />
     </Layout>

@@ -12,7 +12,7 @@ import Star from "../Star/Star.jsx";
 import Paragraph from "../Paragraph/Paragraph.jsx";
 import Section from "../Section/Section.jsx";
 
-const SectionProject = ({ project, reversed, darkMode }) => {
+const SectionProject = ({ project, reversed, darkMode, nav }) => {
   return (
     <Section reversed={reversed} darkMode={darkMode}>
       <div
@@ -26,7 +26,7 @@ const SectionProject = ({ project, reversed, darkMode }) => {
               "SectionProject__image__container--darkMode": darkMode,
               "SectionProject__image__container--reversed": reversed,
             })}
-            href={`/projet?id=${get(project, "id", "")}`}
+            href={`${nav.project.href}?id=${get(project, "id", "")}`}
           >
             <img
               className={classnames("SectionProject__image__image", {
@@ -81,7 +81,7 @@ const SectionProject = ({ project, reversed, darkMode }) => {
           </div>
           <Linky
             label="Voir le projet"
-            href={`/projet?id=${get(project, "id", "")}`}
+            href={`${nav.project.href}?id=${get(project, "id", "")}`}
             darkMode={darkMode}
             reversed={reversed}
           />
@@ -93,6 +93,7 @@ const SectionProject = ({ project, reversed, darkMode }) => {
 
 SectionProject.propTypes = {
   project: object.isRequired,
+  nav: object.isRequired,
   reversed: bool,
   darkMode: bool,
 };

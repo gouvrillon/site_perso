@@ -7,7 +7,7 @@ import SlideProject from "../SlideProject/SlideProject.jsx";
 import Title2 from "../Title2/Title2.jsx";
 import "./SectionProjects.css";
 
-const SectionProjects = ({ projects, reversed, darkMode }) => {
+const SectionProjects = ({ projects, reversed, darkMode, nav }) => {
   return (
     <Section reversed={reversed} darkMode={darkMode}>
       <div className="SectionProjects">
@@ -26,6 +26,7 @@ const SectionProjects = ({ projects, reversed, darkMode }) => {
                 project={project}
                 darkMode={darkMode}
                 reversed={reversed}
+                nav={nav}
               />
             ))
           }
@@ -37,6 +38,7 @@ const SectionProjects = ({ projects, reversed, darkMode }) => {
 
 SectionProjects.propTypes = {
   projects: arrayOf(object).isRequired,
+  nav: object.isRequired,
   reversed: bool,
   darkMode: bool,
 };

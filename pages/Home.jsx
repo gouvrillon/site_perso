@@ -20,7 +20,7 @@ const Home = ({
   return (
     <Layout nav={nav} darkModeCookie={darkModeCookie}>
       <SectionProfile profile={profile} />
-      <SectionProjects projects={projects} reversed={true} />
+      <SectionProjects projects={projects} reversed={true} nav={nav} />
       {isArray(projects) &&
         projects
           .filter((project) => project.star)
@@ -29,6 +29,7 @@ const Home = ({
               key={index}
               project={project}
               reversed={isEqual(index % 2, 1)}
+              nav={nav}
             />
           ))}
       <SectionSkills profile={profile} reversed={true} />

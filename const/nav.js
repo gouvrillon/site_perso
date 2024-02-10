@@ -11,6 +11,9 @@ const nav = {
     label: "Projets",
     href: "/projets",
   },
+  project: {
+    href: "/projet",
+  },
   contact: {
     label: "Contact",
     href: "/contact",

@@ -18,13 +18,14 @@ const Projects = ({
 }) => {
   return (
     <Layout nav={nav} darkModeCookie={darkModeCookie}>
-      <SectionProjects projects={projects} reversed={true} />
+      <SectionProjects projects={projects} reversed={true} nav={nav} />
       {isArray(projects) &&
         projects.map((project, index) => (
           <SectionProject
             key={index}
             project={project}
             reversed={isEqual(index % 2, 1)}
+            nav={nav}
           />
         ))}
       <SectionProfile profile={profile} />

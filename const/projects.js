@@ -1,6 +1,7 @@
 const projects = [
   {
     id: "36724985-c81f-4de4-83b4-59b5cd1f4852",
+    date: "2024-02-02",
     images: [
       "/images/screenshots/BO_1.webp",
       "/images/screenshots/BO_2.webp",
@@ -22,6 +23,7 @@ const projects = [
   },
   {
     id: "47c6c2ab-9adc-45ee-b584-62eefe8deebf",
+    date: "2024-02-05",
     images: [
       "/images/screenshots/PHARMABEST_1.webp",
       "/images/screenshots/PHARMABEST_2.webp",
@@ -48,6 +50,7 @@ const projects = [
   },
   {
     id: "4bdb1d15-c689-4905-ba8e-4d9cbad7fdf0",
+    date: "2024-02-06",
     images: [
       "/images/screenshots/VALWIN_PHARMA_1.webp",
       "/images/screenshots/VALWIN_PHARMA_2.webp",
@@ -70,6 +73,7 @@ const projects = [
   },
   {
     id: "fa2ed302-57ca-48c8-afc9-46d13efa1dac",
+    date: "2024-02-07",
     images: [
       "/images/screenshots/COS_1.webp",
       "/images/screenshots/COS_2.webp",
@@ -95,6 +99,7 @@ const projects = [
   },
   {
     id: "64340727-6b70-4131-8a5e-d54153e2a3c9",
+    date: "2024-02-08",
     images: [
       "/images/screenshots/CORPO_1.webp",
       "/images/screenshots/CORPO_2.webp",
@@ -119,6 +124,7 @@ const projects = [
   },
   {
     id: "6c46cccb-6159-4668-992c-6d622d634e90",
+    date: "2024-02-09",
     images: [
       "/images/screenshots/APTIPHAR_1.webp",
       "/images/screenshots/APTIPHAR_2.webp",

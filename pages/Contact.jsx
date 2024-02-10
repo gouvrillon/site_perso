@@ -17,7 +17,7 @@ const Contact = ({
     <Layout nav={nav} darkModeCookie={darkModeCookie}>
       <SectionContact />
       <SectionProfile profile={profile} reversed={true} />
-      <SectionProjects projects={projects} />
+      <SectionProjects projects={projects} nav={nav} />
     </Layout>
   );
 };

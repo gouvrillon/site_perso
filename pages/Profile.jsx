@@ -30,7 +30,7 @@ const Profile = ({
         />
       ))}
       <SectionSkills profile={profile} />
-      <SectionProjects projects={projects} reversed={true} />
+      <SectionProjects projects={projects} reversed={true} nav={nav} />
       <SectionContact />
     </Layout>
   );

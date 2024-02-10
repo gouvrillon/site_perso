@@ -9,10 +9,10 @@ import Tag from "../Tag/Tag.jsx";
 import Title3 from "../Title3/Title3.jsx";
 import Star from "../Star/Star.jsx";
 
-const SlideProject = ({ project, darkMode, reversed }) => {
+const SlideProject = ({ project, darkMode, reversed, nav }) => {
   return (
     <a
-      href={`/projet?id=${get(project, "id", "")}`}
+      href={`${nav.project.href}?id=${get(project, "id", "")}`}
       className={classnames("SlideProject", {
         "SlideProject--reversed": !darkMode && reversed,
         "SlideProject--darkMode": darkMode && !reversed,
@@ -68,6 +68,7 @@ const SlideProject = ({ project, darkMode, reversed }) => {
 
 SlideProject.propTypes = {
   project: object.isRequired,
+  nav: object.isRequired,
   darkMode: bool,
   reversed: bool,
 };
