@@ -30,6 +30,9 @@ const nav = {
     image: "/images/portraits/CAT.webp",
     href: "/",
   },
+  cv: {
+    href: "/documents/CV_THOMAS_GOUVRILLON.pdf",
+  },
 };
 
 export default nav;

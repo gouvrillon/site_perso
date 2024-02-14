@@ -20,7 +20,7 @@ const Profile = ({
 }) => {
   return (
     <Layout nav={nav} darkModeCookie={darkModeCookie}>
-      <SectionPortrait profile={profile} />
+      <SectionPortrait profile={profile} nav={nav} />
       <SectionPresentation profile={profile} reversed={true} />
       {get(profile, "experiences", []).map((experience, index) => (
         <SectionExperience
