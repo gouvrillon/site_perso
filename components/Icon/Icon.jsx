@@ -36,6 +36,9 @@ import { SiSpring } from "react-icons/si";
 import { GiRabbitHead } from "react-icons/gi";
 import { DiMongodb } from "react-icons/di";
 import { SiStorybook } from "react-icons/si";
+import { FaFacebookF } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
+import { FaLinkedinIn } from "react-icons/fa";
 
 const Icon = ({ icon }) => {
   return (
@@ -110,6 +113,12 @@ const Icon = ({ icon }) => {
         <DiMongodb />
       ) : isEqual(icon, "STORYBOOK") ? (
         <SiStorybook />
+      ) : isEqual(icon, "FACEBOOK") ? (
+        <FaFacebookF />
+      ) : isEqual(icon, "INSTAGRAM") ? (
+        <FaInstagram />
+      ) : isEqual(icon, "LINKEDIN") ? (
+        <FaLinkedinIn />
       ) : null}
     </>
   );
