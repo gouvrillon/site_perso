@@ -40,8 +40,6 @@ import { FaFacebookF } from "react-icons/fa";
 import { FaInstagram } from "react-icons/fa";
 import { FaLinkedinIn } from "react-icons/fa";
 
-// test
-
 const Icon = ({ icon }) => {
   return (
     <>
